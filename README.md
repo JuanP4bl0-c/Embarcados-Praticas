@@ -4,18 +4,18 @@ agora por meio do protocolo MQTT utilizando as ferramntentas disponives da AWS I
 
 Planejamento do código:
 
-1 - Refatoração do código para ESP32 wiFi
+1 - Refatoração do código para ESP32 wiFi (concluído)
 
-2 - Regulação da Placa fotovoltaica para controle da exposição solar
+2 - Regulação da Placa fotovoltaica para controle da exposição solar (concluido)
 
-3 - Gerenciamento de energia para baixo consumo 
+3 - Gerenciamento de energia para baixo consumo (em andamento)
 
 4 - Implementação do Banco de Dados 
 
 5 - Implementação da comunicação com o protocolo MQQT
 
-6 - Configuração do ambiente AWS
+6 - Configuração do ambiente AWS (em desenvolvimento)
 
-7 - Modelagem física e impressão da PCB
+7 - Modelagem física e impressão da PCB (80% concluido)
 
-8 - Atuador: Válvula solenóide
+8 - Atuador: Válvula solenóide (obtido)
