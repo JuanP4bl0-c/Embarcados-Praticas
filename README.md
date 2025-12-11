@@ -3,11 +3,19 @@ Neste projeto priorizamos o controle de um solenoide de 12v para controlar o flu
 agora por meio do protocolo MQTT utilizando as ferramntentas disponives da AWS IoT Core.
 
 Planejamento do código:
+
 1 - Refatoração do código para ESP32 wiFi
+
 2 - Regulação da Placa fotovoltaica para controle da exposição solar
+
 3 - Gerenciamento de energia para baixo consumo 
+
 4 - Implementação do Banco de Dados 
+
 5 - Implementação da comunicação com o protocolo MQQT
+
 6 - Configuração do ambiente AWS
+
 7 - Modelagem física e impressão da PCB
+
 8 - Atuador: Válvula solenóide
