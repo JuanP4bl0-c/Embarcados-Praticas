@@ -60,7 +60,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/juan/esp-idf/components/bootloader/subproject
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader
+CMAKE_BINARY_DIR = "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader && $(CMAKE_COMMAND) -E cmake_progress_start /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader/CMakeFiles /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader/esp-idf/soc//CMakeFiles/progress.marks
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/soc/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader/CMakeFiles 0
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader" && $(CMAKE_COMMAND) -E cmake_progress_start "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader/CMakeFiles" "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader/esp-idf/soc//CMakeFiles/progress.marks"
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/soc/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/soc/clean
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/soc/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/soc/preinstall
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/soc/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/soc/preinstall
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/soc/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 esp-idf/soc/CMakeFiles/__idf_soc.dir/rule:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/soc/CMakeFiles/__idf_soc.dir/rule
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/soc/CMakeFiles/__idf_soc.dir/rule
 .PHONY : esp-idf/soc/CMakeFiles/__idf_soc.dir/rule
 
 # Convenience name for target.
@@ -127,7 +127,7 @@ __idf_soc: esp-idf/soc/CMakeFiles/__idf_soc.dir/rule
 
 # fast build rule for target.
 __idf_soc/fast:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/build
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader" && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/build
 .PHONY : __idf_soc/fast
 
 dport_access_common.obj: dport_access_common.c.obj
@@ -135,7 +135,7 @@ dport_access_common.obj: dport_access_common.c.obj
 
 # target to build an object file
 dport_access_common.c.obj:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/dport_access_common.c.obj
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader" && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/dport_access_common.c.obj
 .PHONY : dport_access_common.c.obj
 
 dport_access_common.i: dport_access_common.c.i
@@ -143,7 +143,7 @@ dport_access_common.i: dport_access_common.c.i
 
 # target to preprocess a source file
 dport_access_common.c.i:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/dport_access_common.c.i
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader" && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/dport_access_common.c.i
 .PHONY : dport_access_common.c.i
 
 dport_access_common.s: dport_access_common.c.s
@@ -151,7 +151,7 @@ dport_access_common.s: dport_access_common.c.s
 
 # target to generate assembly for a file
 dport_access_common.c.s:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/dport_access_common.c.s
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader" && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/dport_access_common.c.s
 .PHONY : dport_access_common.c.s
 
 esp32/adc_periph.obj: esp32/adc_periph.c.obj
@@ -159,7 +159,7 @@ esp32/adc_periph.obj: esp32/adc_periph.c.obj
 
 # target to build an object file
 esp32/adc_periph.c.obj:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/adc_periph.c.obj
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader" && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/adc_periph.c.obj
 .PHONY : esp32/adc_periph.c.obj
 
 esp32/adc_periph.i: esp32/adc_periph.c.i
@@ -167,7 +167,7 @@ esp32/adc_periph.i: esp32/adc_periph.c.i
 
 # target to preprocess a source file
 esp32/adc_periph.c.i:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/adc_periph.c.i
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader" && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/adc_periph.c.i
 .PHONY : esp32/adc_periph.c.i
 
 esp32/adc_periph.s: esp32/adc_periph.c.s
@@ -175,7 +175,7 @@ esp32/adc_periph.s: esp32/adc_periph.c.s
 
 # target to generate assembly for a file
 esp32/adc_periph.c.s:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/adc_periph.c.s
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader" && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/adc_periph.c.s
 .PHONY : esp32/adc_periph.c.s
 
 esp32/dac_periph.obj: esp32/dac_periph.c.obj
@@ -183,7 +183,7 @@ esp32/dac_periph.obj: esp32/dac_periph.c.obj
 
 # target to build an object file
 esp32/dac_periph.c.obj:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/dac_periph.c.obj
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader" && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/dac_periph.c.obj
 .PHONY : esp32/dac_periph.c.obj
 
 esp32/dac_periph.i: esp32/dac_periph.c.i
@@ -191,7 +191,7 @@ esp32/dac_periph.i: esp32/dac_periph.c.i
 
 # target to preprocess a source file
 esp32/dac_periph.c.i:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/dac_periph.c.i
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader" && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/dac_periph.c.i
 .PHONY : esp32/dac_periph.c.i
 
 esp32/dac_periph.s: esp32/dac_periph.c.s
@@ -199,7 +199,7 @@ esp32/dac_periph.s: esp32/dac_periph.c.s
 
 # target to generate assembly for a file
 esp32/dac_periph.c.s:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/dac_periph.c.s
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader" && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/dac_periph.c.s
 .PHONY : esp32/dac_periph.c.s
 
 esp32/dport_access.obj: esp32/dport_access.c.obj
@@ -207,7 +207,7 @@ esp32/dport_access.obj: esp32/dport_access.c.obj
 
 # target to build an object file
 esp32/dport_access.c.obj:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/dport_access.c.obj
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader" && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/dport_access.c.obj
 .PHONY : esp32/dport_access.c.obj
 
 esp32/dport_access.i: esp32/dport_access.c.i
@@ -215,7 +215,7 @@ esp32/dport_access.i: esp32/dport_access.c.i
 
 # target to preprocess a source file
 esp32/dport_access.c.i:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/dport_access.c.i
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader" && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/dport_access.c.i
 .PHONY : esp32/dport_access.c.i
 
 esp32/dport_access.s: esp32/dport_access.c.s
@@ -223,7 +223,7 @@ esp32/dport_access.s: esp32/dport_access.c.s
 
 # target to generate assembly for a file
 esp32/dport_access.c.s:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/dport_access.c.s
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader" && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/dport_access.c.s
 .PHONY : esp32/dport_access.c.s
 
 esp32/emac_periph.obj: esp32/emac_periph.c.obj
@@ -231,7 +231,7 @@ esp32/emac_periph.obj: esp32/emac_periph.c.obj
 
 # target to build an object file
 esp32/emac_periph.c.obj:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/emac_periph.c.obj
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader" && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/emac_periph.c.obj
 .PHONY : esp32/emac_periph.c.obj
 
 esp32/emac_periph.i: esp32/emac_periph.c.i
@@ -239,7 +239,7 @@ esp32/emac_periph.i: esp32/emac_periph.c.i
 
 # target to preprocess a source file
 esp32/emac_periph.c.i:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/emac_periph.c.i
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader" && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/emac_periph.c.i
 .PHONY : esp32/emac_periph.c.i
 
 esp32/emac_periph.s: esp32/emac_periph.c.s
@@ -247,7 +247,7 @@ esp32/emac_periph.s: esp32/emac_periph.c.s
 
 # target to generate assembly for a file
 esp32/emac_periph.c.s:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/emac_periph.c.s
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader" && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/emac_periph.c.s
 .PHONY : esp32/emac_periph.c.s
 
 esp32/gpio_periph.obj: esp32/gpio_periph.c.obj
@@ -255,7 +255,7 @@ esp32/gpio_periph.obj: esp32/gpio_periph.c.obj
 
 # target to build an object file
 esp32/gpio_periph.c.obj:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/gpio_periph.c.obj
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader" && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/gpio_periph.c.obj
 .PHONY : esp32/gpio_periph.c.obj
 
 esp32/gpio_periph.i: esp32/gpio_periph.c.i
@@ -263,7 +263,7 @@ esp32/gpio_periph.i: esp32/gpio_periph.c.i
 
 # target to preprocess a source file
 esp32/gpio_periph.c.i:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/gpio_periph.c.i
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader" && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/gpio_periph.c.i
 .PHONY : esp32/gpio_periph.c.i
 
 esp32/gpio_periph.s: esp32/gpio_periph.c.s
@@ -271,7 +271,7 @@ esp32/gpio_periph.s: esp32/gpio_periph.c.s
 
 # target to generate assembly for a file
 esp32/gpio_periph.c.s:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/gpio_periph.c.s
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader" && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/gpio_periph.c.s
 .PHONY : esp32/gpio_periph.c.s
 
 esp32/i2s_periph.obj: esp32/i2s_periph.c.obj
@@ -279,7 +279,7 @@ esp32/i2s_periph.obj: esp32/i2s_periph.c.obj
 
 # target to build an object file
 esp32/i2s_periph.c.obj:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/i2s_periph.c.obj
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader" && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/i2s_periph.c.obj
 .PHONY : esp32/i2s_periph.c.obj
 
 esp32/i2s_periph.i: esp32/i2s_periph.c.i
@@ -287,7 +287,7 @@ esp32/i2s_periph.i: esp32/i2s_periph.c.i
 
 # target to preprocess a source file
 esp32/i2s_periph.c.i:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/i2s_periph.c.i
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader" && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/i2s_periph.c.i
 .PHONY : esp32/i2s_periph.c.i
 
 esp32/i2s_periph.s: esp32/i2s_periph.c.s
@@ -295,7 +295,7 @@ esp32/i2s_periph.s: esp32/i2s_periph.c.s
 
 # target to generate assembly for a file
 esp32/i2s_periph.c.s:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/i2s_periph.c.s
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader" && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/i2s_periph.c.s
 .PHONY : esp32/i2s_periph.c.s
 
 esp32/interrupts.obj: esp32/interrupts.c.obj
@@ -303,7 +303,7 @@ esp32/interrupts.obj: esp32/interrupts.c.obj
 
 # target to build an object file
 esp32/interrupts.c.obj:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/interrupts.c.obj
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader" && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/interrupts.c.obj
 .PHONY : esp32/interrupts.c.obj
 
 esp32/interrupts.i: esp32/interrupts.c.i
@@ -311,7 +311,7 @@ esp32/interrupts.i: esp32/interrupts.c.i
 
 # target to preprocess a source file
 esp32/interrupts.c.i:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/interrupts.c.i
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader" && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/interrupts.c.i
 .PHONY : esp32/interrupts.c.i
 
 esp32/interrupts.s: esp32/interrupts.c.s
@@ -319,7 +319,7 @@ esp32/interrupts.s: esp32/interrupts.c.s
 
 # target to generate assembly for a file
 esp32/interrupts.c.s:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/interrupts.c.s
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader" && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/interrupts.c.s
 .PHONY : esp32/interrupts.c.s
 
 esp32/lcd_periph.obj: esp32/lcd_periph.c.obj
@@ -327,7 +327,7 @@ esp32/lcd_periph.obj: esp32/lcd_periph.c.obj
 
 # target to build an object file
 esp32/lcd_periph.c.obj:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/lcd_periph.c.obj
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader" && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/lcd_periph.c.obj
 .PHONY : esp32/lcd_periph.c.obj
 
 esp32/lcd_periph.i: esp32/lcd_periph.c.i
@@ -335,7 +335,7 @@ esp32/lcd_periph.i: esp32/lcd_periph.c.i
 
 # target to preprocess a source file
 esp32/lcd_periph.c.i:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/lcd_periph.c.i
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader" && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/lcd_periph.c.i
 .PHONY : esp32/lcd_periph.c.i
 
 esp32/lcd_periph.s: esp32/lcd_periph.c.s
@@ -343,7 +343,7 @@ esp32/lcd_periph.s: esp32/lcd_periph.c.s
 
 # target to generate assembly for a file
 esp32/lcd_periph.c.s:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/lcd_periph.c.s
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader" && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/lcd_periph.c.s
 .PHONY : esp32/lcd_periph.c.s
 
 esp32/ledc_periph.obj: esp32/ledc_periph.c.obj
@@ -351,7 +351,7 @@ esp32/ledc_periph.obj: esp32/ledc_periph.c.obj
 
 # target to build an object file
 esp32/ledc_periph.c.obj:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/ledc_periph.c.obj
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader" && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/ledc_periph.c.obj
 .PHONY : esp32/ledc_periph.c.obj
 
 esp32/ledc_periph.i: esp32/ledc_periph.c.i
@@ -359,7 +359,7 @@ esp32/ledc_periph.i: esp32/ledc_periph.c.i
 
 # target to preprocess a source file
 esp32/ledc_periph.c.i:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/ledc_periph.c.i
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader" && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/ledc_periph.c.i
 .PHONY : esp32/ledc_periph.c.i
 
 esp32/ledc_periph.s: esp32/ledc_periph.c.s
@@ -367,7 +367,7 @@ esp32/ledc_periph.s: esp32/ledc_periph.c.s
 
 # target to generate assembly for a file
 esp32/ledc_periph.c.s:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/ledc_periph.c.s
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader" && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/ledc_periph.c.s
 .PHONY : esp32/ledc_periph.c.s
 
 esp32/mcpwm_periph.obj: esp32/mcpwm_periph.c.obj
@@ -375,7 +375,7 @@ esp32/mcpwm_periph.obj: esp32/mcpwm_periph.c.obj
 
 # target to build an object file
 esp32/mcpwm_periph.c.obj:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/mcpwm_periph.c.obj
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader" && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/mcpwm_periph.c.obj
 .PHONY : esp32/mcpwm_periph.c.obj
 
 esp32/mcpwm_periph.i: esp32/mcpwm_periph.c.i
@@ -383,7 +383,7 @@ esp32/mcpwm_periph.i: esp32/mcpwm_periph.c.i
 
 # target to preprocess a source file
 esp32/mcpwm_periph.c.i:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/mcpwm_periph.c.i
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader" && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/mcpwm_periph.c.i
 .PHONY : esp32/mcpwm_periph.c.i
 
 esp32/mcpwm_periph.s: esp32/mcpwm_periph.c.s
@@ -391,7 +391,7 @@ esp32/mcpwm_periph.s: esp32/mcpwm_periph.c.s
 
 # target to generate assembly for a file
 esp32/mcpwm_periph.c.s:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/mcpwm_periph.c.s
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader" && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/mcpwm_periph.c.s
 .PHONY : esp32/mcpwm_periph.c.s
 
 esp32/mpi_periph.obj: esp32/mpi_periph.c.obj
@@ -399,7 +399,7 @@ esp32/mpi_periph.obj: esp32/mpi_periph.c.obj
 
 # target to build an object file
 esp32/mpi_periph.c.obj:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/mpi_periph.c.obj
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader" && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/mpi_periph.c.obj
 .PHONY : esp32/mpi_periph.c.obj
 
 esp32/mpi_periph.i: esp32/mpi_periph.c.i
@@ -407,7 +407,7 @@ esp32/mpi_periph.i: esp32/mpi_periph.c.i
 
 # target to preprocess a source file
 esp32/mpi_periph.c.i:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/mpi_periph.c.i
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader" && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/mpi_periph.c.i
 .PHONY : esp32/mpi_periph.c.i
 
 esp32/mpi_periph.s: esp32/mpi_periph.c.s
@@ -415,7 +415,7 @@ esp32/mpi_periph.s: esp32/mpi_periph.c.s
 
 # target to generate assembly for a file
 esp32/mpi_periph.c.s:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/mpi_periph.c.s
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader" && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/mpi_periph.c.s
 .PHONY : esp32/mpi_periph.c.s
 
 esp32/pcnt_periph.obj: esp32/pcnt_periph.c.obj
@@ -423,7 +423,7 @@ esp32/pcnt_periph.obj: esp32/pcnt_periph.c.obj
 
 # target to build an object file
 esp32/pcnt_periph.c.obj:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/pcnt_periph.c.obj
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader" && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/pcnt_periph.c.obj
 .PHONY : esp32/pcnt_periph.c.obj
 
 esp32/pcnt_periph.i: esp32/pcnt_periph.c.i
@@ -431,7 +431,7 @@ esp32/pcnt_periph.i: esp32/pcnt_periph.c.i
 
 # target to preprocess a source file
 esp32/pcnt_periph.c.i:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/pcnt_periph.c.i
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader" && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/pcnt_periph.c.i
 .PHONY : esp32/pcnt_periph.c.i
 
 esp32/pcnt_periph.s: esp32/pcnt_periph.c.s
@@ -439,7 +439,7 @@ esp32/pcnt_periph.s: esp32/pcnt_periph.c.s
 
 # target to generate assembly for a file
 esp32/pcnt_periph.c.s:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/pcnt_periph.c.s
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader" && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/pcnt_periph.c.s
 .PHONY : esp32/pcnt_periph.c.s
 
 esp32/power_supply_periph.obj: esp32/power_supply_periph.c.obj
@@ -447,7 +447,7 @@ esp32/power_supply_periph.obj: esp32/power_supply_periph.c.obj
 
 # target to build an object file
 esp32/power_supply_periph.c.obj:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/power_supply_periph.c.obj
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader" && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/power_supply_periph.c.obj
 .PHONY : esp32/power_supply_periph.c.obj
 
 esp32/power_supply_periph.i: esp32/power_supply_periph.c.i
@@ -455,7 +455,7 @@ esp32/power_supply_periph.i: esp32/power_supply_periph.c.i
 
 # target to preprocess a source file
 esp32/power_supply_periph.c.i:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/power_supply_periph.c.i
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader" && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/power_supply_periph.c.i
 .PHONY : esp32/power_supply_periph.c.i
 
 esp32/power_supply_periph.s: esp32/power_supply_periph.c.s
@@ -463,7 +463,7 @@ esp32/power_supply_periph.s: esp32/power_supply_periph.c.s
 
 # target to generate assembly for a file
 esp32/power_supply_periph.c.s:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/power_supply_periph.c.s
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader" && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/power_supply_periph.c.s
 .PHONY : esp32/power_supply_periph.c.s
 
 esp32/rmt_periph.obj: esp32/rmt_periph.c.obj
@@ -471,7 +471,7 @@ esp32/rmt_periph.obj: esp32/rmt_periph.c.obj
 
 # target to build an object file
 esp32/rmt_periph.c.obj:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/rmt_periph.c.obj
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader" && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/rmt_periph.c.obj
 .PHONY : esp32/rmt_periph.c.obj
 
 esp32/rmt_periph.i: esp32/rmt_periph.c.i
@@ -479,7 +479,7 @@ esp32/rmt_periph.i: esp32/rmt_periph.c.i
 
 # target to preprocess a source file
 esp32/rmt_periph.c.i:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/rmt_periph.c.i
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader" && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/rmt_periph.c.i
 .PHONY : esp32/rmt_periph.c.i
 
 esp32/rmt_periph.s: esp32/rmt_periph.c.s
@@ -487,7 +487,7 @@ esp32/rmt_periph.s: esp32/rmt_periph.c.s
 
 # target to generate assembly for a file
 esp32/rmt_periph.c.s:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/rmt_periph.c.s
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader" && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/rmt_periph.c.s
 .PHONY : esp32/rmt_periph.c.s
 
 esp32/rtc_io_periph.obj: esp32/rtc_io_periph.c.obj
@@ -495,7 +495,7 @@ esp32/rtc_io_periph.obj: esp32/rtc_io_periph.c.obj
 
 # target to build an object file
 esp32/rtc_io_periph.c.obj:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/rtc_io_periph.c.obj
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader" && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/rtc_io_periph.c.obj
 .PHONY : esp32/rtc_io_periph.c.obj
 
 esp32/rtc_io_periph.i: esp32/rtc_io_periph.c.i
@@ -503,7 +503,7 @@ esp32/rtc_io_periph.i: esp32/rtc_io_periph.c.i
 
 # target to preprocess a source file
 esp32/rtc_io_periph.c.i:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/rtc_io_periph.c.i
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader" && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/rtc_io_periph.c.i
 .PHONY : esp32/rtc_io_periph.c.i
 
 esp32/rtc_io_periph.s: esp32/rtc_io_periph.c.s
@@ -511,7 +511,7 @@ esp32/rtc_io_periph.s: esp32/rtc_io_periph.c.s
 
 # target to generate assembly for a file
 esp32/rtc_io_periph.c.s:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/rtc_io_periph.c.s
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader" && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/rtc_io_periph.c.s
 .PHONY : esp32/rtc_io_periph.c.s
 
 esp32/sdio_slave_periph.obj: esp32/sdio_slave_periph.c.obj
@@ -519,7 +519,7 @@ esp32/sdio_slave_periph.obj: esp32/sdio_slave_periph.c.obj
 
 # target to build an object file
 esp32/sdio_slave_periph.c.obj:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/sdio_slave_periph.c.obj
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader" && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/sdio_slave_periph.c.obj
 .PHONY : esp32/sdio_slave_periph.c.obj
 
 esp32/sdio_slave_periph.i: esp32/sdio_slave_periph.c.i
@@ -527,7 +527,7 @@ esp32/sdio_slave_periph.i: esp32/sdio_slave_periph.c.i
 
 # target to preprocess a source file
 esp32/sdio_slave_periph.c.i:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/sdio_slave_periph.c.i
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader" && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/sdio_slave_periph.c.i
 .PHONY : esp32/sdio_slave_periph.c.i
 
 esp32/sdio_slave_periph.s: esp32/sdio_slave_periph.c.s
@@ -535,7 +535,7 @@ esp32/sdio_slave_periph.s: esp32/sdio_slave_periph.c.s
 
 # target to generate assembly for a file
 esp32/sdio_slave_periph.c.s:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/sdio_slave_periph.c.s
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader" && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/sdio_slave_periph.c.s
 .PHONY : esp32/sdio_slave_periph.c.s
 
 esp32/sdm_periph.obj: esp32/sdm_periph.c.obj
@@ -543,7 +543,7 @@ esp32/sdm_periph.obj: esp32/sdm_periph.c.obj
 
 # target to build an object file
 esp32/sdm_periph.c.obj:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/sdm_periph.c.obj
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader" && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/sdm_periph.c.obj
 .PHONY : esp32/sdm_periph.c.obj
 
 esp32/sdm_periph.i: esp32/sdm_periph.c.i
@@ -551,7 +551,7 @@ esp32/sdm_periph.i: esp32/sdm_periph.c.i
 
 # target to preprocess a source file
 esp32/sdm_periph.c.i:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/sdm_periph.c.i
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader" && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/sdm_periph.c.i
 .PHONY : esp32/sdm_periph.c.i
 
 esp32/sdm_periph.s: esp32/sdm_periph.c.s
@@ -559,7 +559,7 @@ esp32/sdm_periph.s: esp32/sdm_periph.c.s
 
 # target to generate assembly for a file
 esp32/sdm_periph.c.s:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/sdm_periph.c.s
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader" && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/sdm_periph.c.s
 .PHONY : esp32/sdm_periph.c.s
 
 esp32/sdmmc_periph.obj: esp32/sdmmc_periph.c.obj
@@ -567,7 +567,7 @@ esp32/sdmmc_periph.obj: esp32/sdmmc_periph.c.obj
 
 # target to build an object file
 esp32/sdmmc_periph.c.obj:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/sdmmc_periph.c.obj
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader" && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/sdmmc_periph.c.obj
 .PHONY : esp32/sdmmc_periph.c.obj
 
 esp32/sdmmc_periph.i: esp32/sdmmc_periph.c.i
@@ -575,7 +575,7 @@ esp32/sdmmc_periph.i: esp32/sdmmc_periph.c.i
 
 # target to preprocess a source file
 esp32/sdmmc_periph.c.i:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/sdmmc_periph.c.i
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader" && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/sdmmc_periph.c.i
 .PHONY : esp32/sdmmc_periph.c.i
 
 esp32/sdmmc_periph.s: esp32/sdmmc_periph.c.s
@@ -583,7 +583,7 @@ esp32/sdmmc_periph.s: esp32/sdmmc_periph.c.s
 
 # target to generate assembly for a file
 esp32/sdmmc_periph.c.s:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/sdmmc_periph.c.s
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader" && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/sdmmc_periph.c.s
 .PHONY : esp32/sdmmc_periph.c.s
 
 esp32/spi_periph.obj: esp32/spi_periph.c.obj
@@ -591,7 +591,7 @@ esp32/spi_periph.obj: esp32/spi_periph.c.obj
 
 # target to build an object file
 esp32/spi_periph.c.obj:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/spi_periph.c.obj
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader" && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/spi_periph.c.obj
 .PHONY : esp32/spi_periph.c.obj
 
 esp32/spi_periph.i: esp32/spi_periph.c.i
@@ -599,7 +599,7 @@ esp32/spi_periph.i: esp32/spi_periph.c.i
 
 # target to preprocess a source file
 esp32/spi_periph.c.i:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/spi_periph.c.i
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader" && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/spi_periph.c.i
 .PHONY : esp32/spi_periph.c.i
 
 esp32/spi_periph.s: esp32/spi_periph.c.s
@@ -607,7 +607,7 @@ esp32/spi_periph.s: esp32/spi_periph.c.s
 
 # target to generate assembly for a file
 esp32/spi_periph.c.s:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/spi_periph.c.s
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader" && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/spi_periph.c.s
 .PHONY : esp32/spi_periph.c.s
 
 esp32/touch_sensor_periph.obj: esp32/touch_sensor_periph.c.obj
@@ -615,7 +615,7 @@ esp32/touch_sensor_periph.obj: esp32/touch_sensor_periph.c.obj
 
 # target to build an object file
 esp32/touch_sensor_periph.c.obj:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/touch_sensor_periph.c.obj
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader" && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/touch_sensor_periph.c.obj
 .PHONY : esp32/touch_sensor_periph.c.obj
 
 esp32/touch_sensor_periph.i: esp32/touch_sensor_periph.c.i
@@ -623,7 +623,7 @@ esp32/touch_sensor_periph.i: esp32/touch_sensor_periph.c.i
 
 # target to preprocess a source file
 esp32/touch_sensor_periph.c.i:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/touch_sensor_periph.c.i
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader" && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/touch_sensor_periph.c.i
 .PHONY : esp32/touch_sensor_periph.c.i
 
 esp32/touch_sensor_periph.s: esp32/touch_sensor_periph.c.s
@@ -631,7 +631,7 @@ esp32/touch_sensor_periph.s: esp32/touch_sensor_periph.c.s
 
 # target to generate assembly for a file
 esp32/touch_sensor_periph.c.s:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/touch_sensor_periph.c.s
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader" && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/touch_sensor_periph.c.s
 .PHONY : esp32/touch_sensor_periph.c.s
 
 esp32/twai_periph.obj: esp32/twai_periph.c.obj
@@ -639,7 +639,7 @@ esp32/twai_periph.obj: esp32/twai_periph.c.obj
 
 # target to build an object file
 esp32/twai_periph.c.obj:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/twai_periph.c.obj
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader" && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/twai_periph.c.obj
 .PHONY : esp32/twai_periph.c.obj
 
 esp32/twai_periph.i: esp32/twai_periph.c.i
@@ -647,7 +647,7 @@ esp32/twai_periph.i: esp32/twai_periph.c.i
 
 # target to preprocess a source file
 esp32/twai_periph.c.i:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/twai_periph.c.i
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader" && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/twai_periph.c.i
 .PHONY : esp32/twai_periph.c.i
 
 esp32/twai_periph.s: esp32/twai_periph.c.s
@@ -655,7 +655,7 @@ esp32/twai_periph.s: esp32/twai_periph.c.s
 
 # target to generate assembly for a file
 esp32/twai_periph.c.s:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/twai_periph.c.s
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader" && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/twai_periph.c.s
 .PHONY : esp32/twai_periph.c.s
 
 esp32/uart_periph.obj: esp32/uart_periph.c.obj
@@ -663,7 +663,7 @@ esp32/uart_periph.obj: esp32/uart_periph.c.obj
 
 # target to build an object file
 esp32/uart_periph.c.obj:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/uart_periph.c.obj
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader" && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/uart_periph.c.obj
 .PHONY : esp32/uart_periph.c.obj
 
 esp32/uart_periph.i: esp32/uart_periph.c.i
@@ -671,7 +671,7 @@ esp32/uart_periph.i: esp32/uart_periph.c.i
 
 # target to preprocess a source file
 esp32/uart_periph.c.i:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/uart_periph.c.i
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader" && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/uart_periph.c.i
 .PHONY : esp32/uart_periph.c.i
 
 esp32/uart_periph.s: esp32/uart_periph.c.s
@@ -679,7 +679,7 @@ esp32/uart_periph.s: esp32/uart_periph.c.s
 
 # target to generate assembly for a file
 esp32/uart_periph.c.s:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/uart_periph.c.s
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader" && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/uart_periph.c.s
 .PHONY : esp32/uart_periph.c.s
 
 lldesc.obj: lldesc.c.obj
@@ -687,7 +687,7 @@ lldesc.obj: lldesc.c.obj
 
 # target to build an object file
 lldesc.c.obj:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/lldesc.c.obj
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader" && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/lldesc.c.obj
 .PHONY : lldesc.c.obj
 
 lldesc.i: lldesc.c.i
@@ -695,7 +695,7 @@ lldesc.i: lldesc.c.i
 
 # target to preprocess a source file
 lldesc.c.i:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/lldesc.c.i
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader" && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/lldesc.c.i
 .PHONY : lldesc.c.i
 
 lldesc.s: lldesc.c.s
@@ -703,7 +703,7 @@ lldesc.s: lldesc.c.s
 
 # target to generate assembly for a file
 lldesc.c.s:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/lldesc.c.s
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader" && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/lldesc.c.s
 .PHONY : lldesc.c.s
 
 # Help Target
@@ -798,6 +798,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

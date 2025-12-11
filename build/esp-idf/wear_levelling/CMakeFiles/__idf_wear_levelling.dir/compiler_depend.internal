@@ -68,7 +68,7 @@ esp-idf/wear_levelling/CMakeFiles/__idf_wear_levelling.dir/Partition.cpp.obj
  /home/juan/esp-idf/components/soc/include/soc/soc_caps_eval.h
  /home/juan/esp-idf/components/wear_levelling/private_include/Flash_Access.h
  /home/juan/esp-idf/components/wear_levelling/private_include/Partition.h
- /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/config/sdkconfig.h
+ /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/config/sdkconfig.h
 
 esp-idf/wear_levelling/CMakeFiles/__idf_wear_levelling.dir/SPI_Flash.cpp.obj
  /home/juan/esp-idf/components/wear_levelling/SPI_Flash.cpp
@@ -142,7 +142,7 @@ esp-idf/wear_levelling/CMakeFiles/__idf_wear_levelling.dir/SPI_Flash.cpp.obj
  /home/juan/esp-idf/components/spi_flash/include/esp_flash.h
  /home/juan/esp-idf/components/wear_levelling/private_include/Flash_Access.h
  /home/juan/esp-idf/components/wear_levelling/private_include/SPI_Flash.h
- /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/config/sdkconfig.h
+ /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/config/sdkconfig.h
 
 esp-idf/wear_levelling/CMakeFiles/__idf_wear_levelling.dir/WL_Ext_Perf.cpp.obj
  /home/juan/esp-idf/components/wear_levelling/WL_Ext_Perf.cpp
@@ -216,7 +216,7 @@ esp-idf/wear_levelling/CMakeFiles/__idf_wear_levelling.dir/WL_Ext_Perf.cpp.obj
  /home/juan/esp-idf/components/wear_levelling/private_include/WL_Ext_Perf.h
  /home/juan/esp-idf/components/wear_levelling/private_include/WL_Flash.h
  /home/juan/esp-idf/components/wear_levelling/private_include/WL_State.h
- /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/config/sdkconfig.h
+ /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/config/sdkconfig.h
 
 esp-idf/wear_levelling/CMakeFiles/__idf_wear_levelling.dir/WL_Ext_Safe.cpp.obj
  /home/juan/esp-idf/components/wear_levelling/WL_Ext_Safe.cpp
@@ -291,7 +291,7 @@ esp-idf/wear_levelling/CMakeFiles/__idf_wear_levelling.dir/WL_Ext_Safe.cpp.obj
  /home/juan/esp-idf/components/wear_levelling/private_include/WL_Ext_Safe.h
  /home/juan/esp-idf/components/wear_levelling/private_include/WL_Flash.h
  /home/juan/esp-idf/components/wear_levelling/private_include/WL_State.h
- /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/config/sdkconfig.h
+ /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/config/sdkconfig.h
 
 esp-idf/wear_levelling/CMakeFiles/__idf_wear_levelling.dir/WL_Flash.cpp.obj
  /home/juan/esp-idf/components/wear_levelling/WL_Flash.cpp
@@ -365,7 +365,7 @@ esp-idf/wear_levelling/CMakeFiles/__idf_wear_levelling.dir/WL_Flash.cpp.obj
  /home/juan/esp-idf/components/wear_levelling/private_include/WL_Config.h
  /home/juan/esp-idf/components/wear_levelling/private_include/WL_Flash.h
  /home/juan/esp-idf/components/wear_levelling/private_include/WL_State.h
- /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/config/sdkconfig.h
+ /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/config/sdkconfig.h
 
 esp-idf/wear_levelling/CMakeFiles/__idf_wear_levelling.dir/crc32.cpp.obj
  /home/juan/esp-idf/components/wear_levelling/crc32.cpp
@@ -457,5 +457,5 @@ esp-idf/wear_levelling/CMakeFiles/__idf_wear_levelling.dir/wear_levelling.cpp.ob
  /home/juan/esp-idf/components/wear_levelling/private_include/WL_Ext_Safe.h
  /home/juan/esp-idf/components/wear_levelling/private_include/WL_Flash.h
  /home/juan/esp-idf/components/wear_levelling/private_include/WL_State.h
- /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/config/sdkconfig.h
+ /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/config/sdkconfig.h
 

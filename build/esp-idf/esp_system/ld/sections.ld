@@ -1,6 +1,6 @@
 /* Automatically generated file; DO NOT EDIT */
 /* Espressif IoT Development Framework Linker Script */
-/* Generated from: /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/esp-idf/esp_system/ld/sections.ld.in */
+/* Generated from: /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/esp-idf/esp_system/ld/sections.ld.in */
 
 /*
  * SPDX-FileCopyrightText: 2021 Espressif Systems (Shanghai) CO LTD

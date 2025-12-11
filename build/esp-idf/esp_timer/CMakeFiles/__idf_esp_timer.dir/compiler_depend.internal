@@ -126,7 +126,7 @@ esp-idf/esp_timer/CMakeFiles/__idf_esp_timer.dir/src/esp_timer.c.obj
  /home/juan/esp-idf/components/xtensa/include/xtensa_api.h
  /home/juan/esp-idf/components/xtensa/include/xtensa_config.h
  /home/juan/esp-idf/components/xtensa/include/xtensa_context.h
- /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/config/sdkconfig.h
+ /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/config/sdkconfig.h
 
 esp-idf/esp_timer/CMakeFiles/__idf_esp_timer.dir/src/esp_timer_impl_common.c.obj
  /home/juan/esp-idf/components/esp_timer/src/esp_timer_impl_common.c
@@ -230,7 +230,7 @@ esp-idf/esp_timer/CMakeFiles/__idf_esp_timer.dir/src/esp_timer_impl_common.c.obj
  /home/juan/esp-idf/components/xtensa/include/xtensa_api.h
  /home/juan/esp-idf/components/xtensa/include/xtensa_config.h
  /home/juan/esp-idf/components/xtensa/include/xtensa_context.h
- /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/config/sdkconfig.h
+ /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/config/sdkconfig.h
 
 esp-idf/esp_timer/CMakeFiles/__idf_esp_timer.dir/src/esp_timer_impl_lac.c.obj
  /home/juan/esp-idf/components/esp_timer/src/esp_timer_impl_lac.c
@@ -373,7 +373,7 @@ esp-idf/esp_timer/CMakeFiles/__idf_esp_timer.dir/src/esp_timer_impl_lac.c.obj
  /home/juan/esp-idf/components/xtensa/include/xtensa_api.h
  /home/juan/esp-idf/components/xtensa/include/xtensa_config.h
  /home/juan/esp-idf/components/xtensa/include/xtensa_context.h
- /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/config/sdkconfig.h
+ /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/config/sdkconfig.h
 
 esp-idf/esp_timer/CMakeFiles/__idf_esp_timer.dir/src/esp_timer_init.c.obj
  /home/juan/esp-idf/components/esp_timer/src/esp_timer_init.c
@@ -435,7 +435,7 @@ esp-idf/esp_timer/CMakeFiles/__idf_esp_timer.dir/src/esp_timer_init.c.obj
  /home/juan/esp-idf/components/xtensa/include/xtensa/xtruntime.h
  /home/juan/esp-idf/components/xtensa/include/xtensa_api.h
  /home/juan/esp-idf/components/xtensa/include/xtensa_context.h
- /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/config/sdkconfig.h
+ /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/config/sdkconfig.h
 
 esp-idf/esp_timer/CMakeFiles/__idf_esp_timer.dir/src/ets_timer_legacy.c.obj
  /home/juan/esp-idf/components/esp_timer/src/ets_timer_legacy.c
@@ -554,7 +554,7 @@ esp-idf/esp_timer/CMakeFiles/__idf_esp_timer.dir/src/ets_timer_legacy.c.obj
  /home/juan/esp-idf/components/xtensa/include/xtensa_api.h
  /home/juan/esp-idf/components/xtensa/include/xtensa_config.h
  /home/juan/esp-idf/components/xtensa/include/xtensa_context.h
- /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/config/sdkconfig.h
+ /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/config/sdkconfig.h
 
 esp-idf/esp_timer/CMakeFiles/__idf_esp_timer.dir/src/system_time.c.obj
  /home/juan/esp-idf/components/esp_timer/src/system_time.c
@@ -641,5 +641,5 @@ esp-idf/esp_timer/CMakeFiles/__idf_esp_timer.dir/src/system_time.c.obj
  /home/juan/esp-idf/components/xtensa/include/xtensa/xtruntime.h
  /home/juan/esp-idf/components/xtensa/include/xtensa_api.h
  /home/juan/esp-idf/components/xtensa/include/xtensa_context.h
- /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/config/sdkconfig.h
+ /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/config/sdkconfig.h
 

@@ -1,7 +1,7 @@
 esp-idf/esp_hal_mspi/CMakeFiles/__idf_esp_hal_mspi.dir/spi_flash_hal_iram.c.obj: \
  /home/juan/esp-idf/components/esp_hal_mspi/spi_flash_hal_iram.c \
  /home/juan/esp-idf/components/hal/platform_port/include/hal/config.h \
- /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/config/sdkconfig.h \
+ /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto\ estufa\ Inteligente\ com\ MQTT\ WIP/Projeto/build/config/sdkconfig.h \
  /home/juan/esp-idf/components/esp_hal_mspi/include/hal/spi_flash_hal.h \
  /home/juan/esp-idf/components/esp_hal_mspi/esp32/include/hal/spi_flash_ll.h \
  /home/juan/.espressif/tools/xtensa-esp-elf/esp-15.2.0_20250929/xtensa-esp-elf/xtensa-esp-elf/include/stdlib.h \

@@ -270,7 +270,7 @@ esp-idf/esp_http_client/CMakeFiles/__idf_esp_http_client.dir/esp_http_client.c.o
  /home/juan/esp-idf/components/xtensa/include/xtensa_api.h
  /home/juan/esp-idf/components/xtensa/include/xtensa_config.h
  /home/juan/esp-idf/components/xtensa/include/xtensa_context.h
- /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/config/sdkconfig.h
+ /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/config/sdkconfig.h
 
 esp-idf/esp_http_client/CMakeFiles/__idf_esp_http_client.dir/lib/http_auth.c.obj
  /home/juan/esp-idf/components/esp_http_client/lib/http_auth.c
@@ -473,7 +473,7 @@ esp-idf/esp_http_client/CMakeFiles/__idf_esp_http_client.dir/lib/http_auth.c.obj
  /home/juan/esp-idf/components/xtensa/include/xtensa_api.h
  /home/juan/esp-idf/components/xtensa/include/xtensa_config.h
  /home/juan/esp-idf/components/xtensa/include/xtensa_context.h
- /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/config/sdkconfig.h
+ /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/config/sdkconfig.h
 
 esp-idf/esp_http_client/CMakeFiles/__idf_esp_http_client.dir/lib/http_header.c.obj
  /home/juan/esp-idf/components/esp_http_client/lib/http_header.c
@@ -556,7 +556,7 @@ esp-idf/esp_http_client/CMakeFiles/__idf_esp_http_client.dir/lib/http_header.c.o
  /home/juan/esp-idf/components/soc/esp32/include/soc/reset_reasons.h
  /home/juan/esp-idf/components/soc/esp32/include/soc/soc_caps.h
  /home/juan/esp-idf/components/soc/include/soc/soc_caps_eval.h
- /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/config/sdkconfig.h
+ /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/config/sdkconfig.h
 
 esp-idf/esp_http_client/CMakeFiles/__idf_esp_http_client.dir/lib/http_utils.c.obj
  /home/juan/esp-idf/components/esp_http_client/lib/http_utils.c
@@ -637,5 +637,5 @@ esp-idf/esp_http_client/CMakeFiles/__idf_esp_http_client.dir/lib/http_utils.c.ob
  /home/juan/esp-idf/components/soc/esp32/include/soc/reset_reasons.h
  /home/juan/esp-idf/components/soc/esp32/include/soc/soc_caps.h
  /home/juan/esp-idf/components/soc/include/soc/soc_caps_eval.h
- /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/config/sdkconfig.h
+ /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/config/sdkconfig.h
 

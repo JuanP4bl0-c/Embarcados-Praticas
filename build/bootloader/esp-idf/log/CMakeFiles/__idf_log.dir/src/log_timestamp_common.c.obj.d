@@ -1,7 +1,7 @@
 esp-idf/log/CMakeFiles/__idf_log.dir/src/log_timestamp_common.c.obj: \
  /home/juan/esp-idf/components/log/src/log_timestamp_common.c \
  /home/juan/esp-idf/components/esp_libc/platform_include/assert.h \
- /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader/config/sdkconfig.h \
+ /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto\ estufa\ Inteligente\ com\ MQTT\ WIP/Projeto/build/bootloader/config/sdkconfig.h \
  /home/juan/.espressif/tools/xtensa-esp-elf/esp-15.2.0_20250929/xtensa-esp-elf/xtensa-esp-elf/include/stdlib.h \
  /home/juan/.espressif/tools/xtensa-esp-elf/esp-15.2.0_20250929/xtensa-esp-elf/xtensa-esp-elf/include/machine/ieeefp.h \
  /home/juan/.espressif/tools/xtensa-esp-elf/esp-15.2.0_20250929/xtensa-esp-elf/xtensa-esp-elf/include/_ansi.h \

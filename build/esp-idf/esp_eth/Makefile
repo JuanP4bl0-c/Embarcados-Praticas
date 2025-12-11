@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi
+CMAKE_SOURCE_DIR = "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build
+CMAKE_BINARY_DIR = "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build && $(CMAKE_COMMAND) -E cmake_progress_start /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/CMakeFiles /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/esp-idf/esp_eth//CMakeFiles/progress.marks
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_eth/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/CMakeFiles 0
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build" && $(CMAKE_COMMAND) -E cmake_progress_start "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/CMakeFiles" "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/esp-idf/esp_eth//CMakeFiles/progress.marks"
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_eth/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_eth/clean
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_eth/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_eth/preinstall
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_eth/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_eth/preinstall
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_eth/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/rule:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/rule
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/rule
 .PHONY : esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/rule
 
 # Convenience name for target.
@@ -172,7 +172,7 @@ __idf_esp_eth: esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/rule
 
 # fast build rule for target.
 __idf_esp_eth/fast:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build" && $(MAKE) $(MAKESILENT) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build
 .PHONY : __idf_esp_eth/fast
 
 src/esp_eth.obj: src/esp_eth.c.obj
@@ -180,7 +180,7 @@ src/esp_eth.obj: src/esp_eth.c.obj
 
 # target to build an object file
 src/esp_eth.c.obj:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/esp_eth.c.obj
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build" && $(MAKE) $(MAKESILENT) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/esp_eth.c.obj
 .PHONY : src/esp_eth.c.obj
 
 src/esp_eth.i: src/esp_eth.c.i
@@ -188,7 +188,7 @@ src/esp_eth.i: src/esp_eth.c.i
 
 # target to preprocess a source file
 src/esp_eth.c.i:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/esp_eth.c.i
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build" && $(MAKE) $(MAKESILENT) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/esp_eth.c.i
 .PHONY : src/esp_eth.c.i
 
 src/esp_eth.s: src/esp_eth.c.s
@@ -196,7 +196,7 @@ src/esp_eth.s: src/esp_eth.c.s
 
 # target to generate assembly for a file
 src/esp_eth.c.s:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/esp_eth.c.s
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build" && $(MAKE) $(MAKESILENT) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/esp_eth.c.s
 .PHONY : src/esp_eth.c.s
 
 src/esp_eth_netif_glue.obj: src/esp_eth_netif_glue.c.obj
@@ -204,7 +204,7 @@ src/esp_eth_netif_glue.obj: src/esp_eth_netif_glue.c.obj
 
 # target to build an object file
 src/esp_eth_netif_glue.c.obj:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/esp_eth_netif_glue.c.obj
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build" && $(MAKE) $(MAKESILENT) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/esp_eth_netif_glue.c.obj
 .PHONY : src/esp_eth_netif_glue.c.obj
 
 src/esp_eth_netif_glue.i: src/esp_eth_netif_glue.c.i
@@ -212,7 +212,7 @@ src/esp_eth_netif_glue.i: src/esp_eth_netif_glue.c.i
 
 # target to preprocess a source file
 src/esp_eth_netif_glue.c.i:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/esp_eth_netif_glue.c.i
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build" && $(MAKE) $(MAKESILENT) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/esp_eth_netif_glue.c.i
 .PHONY : src/esp_eth_netif_glue.c.i
 
 src/esp_eth_netif_glue.s: src/esp_eth_netif_glue.c.s
@@ -220,7 +220,7 @@ src/esp_eth_netif_glue.s: src/esp_eth_netif_glue.c.s
 
 # target to generate assembly for a file
 src/esp_eth_netif_glue.c.s:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/esp_eth_netif_glue.c.s
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build" && $(MAKE) $(MAKESILENT) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/esp_eth_netif_glue.c.s
 .PHONY : src/esp_eth_netif_glue.c.s
 
 src/mac/esp_eth_mac_esp.obj: src/mac/esp_eth_mac_esp.c.obj
@@ -228,7 +228,7 @@ src/mac/esp_eth_mac_esp.obj: src/mac/esp_eth_mac_esp.c.obj
 
 # target to build an object file
 src/mac/esp_eth_mac_esp.c.obj:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/mac/esp_eth_mac_esp.c.obj
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build" && $(MAKE) $(MAKESILENT) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/mac/esp_eth_mac_esp.c.obj
 .PHONY : src/mac/esp_eth_mac_esp.c.obj
 
 src/mac/esp_eth_mac_esp.i: src/mac/esp_eth_mac_esp.c.i
@@ -236,7 +236,7 @@ src/mac/esp_eth_mac_esp.i: src/mac/esp_eth_mac_esp.c.i
 
 # target to preprocess a source file
 src/mac/esp_eth_mac_esp.c.i:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/mac/esp_eth_mac_esp.c.i
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build" && $(MAKE) $(MAKESILENT) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/mac/esp_eth_mac_esp.c.i
 .PHONY : src/mac/esp_eth_mac_esp.c.i
 
 src/mac/esp_eth_mac_esp.s: src/mac/esp_eth_mac_esp.c.s
@@ -244,7 +244,7 @@ src/mac/esp_eth_mac_esp.s: src/mac/esp_eth_mac_esp.c.s
 
 # target to generate assembly for a file
 src/mac/esp_eth_mac_esp.c.s:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/mac/esp_eth_mac_esp.c.s
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build" && $(MAKE) $(MAKESILENT) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/mac/esp_eth_mac_esp.c.s
 .PHONY : src/mac/esp_eth_mac_esp.c.s
 
 src/mac/esp_eth_mac_esp_dma.obj: src/mac/esp_eth_mac_esp_dma.c.obj
@@ -252,7 +252,7 @@ src/mac/esp_eth_mac_esp_dma.obj: src/mac/esp_eth_mac_esp_dma.c.obj
 
 # target to build an object file
 src/mac/esp_eth_mac_esp_dma.c.obj:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/mac/esp_eth_mac_esp_dma.c.obj
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build" && $(MAKE) $(MAKESILENT) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/mac/esp_eth_mac_esp_dma.c.obj
 .PHONY : src/mac/esp_eth_mac_esp_dma.c.obj
 
 src/mac/esp_eth_mac_esp_dma.i: src/mac/esp_eth_mac_esp_dma.c.i
@@ -260,7 +260,7 @@ src/mac/esp_eth_mac_esp_dma.i: src/mac/esp_eth_mac_esp_dma.c.i
 
 # target to preprocess a source file
 src/mac/esp_eth_mac_esp_dma.c.i:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/mac/esp_eth_mac_esp_dma.c.i
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build" && $(MAKE) $(MAKESILENT) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/mac/esp_eth_mac_esp_dma.c.i
 .PHONY : src/mac/esp_eth_mac_esp_dma.c.i
 
 src/mac/esp_eth_mac_esp_dma.s: src/mac/esp_eth_mac_esp_dma.c.s
@@ -268,7 +268,7 @@ src/mac/esp_eth_mac_esp_dma.s: src/mac/esp_eth_mac_esp_dma.c.s
 
 # target to generate assembly for a file
 src/mac/esp_eth_mac_esp_dma.c.s:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/mac/esp_eth_mac_esp_dma.c.s
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build" && $(MAKE) $(MAKESILENT) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/mac/esp_eth_mac_esp_dma.c.s
 .PHONY : src/mac/esp_eth_mac_esp_dma.c.s
 
 src/mac/esp_eth_mac_esp_gpio.obj: src/mac/esp_eth_mac_esp_gpio.c.obj
@@ -276,7 +276,7 @@ src/mac/esp_eth_mac_esp_gpio.obj: src/mac/esp_eth_mac_esp_gpio.c.obj
 
 # target to build an object file
 src/mac/esp_eth_mac_esp_gpio.c.obj:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/mac/esp_eth_mac_esp_gpio.c.obj
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build" && $(MAKE) $(MAKESILENT) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/mac/esp_eth_mac_esp_gpio.c.obj
 .PHONY : src/mac/esp_eth_mac_esp_gpio.c.obj
 
 src/mac/esp_eth_mac_esp_gpio.i: src/mac/esp_eth_mac_esp_gpio.c.i
@@ -284,7 +284,7 @@ src/mac/esp_eth_mac_esp_gpio.i: src/mac/esp_eth_mac_esp_gpio.c.i
 
 # target to preprocess a source file
 src/mac/esp_eth_mac_esp_gpio.c.i:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/mac/esp_eth_mac_esp_gpio.c.i
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build" && $(MAKE) $(MAKESILENT) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/mac/esp_eth_mac_esp_gpio.c.i
 .PHONY : src/mac/esp_eth_mac_esp_gpio.c.i
 
 src/mac/esp_eth_mac_esp_gpio.s: src/mac/esp_eth_mac_esp_gpio.c.s
@@ -292,7 +292,7 @@ src/mac/esp_eth_mac_esp_gpio.s: src/mac/esp_eth_mac_esp_gpio.c.s
 
 # target to generate assembly for a file
 src/mac/esp_eth_mac_esp_gpio.c.s:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/mac/esp_eth_mac_esp_gpio.c.s
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build" && $(MAKE) $(MAKESILENT) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/mac/esp_eth_mac_esp_gpio.c.s
 .PHONY : src/mac/esp_eth_mac_esp_gpio.c.s
 
 src/phy/esp_eth_phy_802_3.obj: src/phy/esp_eth_phy_802_3.c.obj
@@ -300,7 +300,7 @@ src/phy/esp_eth_phy_802_3.obj: src/phy/esp_eth_phy_802_3.c.obj
 
 # target to build an object file
 src/phy/esp_eth_phy_802_3.c.obj:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/phy/esp_eth_phy_802_3.c.obj
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build" && $(MAKE) $(MAKESILENT) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/phy/esp_eth_phy_802_3.c.obj
 .PHONY : src/phy/esp_eth_phy_802_3.c.obj
 
 src/phy/esp_eth_phy_802_3.i: src/phy/esp_eth_phy_802_3.c.i
@@ -308,7 +308,7 @@ src/phy/esp_eth_phy_802_3.i: src/phy/esp_eth_phy_802_3.c.i
 
 # target to preprocess a source file
 src/phy/esp_eth_phy_802_3.c.i:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/phy/esp_eth_phy_802_3.c.i
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build" && $(MAKE) $(MAKESILENT) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/phy/esp_eth_phy_802_3.c.i
 .PHONY : src/phy/esp_eth_phy_802_3.c.i
 
 src/phy/esp_eth_phy_802_3.s: src/phy/esp_eth_phy_802_3.c.s
@@ -316,7 +316,7 @@ src/phy/esp_eth_phy_802_3.s: src/phy/esp_eth_phy_802_3.c.s
 
 # target to generate assembly for a file
 src/phy/esp_eth_phy_802_3.c.s:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/phy/esp_eth_phy_802_3.c.s
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build" && $(MAKE) $(MAKESILENT) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/phy/esp_eth_phy_802_3.c.s
 .PHONY : src/phy/esp_eth_phy_802_3.c.s
 
 src/phy/esp_eth_phy_generic.obj: src/phy/esp_eth_phy_generic.c.obj
@@ -324,7 +324,7 @@ src/phy/esp_eth_phy_generic.obj: src/phy/esp_eth_phy_generic.c.obj
 
 # target to build an object file
 src/phy/esp_eth_phy_generic.c.obj:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/phy/esp_eth_phy_generic.c.obj
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build" && $(MAKE) $(MAKESILENT) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/phy/esp_eth_phy_generic.c.obj
 .PHONY : src/phy/esp_eth_phy_generic.c.obj
 
 src/phy/esp_eth_phy_generic.i: src/phy/esp_eth_phy_generic.c.i
@@ -332,7 +332,7 @@ src/phy/esp_eth_phy_generic.i: src/phy/esp_eth_phy_generic.c.i
 
 # target to preprocess a source file
 src/phy/esp_eth_phy_generic.c.i:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/phy/esp_eth_phy_generic.c.i
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build" && $(MAKE) $(MAKESILENT) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/phy/esp_eth_phy_generic.c.i
 .PHONY : src/phy/esp_eth_phy_generic.c.i
 
 src/phy/esp_eth_phy_generic.s: src/phy/esp_eth_phy_generic.c.s
@@ -340,7 +340,7 @@ src/phy/esp_eth_phy_generic.s: src/phy/esp_eth_phy_generic.c.s
 
 # target to generate assembly for a file
 src/phy/esp_eth_phy_generic.c.s:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/phy/esp_eth_phy_generic.c.s
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build" && $(MAKE) $(MAKESILENT) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/phy/esp_eth_phy_generic.c.s
 .PHONY : src/phy/esp_eth_phy_generic.c.s
 
 # Help Target
@@ -388,6 +388,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

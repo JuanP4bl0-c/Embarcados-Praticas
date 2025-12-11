@@ -54,7 +54,7 @@ esp-idf/console/CMakeFiles/__idf_console.dir/argtable3/arg_cmd.c.obj
  /home/juan/esp-idf/components/esp_libc/platform_include/sys/reent.h
  /home/juan/esp-idf/components/esp_libc/platform_include/sys/select.h
  /home/juan/esp-idf/components/esp_libc/platform_include/time.h
- /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/config/sdkconfig.h
+ /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/config/sdkconfig.h
 
 esp-idf/console/CMakeFiles/__idf_console.dir/argtable3/arg_date.c.obj
  /home/juan/esp-idf/components/console/argtable3/arg_date.c
@@ -110,7 +110,7 @@ esp-idf/console/CMakeFiles/__idf_console.dir/argtable3/arg_date.c.obj
  /home/juan/esp-idf/components/esp_libc/platform_include/sys/reent.h
  /home/juan/esp-idf/components/esp_libc/platform_include/sys/select.h
  /home/juan/esp-idf/components/esp_libc/platform_include/time.h
- /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/config/sdkconfig.h
+ /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/config/sdkconfig.h
 
 esp-idf/console/CMakeFiles/__idf_console.dir/argtable3/arg_dbl.c.obj
  /home/juan/esp-idf/components/console/argtable3/arg_dbl.c
@@ -162,7 +162,7 @@ esp-idf/console/CMakeFiles/__idf_console.dir/argtable3/arg_dbl.c.obj
  /home/juan/esp-idf/components/esp_libc/platform_include/sys/reent.h
  /home/juan/esp-idf/components/esp_libc/platform_include/sys/select.h
  /home/juan/esp-idf/components/esp_libc/platform_include/time.h
- /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/config/sdkconfig.h
+ /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/config/sdkconfig.h
 
 esp-idf/console/CMakeFiles/__idf_console.dir/argtable3/arg_dstr.c.obj
  /home/juan/esp-idf/components/console/argtable3/arg_dstr.c
@@ -217,7 +217,7 @@ esp-idf/console/CMakeFiles/__idf_console.dir/argtable3/arg_dstr.c.obj
  /home/juan/esp-idf/components/esp_libc/platform_include/sys/reent.h
  /home/juan/esp-idf/components/esp_libc/platform_include/sys/select.h
  /home/juan/esp-idf/components/esp_libc/platform_include/time.h
- /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/config/sdkconfig.h
+ /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/config/sdkconfig.h
 
 esp-idf/console/CMakeFiles/__idf_console.dir/argtable3/arg_end.c.obj
  /home/juan/esp-idf/components/console/argtable3/arg_end.c
@@ -269,7 +269,7 @@ esp-idf/console/CMakeFiles/__idf_console.dir/argtable3/arg_end.c.obj
  /home/juan/esp-idf/components/esp_libc/platform_include/sys/reent.h
  /home/juan/esp-idf/components/esp_libc/platform_include/sys/select.h
  /home/juan/esp-idf/components/esp_libc/platform_include/time.h
- /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/config/sdkconfig.h
+ /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/config/sdkconfig.h
 
 esp-idf/console/CMakeFiles/__idf_console.dir/argtable3/arg_file.c.obj
  /home/juan/esp-idf/components/console/argtable3/arg_file.c
@@ -324,7 +324,7 @@ esp-idf/console/CMakeFiles/__idf_console.dir/argtable3/arg_file.c.obj
  /home/juan/esp-idf/components/esp_libc/platform_include/sys/reent.h
  /home/juan/esp-idf/components/esp_libc/platform_include/sys/select.h
  /home/juan/esp-idf/components/esp_libc/platform_include/time.h
- /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/config/sdkconfig.h
+ /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/config/sdkconfig.h
 
 esp-idf/console/CMakeFiles/__idf_console.dir/argtable3/arg_hashtable.c.obj
  /home/juan/esp-idf/components/console/argtable3/arg_hashtable.c
@@ -362,7 +362,7 @@ esp-idf/console/CMakeFiles/__idf_console.dir/argtable3/arg_hashtable.c.obj
  /home/juan/esp-idf/components/esp_libc/platform_include/stdio.h
  /home/juan/esp-idf/components/esp_libc/platform_include/sys/lock.h
  /home/juan/esp-idf/components/esp_libc/platform_include/sys/reent.h
- /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/config/sdkconfig.h
+ /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/config/sdkconfig.h
 
 esp-idf/console/CMakeFiles/__idf_console.dir/argtable3/arg_int.c.obj
  /home/juan/esp-idf/components/console/argtable3/arg_int.c
@@ -419,7 +419,7 @@ esp-idf/console/CMakeFiles/__idf_console.dir/argtable3/arg_int.c.obj
  /home/juan/esp-idf/components/esp_libc/platform_include/sys/reent.h
  /home/juan/esp-idf/components/esp_libc/platform_include/sys/select.h
  /home/juan/esp-idf/components/esp_libc/platform_include/time.h
- /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/config/sdkconfig.h
+ /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/config/sdkconfig.h
 
 esp-idf/console/CMakeFiles/__idf_console.dir/argtable3/arg_lit.c.obj
  /home/juan/esp-idf/components/console/argtable3/arg_lit.c
@@ -471,7 +471,7 @@ esp-idf/console/CMakeFiles/__idf_console.dir/argtable3/arg_lit.c.obj
  /home/juan/esp-idf/components/esp_libc/platform_include/sys/reent.h
  /home/juan/esp-idf/components/esp_libc/platform_include/sys/select.h
  /home/juan/esp-idf/components/esp_libc/platform_include/time.h
- /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/config/sdkconfig.h
+ /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/config/sdkconfig.h
 
 esp-idf/console/CMakeFiles/__idf_console.dir/argtable3/arg_rem.c.obj
  /home/juan/esp-idf/components/console/argtable3/arg_rem.c
@@ -523,7 +523,7 @@ esp-idf/console/CMakeFiles/__idf_console.dir/argtable3/arg_rem.c.obj
  /home/juan/esp-idf/components/esp_libc/platform_include/sys/reent.h
  /home/juan/esp-idf/components/esp_libc/platform_include/sys/select.h
  /home/juan/esp-idf/components/esp_libc/platform_include/time.h
- /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/config/sdkconfig.h
+ /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/config/sdkconfig.h
 
 esp-idf/console/CMakeFiles/__idf_console.dir/argtable3/arg_rex.c.obj
  /home/juan/esp-idf/components/console/argtable3/arg_rex.c
@@ -581,7 +581,7 @@ esp-idf/console/CMakeFiles/__idf_console.dir/argtable3/arg_rex.c.obj
  /home/juan/esp-idf/components/esp_libc/platform_include/sys/reent.h
  /home/juan/esp-idf/components/esp_libc/platform_include/sys/select.h
  /home/juan/esp-idf/components/esp_libc/platform_include/time.h
- /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/config/sdkconfig.h
+ /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/config/sdkconfig.h
 
 esp-idf/console/CMakeFiles/__idf_console.dir/argtable3/arg_str.c.obj
  /home/juan/esp-idf/components/console/argtable3/arg_str.c
@@ -633,7 +633,7 @@ esp-idf/console/CMakeFiles/__idf_console.dir/argtable3/arg_str.c.obj
  /home/juan/esp-idf/components/esp_libc/platform_include/sys/reent.h
  /home/juan/esp-idf/components/esp_libc/platform_include/sys/select.h
  /home/juan/esp-idf/components/esp_libc/platform_include/time.h
- /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/config/sdkconfig.h
+ /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/config/sdkconfig.h
 
 esp-idf/console/CMakeFiles/__idf_console.dir/argtable3/arg_utils.c.obj
  /home/juan/esp-idf/components/console/argtable3/arg_utils.c
@@ -688,7 +688,7 @@ esp-idf/console/CMakeFiles/__idf_console.dir/argtable3/arg_utils.c.obj
  /home/juan/esp-idf/components/esp_libc/platform_include/sys/reent.h
  /home/juan/esp-idf/components/esp_libc/platform_include/sys/select.h
  /home/juan/esp-idf/components/esp_libc/platform_include/time.h
- /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/config/sdkconfig.h
+ /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/config/sdkconfig.h
 
 esp-idf/console/CMakeFiles/__idf_console.dir/argtable3/argtable3.c.obj
  /home/juan/esp-idf/components/console/argtable3/argtable3.c
@@ -749,7 +749,7 @@ esp-idf/console/CMakeFiles/__idf_console.dir/argtable3/argtable3.c.obj
  /home/juan/esp-idf/components/esp_libc/platform_include/sys/reent.h
  /home/juan/esp-idf/components/esp_libc/platform_include/sys/select.h
  /home/juan/esp-idf/components/esp_libc/platform_include/time.h
- /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/config/sdkconfig.h
+ /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/config/sdkconfig.h
 
 esp-idf/console/CMakeFiles/__idf_console.dir/commands.c.obj
  /home/juan/esp-idf/components/console/commands.c
@@ -890,7 +890,7 @@ esp-idf/console/CMakeFiles/__idf_console.dir/commands.c.obj
  /home/juan/esp-idf/components/xtensa/include/xtensa_api.h
  /home/juan/esp-idf/components/xtensa/include/xtensa_config.h
  /home/juan/esp-idf/components/xtensa/include/xtensa_context.h
- /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/config/sdkconfig.h
+ /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/config/sdkconfig.h
 
 esp-idf/console/CMakeFiles/__idf_console.dir/esp_console_common.c.obj
  /home/juan/esp-idf/components/console/esp_console_common.c
@@ -1047,7 +1047,7 @@ esp-idf/console/CMakeFiles/__idf_console.dir/esp_console_common.c.obj
  /home/juan/esp-idf/components/xtensa/include/xtensa_api.h
  /home/juan/esp-idf/components/xtensa/include/xtensa_config.h
  /home/juan/esp-idf/components/xtensa/include/xtensa_context.h
- /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/config/sdkconfig.h
+ /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/config/sdkconfig.h
 
 esp-idf/console/CMakeFiles/__idf_console.dir/esp_console_repl_chip.c.obj
  /home/juan/esp-idf/components/console/esp_console_repl_chip.c
@@ -1210,7 +1210,7 @@ esp-idf/console/CMakeFiles/__idf_console.dir/esp_console_repl_chip.c.obj
  /home/juan/esp-idf/components/xtensa/include/xtensa_api.h
  /home/juan/esp-idf/components/xtensa/include/xtensa_config.h
  /home/juan/esp-idf/components/xtensa/include/xtensa_context.h
- /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/config/sdkconfig.h
+ /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/config/sdkconfig.h
 
 esp-idf/console/CMakeFiles/__idf_console.dir/esp_console_repl_internal.c.obj
  /home/juan/esp-idf/components/console/esp_console_repl_internal.c
@@ -1367,7 +1367,7 @@ esp-idf/console/CMakeFiles/__idf_console.dir/esp_console_repl_internal.c.obj
  /home/juan/esp-idf/components/xtensa/include/xtensa_api.h
  /home/juan/esp-idf/components/xtensa/include/xtensa_config.h
  /home/juan/esp-idf/components/xtensa/include/xtensa_context.h
- /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/config/sdkconfig.h
+ /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/config/sdkconfig.h
 
 esp-idf/console/CMakeFiles/__idf_console.dir/linenoise/linenoise.c.obj
  /home/juan/esp-idf/components/console/linenoise/linenoise.c
@@ -1440,7 +1440,7 @@ esp-idf/console/CMakeFiles/__idf_console.dir/linenoise/linenoise.c.obj
  /home/juan/esp-idf/components/esp_libc/platform_include/sys/time.h
  /home/juan/esp-idf/components/esp_libc/platform_include/sys/unistd.h
  /home/juan/esp-idf/components/esp_libc/platform_include/time.h
- /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/config/sdkconfig.h
+ /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/config/sdkconfig.h
 
 esp-idf/console/CMakeFiles/__idf_console.dir/split_argv.c.obj
  /home/juan/esp-idf/components/console/split_argv.c
@@ -1477,5 +1477,5 @@ esp-idf/console/CMakeFiles/__idf_console.dir/split_argv.c.obj
  /home/juan/esp-idf/components/esp_libc/platform_include/stdio.h
  /home/juan/esp-idf/components/esp_libc/platform_include/sys/lock.h
  /home/juan/esp-idf/components/esp_libc/platform_include/sys/reent.h
- /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/config/sdkconfig.h
+ /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/config/sdkconfig.h
 

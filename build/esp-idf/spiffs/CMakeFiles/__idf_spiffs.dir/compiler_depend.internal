@@ -162,7 +162,7 @@ esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/esp_spiffs.c.obj
  /home/juan/esp-idf/components/xtensa/include/xtensa_api.h
  /home/juan/esp-idf/components/xtensa/include/xtensa_config.h
  /home/juan/esp-idf/components/xtensa/include/xtensa_context.h
- /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/config/sdkconfig.h
+ /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/config/sdkconfig.h
 
 esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs/src/spiffs_cache.c.obj
  /home/juan/esp-idf/components/spiffs/spiffs/src/spiffs_cache.c
@@ -237,7 +237,7 @@ esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs/src/spiffs_cache.c.obj
  /home/juan/esp-idf/components/spiffs/include/spiffs_config.h
  /home/juan/esp-idf/components/spiffs/spiffs/src/spiffs.h
  /home/juan/esp-idf/components/spiffs/spiffs/src/spiffs_nucleus.h
- /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/config/sdkconfig.h
+ /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/config/sdkconfig.h
 
 esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs/src/spiffs_check.c.obj
  /home/juan/esp-idf/components/spiffs/spiffs/src/spiffs_check.c
@@ -312,7 +312,7 @@ esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs/src/spiffs_check.c.obj
  /home/juan/esp-idf/components/spiffs/include/spiffs_config.h
  /home/juan/esp-idf/components/spiffs/spiffs/src/spiffs.h
  /home/juan/esp-idf/components/spiffs/spiffs/src/spiffs_nucleus.h
- /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/config/sdkconfig.h
+ /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/config/sdkconfig.h
 
 esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs/src/spiffs_gc.c.obj
  /home/juan/esp-idf/components/spiffs/spiffs/src/spiffs_gc.c
@@ -387,7 +387,7 @@ esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs/src/spiffs_gc.c.obj
  /home/juan/esp-idf/components/spiffs/include/spiffs_config.h
  /home/juan/esp-idf/components/spiffs/spiffs/src/spiffs.h
  /home/juan/esp-idf/components/spiffs/spiffs/src/spiffs_nucleus.h
- /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/config/sdkconfig.h
+ /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/config/sdkconfig.h
 
 esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs/src/spiffs_hydrogen.c.obj
  /home/juan/esp-idf/components/spiffs/spiffs/src/spiffs_hydrogen.c
@@ -462,7 +462,7 @@ esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs/src/spiffs_hydrogen.c.obj
  /home/juan/esp-idf/components/spiffs/include/spiffs_config.h
  /home/juan/esp-idf/components/spiffs/spiffs/src/spiffs.h
  /home/juan/esp-idf/components/spiffs/spiffs/src/spiffs_nucleus.h
- /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/config/sdkconfig.h
+ /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/config/sdkconfig.h
 
 esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs/src/spiffs_nucleus.c.obj
  /home/juan/esp-idf/components/spiffs/spiffs/src/spiffs_nucleus.c
@@ -537,7 +537,7 @@ esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs/src/spiffs_nucleus.c.obj
  /home/juan/esp-idf/components/spiffs/include/spiffs_config.h
  /home/juan/esp-idf/components/spiffs/spiffs/src/spiffs.h
  /home/juan/esp-idf/components/spiffs/spiffs/src/spiffs_nucleus.h
- /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/config/sdkconfig.h
+ /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/config/sdkconfig.h
 
 esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs_api.c.obj
  /home/juan/esp-idf/components/spiffs/spiffs_api.c
@@ -672,5 +672,5 @@ esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs_api.c.obj
  /home/juan/esp-idf/components/xtensa/include/xtensa_api.h
  /home/juan/esp-idf/components/xtensa/include/xtensa_config.h
  /home/juan/esp-idf/components/xtensa/include/xtensa_context.h
- /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/config/sdkconfig.h
+ /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/config/sdkconfig.h
 

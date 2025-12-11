@@ -1,8 +1,0 @@
-Command: make -j 18 all
-/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/main/mqtt_manager.c: In function 'set_led_rgb':
-/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/main/mqtt_manager.c:24:5: error: implicit declaration of function 'gpio_set_level' [-Wimplicit-function-declaration]
-   24 |     gpio_set_level(LED_R_GPIO, r);
-      |     ^~~~~~~~~~~~~~
-make[2]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/build.make:119: esp-idf/main/CMakeFiles/__idf_main.dir/mqtt_manager.c.obj] Erro 1
-make[1]: *** [CMakeFiles/Makefile2:5944: esp-idf/main/CMakeFiles/__idf_main.dir/all] Erro 2
-make: *** [Makefile:136: all] Erro 2

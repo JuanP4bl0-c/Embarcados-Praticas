@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi
+CMAKE_SOURCE_DIR = "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build
+CMAKE_BINARY_DIR = "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build"
 
 # Include any dependencies generated for this target.
 include esp-idf/esp_hal_wdt/CMakeFiles/__idf_esp_hal_wdt.dir/depend.make
@@ -72,30 +72,30 @@ include esp-idf/esp_hal_wdt/CMakeFiles/__idf_esp_hal_wdt.dir/flags.make
 esp-idf/esp_hal_wdt/CMakeFiles/__idf_esp_hal_wdt.dir/esp32/mwdt_periph.c.obj: esp-idf/esp_hal_wdt/CMakeFiles/__idf_esp_hal_wdt.dir/flags.make
 esp-idf/esp_hal_wdt/CMakeFiles/__idf_esp_hal_wdt.dir/esp32/mwdt_periph.c.obj: /home/juan/esp-idf/components/esp_hal_wdt/esp32/mwdt_periph.c
 esp-idf/esp_hal_wdt/CMakeFiles/__idf_esp_hal_wdt.dir/esp32/mwdt_periph.c.obj: esp-idf/esp_hal_wdt/CMakeFiles/__idf_esp_hal_wdt.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object esp-idf/esp_hal_wdt/CMakeFiles/__idf_esp_hal_wdt.dir/esp32/mwdt_periph.c.obj"
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/esp-idf/esp_hal_wdt && /home/juan/.espressif/tools/xtensa-esp-elf/esp-15.2.0_20250929/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/esp_hal_wdt/CMakeFiles/__idf_esp_hal_wdt.dir/esp32/mwdt_periph.c.obj -MF CMakeFiles/__idf_esp_hal_wdt.dir/esp32/mwdt_periph.c.obj.d -o CMakeFiles/__idf_esp_hal_wdt.dir/esp32/mwdt_periph.c.obj -c /home/juan/esp-idf/components/esp_hal_wdt/esp32/mwdt_periph.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object esp-idf/esp_hal_wdt/CMakeFiles/__idf_esp_hal_wdt.dir/esp32/mwdt_periph.c.obj"
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/esp-idf/esp_hal_wdt" && /home/juan/.espressif/tools/xtensa-esp-elf/esp-15.2.0_20250929/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/esp_hal_wdt/CMakeFiles/__idf_esp_hal_wdt.dir/esp32/mwdt_periph.c.obj -MF CMakeFiles/__idf_esp_hal_wdt.dir/esp32/mwdt_periph.c.obj.d -o CMakeFiles/__idf_esp_hal_wdt.dir/esp32/mwdt_periph.c.obj -c /home/juan/esp-idf/components/esp_hal_wdt/esp32/mwdt_periph.c
 
 esp-idf/esp_hal_wdt/CMakeFiles/__idf_esp_hal_wdt.dir/esp32/mwdt_periph.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_esp_hal_wdt.dir/esp32/mwdt_periph.c.i"
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/esp-idf/esp_hal_wdt && /home/juan/.espressif/tools/xtensa-esp-elf/esp-15.2.0_20250929/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/juan/esp-idf/components/esp_hal_wdt/esp32/mwdt_periph.c > CMakeFiles/__idf_esp_hal_wdt.dir/esp32/mwdt_periph.c.i
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/esp-idf/esp_hal_wdt" && /home/juan/.espressif/tools/xtensa-esp-elf/esp-15.2.0_20250929/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/juan/esp-idf/components/esp_hal_wdt/esp32/mwdt_periph.c > CMakeFiles/__idf_esp_hal_wdt.dir/esp32/mwdt_periph.c.i
 
 esp-idf/esp_hal_wdt/CMakeFiles/__idf_esp_hal_wdt.dir/esp32/mwdt_periph.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_esp_hal_wdt.dir/esp32/mwdt_periph.c.s"
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/esp-idf/esp_hal_wdt && /home/juan/.espressif/tools/xtensa-esp-elf/esp-15.2.0_20250929/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/juan/esp-idf/components/esp_hal_wdt/esp32/mwdt_periph.c -o CMakeFiles/__idf_esp_hal_wdt.dir/esp32/mwdt_periph.c.s
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/esp-idf/esp_hal_wdt" && /home/juan/.espressif/tools/xtensa-esp-elf/esp-15.2.0_20250929/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/juan/esp-idf/components/esp_hal_wdt/esp32/mwdt_periph.c -o CMakeFiles/__idf_esp_hal_wdt.dir/esp32/mwdt_periph.c.s
 
 esp-idf/esp_hal_wdt/CMakeFiles/__idf_esp_hal_wdt.dir/wdt_hal_iram.c.obj: esp-idf/esp_hal_wdt/CMakeFiles/__idf_esp_hal_wdt.dir/flags.make
 esp-idf/esp_hal_wdt/CMakeFiles/__idf_esp_hal_wdt.dir/wdt_hal_iram.c.obj: /home/juan/esp-idf/components/esp_hal_wdt/wdt_hal_iram.c
 esp-idf/esp_hal_wdt/CMakeFiles/__idf_esp_hal_wdt.dir/wdt_hal_iram.c.obj: esp-idf/esp_hal_wdt/CMakeFiles/__idf_esp_hal_wdt.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object esp-idf/esp_hal_wdt/CMakeFiles/__idf_esp_hal_wdt.dir/wdt_hal_iram.c.obj"
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/esp-idf/esp_hal_wdt && /home/juan/.espressif/tools/xtensa-esp-elf/esp-15.2.0_20250929/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/esp_hal_wdt/CMakeFiles/__idf_esp_hal_wdt.dir/wdt_hal_iram.c.obj -MF CMakeFiles/__idf_esp_hal_wdt.dir/wdt_hal_iram.c.obj.d -o CMakeFiles/__idf_esp_hal_wdt.dir/wdt_hal_iram.c.obj -c /home/juan/esp-idf/components/esp_hal_wdt/wdt_hal_iram.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building C object esp-idf/esp_hal_wdt/CMakeFiles/__idf_esp_hal_wdt.dir/wdt_hal_iram.c.obj"
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/esp-idf/esp_hal_wdt" && /home/juan/.espressif/tools/xtensa-esp-elf/esp-15.2.0_20250929/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/esp_hal_wdt/CMakeFiles/__idf_esp_hal_wdt.dir/wdt_hal_iram.c.obj -MF CMakeFiles/__idf_esp_hal_wdt.dir/wdt_hal_iram.c.obj.d -o CMakeFiles/__idf_esp_hal_wdt.dir/wdt_hal_iram.c.obj -c /home/juan/esp-idf/components/esp_hal_wdt/wdt_hal_iram.c
 
 esp-idf/esp_hal_wdt/CMakeFiles/__idf_esp_hal_wdt.dir/wdt_hal_iram.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_esp_hal_wdt.dir/wdt_hal_iram.c.i"
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/esp-idf/esp_hal_wdt && /home/juan/.espressif/tools/xtensa-esp-elf/esp-15.2.0_20250929/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/juan/esp-idf/components/esp_hal_wdt/wdt_hal_iram.c > CMakeFiles/__idf_esp_hal_wdt.dir/wdt_hal_iram.c.i
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/esp-idf/esp_hal_wdt" && /home/juan/.espressif/tools/xtensa-esp-elf/esp-15.2.0_20250929/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/juan/esp-idf/components/esp_hal_wdt/wdt_hal_iram.c > CMakeFiles/__idf_esp_hal_wdt.dir/wdt_hal_iram.c.i
 
 esp-idf/esp_hal_wdt/CMakeFiles/__idf_esp_hal_wdt.dir/wdt_hal_iram.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_esp_hal_wdt.dir/wdt_hal_iram.c.s"
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/esp-idf/esp_hal_wdt && /home/juan/.espressif/tools/xtensa-esp-elf/esp-15.2.0_20250929/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/juan/esp-idf/components/esp_hal_wdt/wdt_hal_iram.c -o CMakeFiles/__idf_esp_hal_wdt.dir/wdt_hal_iram.c.s
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/esp-idf/esp_hal_wdt" && /home/juan/.espressif/tools/xtensa-esp-elf/esp-15.2.0_20250929/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/juan/esp-idf/components/esp_hal_wdt/wdt_hal_iram.c -o CMakeFiles/__idf_esp_hal_wdt.dir/wdt_hal_iram.c.s
 
 # Object files for target __idf_esp_hal_wdt
 __idf_esp_hal_wdt_OBJECTS = \
@@ -109,19 +109,19 @@ esp-idf/esp_hal_wdt/libesp_hal_wdt.a: esp-idf/esp_hal_wdt/CMakeFiles/__idf_esp_h
 esp-idf/esp_hal_wdt/libesp_hal_wdt.a: esp-idf/esp_hal_wdt/CMakeFiles/__idf_esp_hal_wdt.dir/wdt_hal_iram.c.obj
 esp-idf/esp_hal_wdt/libesp_hal_wdt.a: esp-idf/esp_hal_wdt/CMakeFiles/__idf_esp_hal_wdt.dir/build.make
 esp-idf/esp_hal_wdt/libesp_hal_wdt.a: esp-idf/esp_hal_wdt/CMakeFiles/__idf_esp_hal_wdt.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C static library libesp_hal_wdt.a"
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/esp-idf/esp_hal_wdt && $(CMAKE_COMMAND) -P CMakeFiles/__idf_esp_hal_wdt.dir/cmake_clean_target.cmake
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/esp-idf/esp_hal_wdt && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/__idf_esp_hal_wdt.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking C static library libesp_hal_wdt.a"
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/esp-idf/esp_hal_wdt" && $(CMAKE_COMMAND) -P CMakeFiles/__idf_esp_hal_wdt.dir/cmake_clean_target.cmake
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/esp-idf/esp_hal_wdt" && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/__idf_esp_hal_wdt.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 esp-idf/esp_hal_wdt/CMakeFiles/__idf_esp_hal_wdt.dir/build: esp-idf/esp_hal_wdt/libesp_hal_wdt.a
 .PHONY : esp-idf/esp_hal_wdt/CMakeFiles/__idf_esp_hal_wdt.dir/build
 
 esp-idf/esp_hal_wdt/CMakeFiles/__idf_esp_hal_wdt.dir/clean:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/esp-idf/esp_hal_wdt && $(CMAKE_COMMAND) -P CMakeFiles/__idf_esp_hal_wdt.dir/cmake_clean.cmake
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/esp-idf/esp_hal_wdt" && $(CMAKE_COMMAND) -P CMakeFiles/__idf_esp_hal_wdt.dir/cmake_clean.cmake
 .PHONY : esp-idf/esp_hal_wdt/CMakeFiles/__idf_esp_hal_wdt.dir/clean
 
 esp-idf/esp_hal_wdt/CMakeFiles/__idf_esp_hal_wdt.dir/depend:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi /home/juan/esp-idf/components/esp_hal_wdt /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/esp-idf/esp_hal_wdt /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/esp-idf/esp_hal_wdt/CMakeFiles/__idf_esp_hal_wdt.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto" /home/juan/esp-idf/components/esp_hal_wdt "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build" "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/esp-idf/esp_hal_wdt" "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/esp-idf/esp_hal_wdt/CMakeFiles/__idf_esp_hal_wdt.dir/DependInfo.cmake" "--color=$(COLOR)"
 .PHONY : esp-idf/esp_hal_wdt/CMakeFiles/__idf_esp_hal_wdt.dir/depend
 

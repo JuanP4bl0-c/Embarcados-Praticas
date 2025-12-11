@@ -23,7 +23,7 @@ esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_print.c.obj: \
  /home/juan/.espressif/tools/xtensa-esp-elf/esp-15.2.0_20250929/xtensa-esp-elf/xtensa-esp-elf/include/machine/param.h \
  /home/juan/esp-idf/components/esp_rom/esp32/esp_rom_caps.h \
  /home/juan/esp-idf/components/esp_rom/include/esp_rom_sys.h \
- /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader/config/sdkconfig.h \
+ /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto\ estufa\ Inteligente\ com\ MQTT\ WIP/Projeto/build/bootloader/config/sdkconfig.h \
  /home/juan/.espressif/tools/xtensa-esp-elf/esp-15.2.0_20250929/xtensa-esp-elf/xtensa-esp-elf/include/inttypes.h \
  /home/juan/.espressif/tools/xtensa-esp-elf/esp-15.2.0_20250929/xtensa-esp-elf/xtensa-esp-elf/include/_ansi.h \
  /home/juan/.espressif/tools/xtensa-esp-elf/esp-15.2.0_20250929/xtensa-esp-elf/xtensa-esp-elf/include/sys/_locale.h \

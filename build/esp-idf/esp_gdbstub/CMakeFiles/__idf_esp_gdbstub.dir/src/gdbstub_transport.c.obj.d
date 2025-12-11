@@ -22,7 +22,7 @@ esp-idf/esp_gdbstub/CMakeFiles/__idf_esp_gdbstub.dir/src/gdbstub_transport.c.obj
  /home/juan/esp-idf/components/xtensa/include/xtensa/xtensa-versions.h \
  /home/juan/esp-idf/components/xtensa/esp32/include/xtensa/config/core-isa.h \
  /home/juan/esp-idf/components/xtensa/esp32/include/xtensa/config/core-matmap.h \
- /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/config/sdkconfig.h \
+ /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto\ estufa\ Inteligente\ com\ MQTT\ WIP/Projeto/build/config/sdkconfig.h \
  /home/juan/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/FreeRTOS.h \
  /home/juan/esp-idf/components/freertos/config/include/freertos/FreeRTOSConfig.h \
  /home/juan/esp-idf/components/esp_libc/platform_include/assert.h \

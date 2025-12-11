@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi
+CMAKE_SOURCE_DIR = "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build
+CMAKE_BINARY_DIR = "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/AWS_Wifi.elf.dir/depend.make
@@ -72,16 +72,16 @@ include CMakeFiles/AWS_Wifi.elf.dir/flags.make
 CMakeFiles/AWS_Wifi.elf.dir/project_elf_src_esp32.c.obj: CMakeFiles/AWS_Wifi.elf.dir/flags.make
 CMakeFiles/AWS_Wifi.elf.dir/project_elf_src_esp32.c.obj: project_elf_src_esp32.c
 CMakeFiles/AWS_Wifi.elf.dir/project_elf_src_esp32.c.obj: CMakeFiles/AWS_Wifi.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/AWS_Wifi.elf.dir/project_elf_src_esp32.c.obj"
-	/home/juan/.espressif/tools/xtensa-esp-elf/esp-15.2.0_20250929/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/AWS_Wifi.elf.dir/project_elf_src_esp32.c.obj -MF CMakeFiles/AWS_Wifi.elf.dir/project_elf_src_esp32.c.obj.d -o CMakeFiles/AWS_Wifi.elf.dir/project_elf_src_esp32.c.obj -c /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/project_elf_src_esp32.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/AWS_Wifi.elf.dir/project_elf_src_esp32.c.obj"
+	/home/juan/.espressif/tools/xtensa-esp-elf/esp-15.2.0_20250929/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/AWS_Wifi.elf.dir/project_elf_src_esp32.c.obj -MF CMakeFiles/AWS_Wifi.elf.dir/project_elf_src_esp32.c.obj.d -o CMakeFiles/AWS_Wifi.elf.dir/project_elf_src_esp32.c.obj -c "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/project_elf_src_esp32.c"
 
 CMakeFiles/AWS_Wifi.elf.dir/project_elf_src_esp32.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/AWS_Wifi.elf.dir/project_elf_src_esp32.c.i"
-	/home/juan/.espressif/tools/xtensa-esp-elf/esp-15.2.0_20250929/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/project_elf_src_esp32.c > CMakeFiles/AWS_Wifi.elf.dir/project_elf_src_esp32.c.i
+	/home/juan/.espressif/tools/xtensa-esp-elf/esp-15.2.0_20250929/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/project_elf_src_esp32.c" > CMakeFiles/AWS_Wifi.elf.dir/project_elf_src_esp32.c.i
 
 CMakeFiles/AWS_Wifi.elf.dir/project_elf_src_esp32.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/AWS_Wifi.elf.dir/project_elf_src_esp32.c.s"
-	/home/juan/.espressif/tools/xtensa-esp-elf/esp-15.2.0_20250929/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/project_elf_src_esp32.c -o CMakeFiles/AWS_Wifi.elf.dir/project_elf_src_esp32.c.s
+	/home/juan/.espressif/tools/xtensa-esp-elf/esp-15.2.0_20250929/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/project_elf_src_esp32.c" -o CMakeFiles/AWS_Wifi.elf.dir/project_elf_src_esp32.c.s
 
 # Object files for target AWS_Wifi.elf
 AWS_Wifi_elf_OBJECTS = \
@@ -543,7 +543,7 @@ AWS_Wifi.elf: /home/juan/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-re
 AWS_Wifi.elf: /home/juan/esp-idf/components/soc/esp32/ld/esp32.peripherals.ld
 AWS_Wifi.elf: esp-idf/esp_system/ld/sections.ld
 AWS_Wifi.elf: CMakeFiles/AWS_Wifi.elf.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable AWS_Wifi.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable AWS_Wifi.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/AWS_Wifi.elf.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -555,6 +555,6 @@ CMakeFiles/AWS_Wifi.elf.dir/clean:
 .PHONY : CMakeFiles/AWS_Wifi.elf.dir/clean
 
 CMakeFiles/AWS_Wifi.elf.dir/depend:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/CMakeFiles/AWS_Wifi.elf.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto" "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto" "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build" "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build" "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/CMakeFiles/AWS_Wifi.elf.dir/DependInfo.cmake" "--color=$(COLOR)"
 .PHONY : CMakeFiles/AWS_Wifi.elf.dir/depend
 

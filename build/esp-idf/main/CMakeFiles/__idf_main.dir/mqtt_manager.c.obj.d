@@ -1,6 +1,6 @@
 esp-idf/main/CMakeFiles/__idf_main.dir/mqtt_manager.c.obj: \
- /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/main/mqtt_manager.c \
- /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/main/mqtt_manager.h \
+ /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto\ estufa\ Inteligente\ com\ MQTT\ WIP/Projeto/main/mqtt_manager.c \
+ /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto\ estufa\ Inteligente\ com\ MQTT\ WIP/Projeto/main/mqtt_manager.h \
  /home/juan/esp-idf/components/mqtt/esp-mqtt/include/mqtt_client.h \
  /home/juan/.espressif/tools/xtensa-esp-elf/esp-15.2.0_20250929/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/15.2.0/include/stdint.h \
  /home/juan/.espressif/tools/xtensa-esp-elf/esp-15.2.0_20250929/xtensa-esp-elf/xtensa-esp-elf/include/stdint.h \
@@ -16,7 +16,7 @@ esp-idf/main/CMakeFiles/__idf_main.dir/mqtt_manager.c.obj: \
  /home/juan/.espressif/tools/xtensa-esp-elf/esp-15.2.0_20250929/xtensa-esp-elf/xtensa-esp-elf/include/sys/config.h \
  /home/juan/.espressif/tools/xtensa-esp-elf/esp-15.2.0_20250929/xtensa-esp-elf/xtensa-esp-elf/include/machine/ieeefp.h \
  /home/juan/esp-idf/components/esp_libc/platform_include/sys/reent.h \
- /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/config/sdkconfig.h \
+ /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto\ estufa\ Inteligente\ com\ MQTT\ WIP/Projeto/build/config/sdkconfig.h \
  /home/juan/.espressif/tools/xtensa-esp-elf/esp-15.2.0_20250929/xtensa-esp-elf/xtensa-esp-elf/include/sys/reent.h \
  /home/juan/.espressif/tools/xtensa-esp-elf/esp-15.2.0_20250929/xtensa-esp-elf/xtensa-esp-elf/include/_ansi.h \
  /home/juan/.espressif/tools/xtensa-esp-elf/esp-15.2.0_20250929/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/15.2.0/include/stddef.h \
@@ -121,11 +121,4 @@ esp-idf/main/CMakeFiles/__idf_main.dir/mqtt_manager.c.obj: \
  /home/juan/esp-idf/components/log/include/esp_log_format.h \
  /home/juan/esp-idf/components/log/include/esp_log_args.h \
  /home/juan/esp-idf/components/log/include/esp_log_attr.h \
- /home/juan/esp-idf/components/log/include/esp_private/log_attr.h \
- /home/juan/esp-idf/components/esp_driver_gpio/include/driver/gpio.h \
- /home/juan/esp-idf/components/hal/include/hal/gpio_types.h \
- /home/juan/esp-idf/components/soc/esp32/include/soc/gpio_num.h \
- /home/juan/esp-idf/components/esp_rom/include/esp_rom_gpio.h \
- /home/juan/esp-idf/components/soc/esp32/include/soc/gpio_pins.h \
- /home/juan/esp-idf/components/esp_driver_gpio/include/driver/gpio_etm.h \
- /home/juan/esp-idf/components/esp_hw_support/etm/include/esp_etm.h
+ /home/juan/esp-idf/components/log/include/esp_private/log_attr.h

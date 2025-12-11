@@ -71,5 +71,5 @@ esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/src/esp_err_to_name.c.obj
  /home/juan/esp-idf/components/soc/include/soc/soc_caps_eval.h
  /home/juan/esp-idf/components/spi_flash/include/esp_spi_flash_counters.h
  /home/juan/esp-idf/components/spi_flash/include/spi_flash_mmap.h
- /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader/config/sdkconfig.h
+ /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader/config/sdkconfig.h
 

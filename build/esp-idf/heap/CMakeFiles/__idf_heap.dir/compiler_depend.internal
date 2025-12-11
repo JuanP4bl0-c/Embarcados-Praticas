@@ -122,7 +122,7 @@ esp-idf/heap/CMakeFiles/__idf_heap.dir/heap_caps.c.obj
  /home/juan/esp-idf/components/xtensa/include/xtensa_api.h
  /home/juan/esp-idf/components/xtensa/include/xtensa_config.h
  /home/juan/esp-idf/components/xtensa/include/xtensa_context.h
- /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/config/sdkconfig.h
+ /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/config/sdkconfig.h
 
 esp-idf/heap/CMakeFiles/__idf_heap.dir/heap_caps_base.c.obj
  /home/juan/esp-idf/components/heap/heap_caps_base.c
@@ -245,7 +245,7 @@ esp-idf/heap/CMakeFiles/__idf_heap.dir/heap_caps_base.c.obj
  /home/juan/esp-idf/components/xtensa/include/xtensa_api.h
  /home/juan/esp-idf/components/xtensa/include/xtensa_config.h
  /home/juan/esp-idf/components/xtensa/include/xtensa_context.h
- /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/config/sdkconfig.h
+ /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/config/sdkconfig.h
 
 esp-idf/heap/CMakeFiles/__idf_heap.dir/heap_caps_init.c.obj
  /home/juan/esp-idf/components/heap/heap_caps_init.c
@@ -367,7 +367,7 @@ esp-idf/heap/CMakeFiles/__idf_heap.dir/heap_caps_init.c.obj
  /home/juan/esp-idf/components/xtensa/include/xtensa_api.h
  /home/juan/esp-idf/components/xtensa/include/xtensa_config.h
  /home/juan/esp-idf/components/xtensa/include/xtensa_context.h
- /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/config/sdkconfig.h
+ /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/config/sdkconfig.h
 
 esp-idf/heap/CMakeFiles/__idf_heap.dir/multi_heap.c.obj
  /home/juan/esp-idf/components/heap/multi_heap.c
@@ -479,7 +479,7 @@ esp-idf/heap/CMakeFiles/__idf_heap.dir/multi_heap.c.obj
  /home/juan/esp-idf/components/xtensa/include/xtensa_api.h
  /home/juan/esp-idf/components/xtensa/include/xtensa_config.h
  /home/juan/esp-idf/components/xtensa/include/xtensa_context.h
- /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/config/sdkconfig.h
+ /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/config/sdkconfig.h
 
 esp-idf/heap/CMakeFiles/__idf_heap.dir/port/esp32/memory_layout.c.obj
  /home/juan/esp-idf/components/heap/port/esp32/memory_layout.c
@@ -526,7 +526,7 @@ esp-idf/heap/CMakeFiles/__idf_heap.dir/port/esp32/memory_layout.c.obj
  /home/juan/esp-idf/components/soc/esp32/include/soc/soc_caps.h
  /home/juan/esp-idf/components/soc/esp32/register/soc/reg_base.h
  /home/juan/esp-idf/components/soc/include/soc/soc_caps_eval.h
- /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/config/sdkconfig.h
+ /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/config/sdkconfig.h
 
 esp-idf/heap/CMakeFiles/__idf_heap.dir/port/memory_layout_utils.c.obj
  /home/juan/esp-idf/components/heap/port/memory_layout_utils.c
@@ -588,7 +588,7 @@ esp-idf/heap/CMakeFiles/__idf_heap.dir/port/memory_layout_utils.c.obj
  /home/juan/esp-idf/components/soc/esp32/include/soc/soc_caps.h
  /home/juan/esp-idf/components/soc/esp32/register/soc/reg_base.h
  /home/juan/esp-idf/components/soc/include/soc/soc_caps_eval.h
- /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/config/sdkconfig.h
+ /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/config/sdkconfig.h
 
 esp-idf/heap/CMakeFiles/__idf_heap.dir/tlsf/tlsf.c.obj
  /home/juan/esp-idf/components/heap/tlsf/tlsf.c
@@ -632,5 +632,5 @@ esp-idf/heap/CMakeFiles/__idf_heap.dir/tlsf/tlsf.c.obj
  /home/juan/esp-idf/components/heap/tlsf/include/tlsf.h
  /home/juan/esp-idf/components/heap/tlsf/tlsf_block_functions.h
  /home/juan/esp-idf/components/heap/tlsf/tlsf_control_functions.h
- /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/config/sdkconfig.h
+ /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/config/sdkconfig.h
 

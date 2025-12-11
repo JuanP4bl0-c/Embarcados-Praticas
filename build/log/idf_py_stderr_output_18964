@@ -1,5 +1,0 @@
-Command: make -j 18 all
-/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/main/main.c: In function 'dht11_read':
-/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/main/main.c:47:16: warning: unused variable 'j' [-Wunused-variable]
-   47 |     int i = 0, j = 0;
-      |                ^

@@ -1,6 +1,6 @@
 esp-idf/unity/CMakeFiles/__idf_unity.dir/unity_utils_cache.c.obj: \
  /home/juan/esp-idf/components/unity/unity_utils_cache.c \
- /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/config/sdkconfig.h \
+ /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto\ estufa\ Inteligente\ com\ MQTT\ WIP/Projeto/build/config/sdkconfig.h \
  /home/juan/esp-idf/components/unity/unity/src/unity.h \
  /home/juan/esp-idf/components/unity/unity/src/unity_internals.h \
  /home/juan/esp-idf/components/unity/include/unity_config.h \

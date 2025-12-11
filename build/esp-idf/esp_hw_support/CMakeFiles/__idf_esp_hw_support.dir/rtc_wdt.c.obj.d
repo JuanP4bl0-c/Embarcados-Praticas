@@ -13,7 +13,7 @@ esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/rtc_wdt.c.obj: \
  /home/juan/esp-idf/components/soc/include/soc/rtc_io_periph.h \
  /home/juan/esp-idf/components/soc/esp32/include/soc/soc_caps.h \
  /home/juan/esp-idf/components/soc/include/soc/soc_caps_eval.h \
- /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/config/sdkconfig.h \
+ /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto\ estufa\ Inteligente\ com\ MQTT\ WIP/Projeto/build/config/sdkconfig.h \
  /home/juan/esp-idf/components/soc/esp32/include/soc/rtc_io_channel.h \
  /home/juan/esp-idf/components/soc/esp32/register/soc/io_mux_reg.h \
  /home/juan/esp-idf/components/soc/esp32/include/soc/soc.h \

@@ -1,6 +1,6 @@
 esp-idf/console/CMakeFiles/__idf_console.dir/esp_console_repl_internal.c.obj: \
  /home/juan/esp-idf/components/console/esp_console_repl_internal.c \
- /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/config/sdkconfig.h \
+ /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto\ estufa\ Inteligente\ com\ MQTT\ WIP/Projeto/build/config/sdkconfig.h \
  /home/juan/.espressif/tools/xtensa-esp-elf/esp-15.2.0_20250929/xtensa-esp-elf/xtensa-esp-elf/include/unistd.h \
  /home/juan/esp-idf/components/esp_libc/platform_include/sys/unistd.h \
  /home/juan/.espressif/tools/xtensa-esp-elf/esp-15.2.0_20250929/xtensa-esp-elf/xtensa-esp-elf/include/sys/types.h \

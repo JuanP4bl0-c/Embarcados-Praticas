@@ -12,7 +12,7 @@ esp-idf/mbedtls/mbedtls/3rdparty/p256-m/CMakeFiles/p256m.dir/p256-m/p256-m.c.obj
  /home/juan/esp-idf/components/mbedtls/mbedtls/include/mbedtls/platform_util.h \
  /home/juan/esp-idf/components/mbedtls/mbedtls/include/mbedtls/build_info.h \
  /home/juan/esp-idf/components/mbedtls/port/include/mbedtls/esp_config.h \
- /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/config/sdkconfig.h \
+ /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto\ estufa\ Inteligente\ com\ MQTT\ WIP/Projeto/build/config/sdkconfig.h \
  /home/juan/esp-idf/components/mbedtls/mbedtls/include/mbedtls/mbedtls_config.h \
  /home/juan/esp-idf/components/soc/esp32/include/soc/soc_caps.h \
  /home/juan/esp-idf/components/soc/include/soc/soc_caps_eval.h \

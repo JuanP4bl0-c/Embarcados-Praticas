@@ -1,4 +1,4 @@
-/* * Data converted from /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/main/certs/21799d82cb8e53178d50791a8bce841ab0132bdc3596a4350b798c0b5dc0925a-certificate.pem.crt
+/* * Data converted from /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/main/certs/21799d82cb8e53178d50791a8bce841ab0132bdc3596a4350b798c0b5dc0925a-certificate.pem.crt
  * (null byte appended)
  */
 .data

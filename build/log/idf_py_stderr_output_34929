@@ -1,8 +1,0 @@
-Command: make -j 18 all
-/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/main/main.c: In function 'publish_sensor_data_task':
-/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/main/main.c:81:36: error: implicit declaration of function 'esp_timer_get_time' [-Wimplicit-function-declaration]
-   81 |             int64_t timestamp_ms = esp_timer_get_time() / 1000;
-      |                                    ^~~~~~~~~~~~~~~~~~
-make[2]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/build.make:91: esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj] Erro 1
-make[1]: *** [CMakeFiles/Makefile2:5944: esp-idf/main/CMakeFiles/__idf_main.dir/all] Erro 2
-make: *** [Makefile:136: all] Erro 2

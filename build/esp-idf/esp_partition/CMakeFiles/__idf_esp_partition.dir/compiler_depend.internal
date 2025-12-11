@@ -89,7 +89,7 @@ esp-idf/esp_partition/CMakeFiles/__idf_esp_partition.dir/partition.c.obj
  /home/juan/esp-idf/components/spi_flash/include/esp_flash.h
  /home/juan/esp-idf/components/spi_flash/include/esp_spi_flash_counters.h
  /home/juan/esp-idf/components/spi_flash/include/spi_flash_mmap.h
- /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/config/sdkconfig.h
+ /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/config/sdkconfig.h
 
 esp-idf/esp_partition/CMakeFiles/__idf_esp_partition.dir/partition_target.c.obj
  /home/juan/esp-idf/components/esp_partition/partition_target.c
@@ -175,5 +175,5 @@ esp-idf/esp_partition/CMakeFiles/__idf_esp_partition.dir/partition_target.c.obj
  /home/juan/esp-idf/components/spi_flash/include/esp_flash.h
  /home/juan/esp-idf/components/spi_flash/include/esp_spi_flash_counters.h
  /home/juan/esp-idf/components/spi_flash/include/spi_flash_mmap.h
- /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/config/sdkconfig.h
+ /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/config/sdkconfig.h
 

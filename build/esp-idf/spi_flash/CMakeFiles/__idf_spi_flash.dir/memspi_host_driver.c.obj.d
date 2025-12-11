@@ -2,7 +2,7 @@ esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/memspi_host_driver.c.obj: \
  /home/juan/esp-idf/components/spi_flash/memspi_host_driver.c \
  /home/juan/esp-idf/components/soc/esp32/include/soc/soc_caps.h \
  /home/juan/esp-idf/components/soc/include/soc/soc_caps_eval.h \
- /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/config/sdkconfig.h \
+ /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto\ estufa\ Inteligente\ com\ MQTT\ WIP/Projeto/build/config/sdkconfig.h \
  /home/juan/esp-idf/components/spi_flash/include/spi_flash/spi_flash_defs.h \
  /home/juan/esp-idf/components/spi_flash/include/memspi_host_driver.h \
  /home/juan/esp-idf/components/esp_hal_mspi/include/hal/spi_flash_hal.h \

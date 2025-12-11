@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi
+CMAKE_SOURCE_DIR = "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build
+CMAKE_BINARY_DIR = "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build && $(CMAKE_COMMAND) -E cmake_progress_start /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/CMakeFiles /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/esp-idf/main//CMakeFiles/progress.marks
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/main/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/CMakeFiles 0
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build" && $(CMAKE_COMMAND) -E cmake_progress_start "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/CMakeFiles" "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/esp-idf/main//CMakeFiles/progress.marks"
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/main/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/main/clean
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/main/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/main/preinstall
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/main/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/main/preinstall
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/main/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 esp-idf/main/CMakeFiles/__idf_main.dir/rule:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/main/CMakeFiles/__idf_main.dir/rule
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/main/CMakeFiles/__idf_main.dir/rule
 .PHONY : esp-idf/main/CMakeFiles/__idf_main.dir/rule
 
 # Convenience name for target.
@@ -172,39 +172,63 @@ __idf_main: esp-idf/main/CMakeFiles/__idf_main.dir/rule
 
 # fast build rule for target.
 __idf_main/fast:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build && $(MAKE) $(MAKESILENT) -f esp-idf/main/CMakeFiles/__idf_main.dir/build.make esp-idf/main/CMakeFiles/__idf_main.dir/build
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build" && $(MAKE) $(MAKESILENT) -f esp-idf/main/CMakeFiles/__idf_main.dir/build.make esp-idf/main/CMakeFiles/__idf_main.dir/build
 .PHONY : __idf_main/fast
 
-__/__/21799d82cb8e53178d50791a8bce841ab0132bdc3596a4350b798c0b5dc0925a-certificate.pem.crt.obj: __/__/21799d82cb8e53178d50791a8bce841ab0132bdc3596a4350b798c0b5dc0925a-certificate.pem.crt.S.obj
-.PHONY : __/__/21799d82cb8e53178d50791a8bce841ab0132bdc3596a4350b798c0b5dc0925a-certificate.pem.crt.obj
+__/__/86cf2f23eee12460caeaf6c97ae117032f556f433959a2bfd83039ab5fa3ae0c-certificate.pem.crt.obj: __/__/86cf2f23eee12460caeaf6c97ae117032f556f433959a2bfd83039ab5fa3ae0c-certificate.pem.crt.S.obj
+.PHONY : __/__/86cf2f23eee12460caeaf6c97ae117032f556f433959a2bfd83039ab5fa3ae0c-certificate.pem.crt.obj
 
 # target to build an object file
-__/__/21799d82cb8e53178d50791a8bce841ab0132bdc3596a4350b798c0b5dc0925a-certificate.pem.crt.S.obj:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build && $(MAKE) $(MAKESILENT) -f esp-idf/main/CMakeFiles/__idf_main.dir/build.make esp-idf/main/CMakeFiles/__idf_main.dir/__/__/21799d82cb8e53178d50791a8bce841ab0132bdc3596a4350b798c0b5dc0925a-certificate.pem.crt.S.obj
-.PHONY : __/__/21799d82cb8e53178d50791a8bce841ab0132bdc3596a4350b798c0b5dc0925a-certificate.pem.crt.S.obj
+__/__/86cf2f23eee12460caeaf6c97ae117032f556f433959a2bfd83039ab5fa3ae0c-certificate.pem.crt.S.obj:
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build" && $(MAKE) $(MAKESILENT) -f esp-idf/main/CMakeFiles/__idf_main.dir/build.make esp-idf/main/CMakeFiles/__idf_main.dir/__/__/86cf2f23eee12460caeaf6c97ae117032f556f433959a2bfd83039ab5fa3ae0c-certificate.pem.crt.S.obj
+.PHONY : __/__/86cf2f23eee12460caeaf6c97ae117032f556f433959a2bfd83039ab5fa3ae0c-certificate.pem.crt.S.obj
 
-__/__/21799d82cb8e53178d50791a8bce841ab0132bdc3596a4350b798c0b5dc0925a-private.pem.key.obj: __/__/21799d82cb8e53178d50791a8bce841ab0132bdc3596a4350b798c0b5dc0925a-private.pem.key.S.obj
-.PHONY : __/__/21799d82cb8e53178d50791a8bce841ab0132bdc3596a4350b798c0b5dc0925a-private.pem.key.obj
+__/__/86cf2f23eee12460caeaf6c97ae117032f556f433959a2bfd83039ab5fa3ae0c-private.pem.key.obj: __/__/86cf2f23eee12460caeaf6c97ae117032f556f433959a2bfd83039ab5fa3ae0c-private.pem.key.S.obj
+.PHONY : __/__/86cf2f23eee12460caeaf6c97ae117032f556f433959a2bfd83039ab5fa3ae0c-private.pem.key.obj
 
 # target to build an object file
-__/__/21799d82cb8e53178d50791a8bce841ab0132bdc3596a4350b798c0b5dc0925a-private.pem.key.S.obj:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build && $(MAKE) $(MAKESILENT) -f esp-idf/main/CMakeFiles/__idf_main.dir/build.make esp-idf/main/CMakeFiles/__idf_main.dir/__/__/21799d82cb8e53178d50791a8bce841ab0132bdc3596a4350b798c0b5dc0925a-private.pem.key.S.obj
-.PHONY : __/__/21799d82cb8e53178d50791a8bce841ab0132bdc3596a4350b798c0b5dc0925a-private.pem.key.S.obj
+__/__/86cf2f23eee12460caeaf6c97ae117032f556f433959a2bfd83039ab5fa3ae0c-private.pem.key.S.obj:
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build" && $(MAKE) $(MAKESILENT) -f esp-idf/main/CMakeFiles/__idf_main.dir/build.make esp-idf/main/CMakeFiles/__idf_main.dir/__/__/86cf2f23eee12460caeaf6c97ae117032f556f433959a2bfd83039ab5fa3ae0c-private.pem.key.S.obj
+.PHONY : __/__/86cf2f23eee12460caeaf6c97ae117032f556f433959a2bfd83039ab5fa3ae0c-private.pem.key.S.obj
 
 __/__/AmazonRootCA1.pem.obj: __/__/AmazonRootCA1.pem.S.obj
 .PHONY : __/__/AmazonRootCA1.pem.obj
 
 # target to build an object file
 __/__/AmazonRootCA1.pem.S.obj:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build && $(MAKE) $(MAKESILENT) -f esp-idf/main/CMakeFiles/__idf_main.dir/build.make esp-idf/main/CMakeFiles/__idf_main.dir/__/__/AmazonRootCA1.pem.S.obj
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build" && $(MAKE) $(MAKESILENT) -f esp-idf/main/CMakeFiles/__idf_main.dir/build.make esp-idf/main/CMakeFiles/__idf_main.dir/__/__/AmazonRootCA1.pem.S.obj
 .PHONY : __/__/AmazonRootCA1.pem.S.obj
+
+dht11.obj: dht11.c.obj
+.PHONY : dht11.obj
+
+# target to build an object file
+dht11.c.obj:
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build" && $(MAKE) $(MAKESILENT) -f esp-idf/main/CMakeFiles/__idf_main.dir/build.make esp-idf/main/CMakeFiles/__idf_main.dir/dht11.c.obj
+.PHONY : dht11.c.obj
+
+dht11.i: dht11.c.i
+.PHONY : dht11.i
+
+# target to preprocess a source file
+dht11.c.i:
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build" && $(MAKE) $(MAKESILENT) -f esp-idf/main/CMakeFiles/__idf_main.dir/build.make esp-idf/main/CMakeFiles/__idf_main.dir/dht11.c.i
+.PHONY : dht11.c.i
+
+dht11.s: dht11.c.s
+.PHONY : dht11.s
+
+# target to generate assembly for a file
+dht11.c.s:
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build" && $(MAKE) $(MAKESILENT) -f esp-idf/main/CMakeFiles/__idf_main.dir/build.make esp-idf/main/CMakeFiles/__idf_main.dir/dht11.c.s
+.PHONY : dht11.c.s
 
 main.obj: main.c.obj
 .PHONY : main.obj
 
 # target to build an object file
 main.c.obj:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build && $(MAKE) $(MAKESILENT) -f esp-idf/main/CMakeFiles/__idf_main.dir/build.make esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build" && $(MAKE) $(MAKESILENT) -f esp-idf/main/CMakeFiles/__idf_main.dir/build.make esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
 .PHONY : main.c.obj
 
 main.i: main.c.i
@@ -212,7 +236,7 @@ main.i: main.c.i
 
 # target to preprocess a source file
 main.c.i:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build && $(MAKE) $(MAKESILENT) -f esp-idf/main/CMakeFiles/__idf_main.dir/build.make esp-idf/main/CMakeFiles/__idf_main.dir/main.c.i
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build" && $(MAKE) $(MAKESILENT) -f esp-idf/main/CMakeFiles/__idf_main.dir/build.make esp-idf/main/CMakeFiles/__idf_main.dir/main.c.i
 .PHONY : main.c.i
 
 main.s: main.c.s
@@ -220,7 +244,7 @@ main.s: main.c.s
 
 # target to generate assembly for a file
 main.c.s:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build && $(MAKE) $(MAKESILENT) -f esp-idf/main/CMakeFiles/__idf_main.dir/build.make esp-idf/main/CMakeFiles/__idf_main.dir/main.c.s
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build" && $(MAKE) $(MAKESILENT) -f esp-idf/main/CMakeFiles/__idf_main.dir/build.make esp-idf/main/CMakeFiles/__idf_main.dir/main.c.s
 .PHONY : main.c.s
 
 mqtt_manager.obj: mqtt_manager.c.obj
@@ -228,7 +252,7 @@ mqtt_manager.obj: mqtt_manager.c.obj
 
 # target to build an object file
 mqtt_manager.c.obj:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build && $(MAKE) $(MAKESILENT) -f esp-idf/main/CMakeFiles/__idf_main.dir/build.make esp-idf/main/CMakeFiles/__idf_main.dir/mqtt_manager.c.obj
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build" && $(MAKE) $(MAKESILENT) -f esp-idf/main/CMakeFiles/__idf_main.dir/build.make esp-idf/main/CMakeFiles/__idf_main.dir/mqtt_manager.c.obj
 .PHONY : mqtt_manager.c.obj
 
 mqtt_manager.i: mqtt_manager.c.i
@@ -236,7 +260,7 @@ mqtt_manager.i: mqtt_manager.c.i
 
 # target to preprocess a source file
 mqtt_manager.c.i:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build && $(MAKE) $(MAKESILENT) -f esp-idf/main/CMakeFiles/__idf_main.dir/build.make esp-idf/main/CMakeFiles/__idf_main.dir/mqtt_manager.c.i
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build" && $(MAKE) $(MAKESILENT) -f esp-idf/main/CMakeFiles/__idf_main.dir/build.make esp-idf/main/CMakeFiles/__idf_main.dir/mqtt_manager.c.i
 .PHONY : mqtt_manager.c.i
 
 mqtt_manager.s: mqtt_manager.c.s
@@ -244,15 +268,39 @@ mqtt_manager.s: mqtt_manager.c.s
 
 # target to generate assembly for a file
 mqtt_manager.c.s:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build && $(MAKE) $(MAKESILENT) -f esp-idf/main/CMakeFiles/__idf_main.dir/build.make esp-idf/main/CMakeFiles/__idf_main.dir/mqtt_manager.c.s
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build" && $(MAKE) $(MAKESILENT) -f esp-idf/main/CMakeFiles/__idf_main.dir/build.make esp-idf/main/CMakeFiles/__idf_main.dir/mqtt_manager.c.s
 .PHONY : mqtt_manager.c.s
+
+status_led.obj: status_led.c.obj
+.PHONY : status_led.obj
+
+# target to build an object file
+status_led.c.obj:
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build" && $(MAKE) $(MAKESILENT) -f esp-idf/main/CMakeFiles/__idf_main.dir/build.make esp-idf/main/CMakeFiles/__idf_main.dir/status_led.c.obj
+.PHONY : status_led.c.obj
+
+status_led.i: status_led.c.i
+.PHONY : status_led.i
+
+# target to preprocess a source file
+status_led.c.i:
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build" && $(MAKE) $(MAKESILENT) -f esp-idf/main/CMakeFiles/__idf_main.dir/build.make esp-idf/main/CMakeFiles/__idf_main.dir/status_led.c.i
+.PHONY : status_led.c.i
+
+status_led.s: status_led.c.s
+.PHONY : status_led.s
+
+# target to generate assembly for a file
+status_led.c.s:
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build" && $(MAKE) $(MAKESILENT) -f esp-idf/main/CMakeFiles/__idf_main.dir/build.make esp-idf/main/CMakeFiles/__idf_main.dir/status_led.c.s
+.PHONY : status_led.c.s
 
 wifi_manager.obj: wifi_manager.c.obj
 .PHONY : wifi_manager.obj
 
 # target to build an object file
 wifi_manager.c.obj:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build && $(MAKE) $(MAKESILENT) -f esp-idf/main/CMakeFiles/__idf_main.dir/build.make esp-idf/main/CMakeFiles/__idf_main.dir/wifi_manager.c.obj
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build" && $(MAKE) $(MAKESILENT) -f esp-idf/main/CMakeFiles/__idf_main.dir/build.make esp-idf/main/CMakeFiles/__idf_main.dir/wifi_manager.c.obj
 .PHONY : wifi_manager.c.obj
 
 wifi_manager.i: wifi_manager.c.i
@@ -260,7 +308,7 @@ wifi_manager.i: wifi_manager.c.i
 
 # target to preprocess a source file
 wifi_manager.c.i:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build && $(MAKE) $(MAKESILENT) -f esp-idf/main/CMakeFiles/__idf_main.dir/build.make esp-idf/main/CMakeFiles/__idf_main.dir/wifi_manager.c.i
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build" && $(MAKE) $(MAKESILENT) -f esp-idf/main/CMakeFiles/__idf_main.dir/build.make esp-idf/main/CMakeFiles/__idf_main.dir/wifi_manager.c.i
 .PHONY : wifi_manager.c.i
 
 wifi_manager.s: wifi_manager.c.s
@@ -268,7 +316,7 @@ wifi_manager.s: wifi_manager.c.s
 
 # target to generate assembly for a file
 wifi_manager.c.s:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build && $(MAKE) $(MAKESILENT) -f esp-idf/main/CMakeFiles/__idf_main.dir/build.make esp-idf/main/CMakeFiles/__idf_main.dir/wifi_manager.c.s
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build" && $(MAKE) $(MAKESILENT) -f esp-idf/main/CMakeFiles/__idf_main.dir/build.make esp-idf/main/CMakeFiles/__idf_main.dir/wifi_manager.c.s
 .PHONY : wifi_manager.c.s
 
 # Help Target
@@ -284,15 +332,21 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... __idf_main"
-	@echo "... __/__/21799d82cb8e53178d50791a8bce841ab0132bdc3596a4350b798c0b5dc0925a-certificate.pem.crt.obj"
-	@echo "... __/__/21799d82cb8e53178d50791a8bce841ab0132bdc3596a4350b798c0b5dc0925a-private.pem.key.obj"
+	@echo "... __/__/86cf2f23eee12460caeaf6c97ae117032f556f433959a2bfd83039ab5fa3ae0c-certificate.pem.crt.obj"
+	@echo "... __/__/86cf2f23eee12460caeaf6c97ae117032f556f433959a2bfd83039ab5fa3ae0c-private.pem.key.obj"
 	@echo "... __/__/AmazonRootCA1.pem.obj"
+	@echo "... dht11.obj"
+	@echo "... dht11.i"
+	@echo "... dht11.s"
 	@echo "... main.obj"
 	@echo "... main.i"
 	@echo "... main.s"
 	@echo "... mqtt_manager.obj"
 	@echo "... mqtt_manager.i"
 	@echo "... mqtt_manager.s"
+	@echo "... status_led.obj"
+	@echo "... status_led.i"
+	@echo "... status_led.s"
 	@echo "... wifi_manager.obj"
 	@echo "... wifi_manager.i"
 	@echo "... wifi_manager.s"
@@ -307,6 +361,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

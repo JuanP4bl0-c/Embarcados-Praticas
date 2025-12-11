@@ -49,5 +49,5 @@ esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/xt_trax.c.obj
  /home/juan/esp-idf/components/xtensa/esp32/include/xtensa/config/core-isa.h
  /home/juan/esp-idf/components/xtensa/include/eri.h
  /home/juan/esp-idf/components/xtensa/include/xtensa-debug-module.h
- /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader/config/sdkconfig.h
+ /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader/config/sdkconfig.h
 

@@ -1,6 +1,6 @@
 esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_console.c.obj: \
  /home/juan/esp-idf/components/bootloader_support/src/bootloader_console.c \
- /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader/config/sdkconfig.h \
+ /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto\ estufa\ Inteligente\ com\ MQTT\ WIP/Projeto/build/bootloader/config/sdkconfig.h \
  /home/juan/esp-idf/components/bootloader_support/private_include/bootloader_console.h \
  /home/juan/esp-idf/components/soc/esp32/include/soc/soc_caps.h \
  /home/juan/esp-idf/components/soc/include/soc/soc_caps_eval.h \

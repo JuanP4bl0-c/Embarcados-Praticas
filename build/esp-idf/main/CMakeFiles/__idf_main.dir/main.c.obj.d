@@ -1,7 +1,7 @@
 esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj: \
- /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/main/main.c \
+ /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto\ estufa\ Inteligente\ com\ MQTT\ WIP/Projeto/main/main.c \
  /home/juan/esp-idf/components/esp_libc/platform_include/stdio.h \
- /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/config/sdkconfig.h \
+ /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto\ estufa\ Inteligente\ com\ MQTT\ WIP/Projeto/build/config/sdkconfig.h \
  /home/juan/.espressif/tools/xtensa-esp-elf/esp-15.2.0_20250929/xtensa-esp-elf/xtensa-esp-elf/include/stdio.h \
  /home/juan/.espressif/tools/xtensa-esp-elf/esp-15.2.0_20250929/xtensa-esp-elf/xtensa-esp-elf/include/_ansi.h \
  /home/juan/.espressif/tools/xtensa-esp-elf/esp-15.2.0_20250929/xtensa-esp-elf/xtensa-esp-elf/include/newlib.h \
@@ -128,7 +128,8 @@ esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj: \
  /home/juan/esp-idf/components/log/include/esp_log_args.h \
  /home/juan/esp-idf/components/log/include/esp_log_attr.h \
  /home/juan/esp-idf/components/log/include/esp_private/log_attr.h \
- /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/main/wifi_manager.h \
+ /home/juan/esp-idf/components/esp_timer/include/esp_timer.h \
+ /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto\ estufa\ Inteligente\ com\ MQTT\ WIP/Projeto/main/wifi_manager.h \
  /home/juan/esp-idf/components/esp_wifi/include/esp_wifi.h \
  /home/juan/esp-idf/components/esp_wifi/include/esp_wifi_types.h \
  /home/juan/esp-idf/components/esp_wifi/include/esp_wifi_types_generic.h \
@@ -144,8 +145,7 @@ esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj: \
  /home/juan/.espressif/tools/xtensa-esp-elf/esp-15.2.0_20250929/xtensa-esp-elf/xtensa-esp-elf/include/machine/_endian.h \
  /home/juan/esp-idf/components/esp_netif/include/esp_netif_types.h \
  /home/juan/esp-idf/components/esp_netif/include/esp_netif_defaults.h \
- /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/main/mqtt_manager.h \
+ /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto\ estufa\ Inteligente\ com\ MQTT\ WIP/Projeto/main/mqtt_manager.h \
  /home/juan/esp-idf/components/mqtt/esp-mqtt/include/mqtt_client.h \
  /home/juan/esp-idf/components/tcp_transport/include/esp_transport.h \
- /home/juan/esp-idf/components/esp_timer/include/esp_timer.h \
  /home/juan/esp-idf/components/esp_rom/esp32/include/esp32/rom/ets_sys.h

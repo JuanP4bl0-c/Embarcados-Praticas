@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
   "AmazonRootCA1.pem.S"
-  "21799d82cb8e53178d50791a8bce841ab0132bdc3596a4350b798c0b5dc0925a-certificate.pem.crt.S"
-  "21799d82cb8e53178d50791a8bce841ab0132bdc3596a4350b798c0b5dc0925a-private.pem.key.S"
+  "86cf2f23eee12460caeaf6c97ae117032f556f433959a2bfd83039ab5fa3ae0c-certificate.pem.crt.S"
+  "86cf2f23eee12460caeaf6c97ae117032f556f433959a2bfd83039ab5fa3ae0c-private.pem.key.S"
 )

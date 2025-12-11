@@ -2,7 +2,7 @@ esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/src/esp_crypto_periph_clk
  /home/juan/esp-idf/components/esp_security/src/esp_crypto_periph_clk.c \
  /home/juan/esp-idf/components/soc/esp32/include/soc/soc_caps.h \
  /home/juan/esp-idf/components/soc/include/soc/soc_caps_eval.h \
- /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/config/sdkconfig.h \
+ /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto\ estufa\ Inteligente\ com\ MQTT\ WIP/Projeto/build/config/sdkconfig.h \
  /home/juan/esp-idf/components/esp_hw_support/include/esp_private/esp_crypto_lock_internal.h \
  /home/juan/esp-idf/components/esp_hw_support/include/esp_private/periph_ctrl.h \
  /home/juan/.espressif/tools/xtensa-esp-elf/esp-15.2.0_20250929/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/15.2.0/include/stdint.h \

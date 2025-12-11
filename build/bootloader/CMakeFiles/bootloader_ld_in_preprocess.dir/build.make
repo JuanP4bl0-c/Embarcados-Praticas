@@ -56,7 +56,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/juan/esp-idf/components/bootloader/subproject
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader
+CMAKE_BINARY_DIR = "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader"
 
 # Utility rule file for bootloader_ld_in_preprocess.
 
@@ -70,8 +70,8 @@ CMakeFiles/bootloader_ld_in_preprocess: ld/bootloader.ld
 
 ld/bootloader.ld: /home/juan/esp-idf/components/bootloader/subproject/main/ld/esp32/bootloader.ld.in
 ld/bootloader.ld: config/sdkconfig.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Preprocessing linker script /home/juan/esp-idf/components/bootloader/subproject/main/ld/esp32/bootloader.ld.in -> /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader/ld/bootloader.ld"
-	/usr/bin/cmake -DCC=/home/juan/.espressif/tools/xtensa-esp-elf/esp-15.2.0_20250929/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc -DSOURCE=/home/juan/esp-idf/components/bootloader/subproject/main/ld/esp32/bootloader.ld.in -DTARGET=/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader/ld/bootloader.ld "-DCFLAGS=-I\"/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader/config\" -I\"/home/juan/esp-idf/components/bootloader/subproject/main/ld\"" -P /home/juan/esp-idf/tools/cmake/linker_script_preprocessor.cmake
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir="/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Preprocessing linker script /home/juan/esp-idf/components/bootloader/subproject/main/ld/esp32/bootloader.ld.in -> /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader/ld/bootloader.ld"
+	/usr/bin/cmake -DCC=/home/juan/.espressif/tools/xtensa-esp-elf/esp-15.2.0_20250929/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc -DSOURCE=/home/juan/esp-idf/components/bootloader/subproject/main/ld/esp32/bootloader.ld.in "-DTARGET=/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader/ld/bootloader.ld" "-DCFLAGS=-I\"/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader/config\" -I\"/home/juan/esp-idf/components/bootloader/subproject/main/ld\"" -P /home/juan/esp-idf/tools/cmake/linker_script_preprocessor.cmake
 
 bootloader_ld_in_preprocess: CMakeFiles/bootloader_ld_in_preprocess
 bootloader_ld_in_preprocess: ld/bootloader.ld
@@ -87,6 +87,6 @@ CMakeFiles/bootloader_ld_in_preprocess.dir/clean:
 .PHONY : CMakeFiles/bootloader_ld_in_preprocess.dir/clean
 
 CMakeFiles/bootloader_ld_in_preprocess.dir/depend:
-	cd /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/juan/esp-idf/components/bootloader/subproject /home/juan/esp-idf/components/bootloader/subproject /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/bootloader/CMakeFiles/bootloader_ld_in_preprocess.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/juan/esp-idf/components/bootloader/subproject /home/juan/esp-idf/components/bootloader/subproject "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader" "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader" "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/bootloader/CMakeFiles/bootloader_ld_in_preprocess.dir/DependInfo.cmake" "--color=$(COLOR)"
 .PHONY : CMakeFiles/bootloader_ld_in_preprocess.dir/depend
 

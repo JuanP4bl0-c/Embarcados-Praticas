@@ -1,4 +1,4 @@
-/* * Data converted from /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/main/certs/AmazonRootCA1.pem
+/* * Data converted from /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/main/certs/AmazonRootCA1.pem
  * (null byte appended)
  */
 .data

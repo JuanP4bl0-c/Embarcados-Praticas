@@ -1,8 +1,0 @@
-Command: make -j 18 all
-/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/main/main.c:14:10: fatal error: dht.h: No such file or directory
-   14 | #include "dht.h"
-      |          ^~~~~~~
-compilation terminated.
-make[2]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/build.make:91: esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj] Erro 1
-make[1]: *** [CMakeFiles/Makefile2:5944: esp-idf/main/CMakeFiles/__idf_main.dir/all] Erro 2
-make: *** [Makefile:136: all] Erro 2

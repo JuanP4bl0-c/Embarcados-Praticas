@@ -8,9 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_ASM
-  "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/21799d82cb8e53178d50791a8bce841ab0132bdc3596a4350b798c0b5dc0925a-certificate.pem.crt.S" "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/esp-idf/main/CMakeFiles/__idf_main.dir/__/__/21799d82cb8e53178d50791a8bce841ab0132bdc3596a4350b798c0b5dc0925a-certificate.pem.crt.S.obj"
-  "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/21799d82cb8e53178d50791a8bce841ab0132bdc3596a4350b798c0b5dc0925a-private.pem.key.S" "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/esp-idf/main/CMakeFiles/__idf_main.dir/__/__/21799d82cb8e53178d50791a8bce841ab0132bdc3596a4350b798c0b5dc0925a-private.pem.key.S.obj"
-  "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/AmazonRootCA1.pem.S" "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/esp-idf/main/CMakeFiles/__idf_main.dir/__/__/AmazonRootCA1.pem.S.obj"
+  "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/86cf2f23eee12460caeaf6c97ae117032f556f433959a2bfd83039ab5fa3ae0c-certificate.pem.crt.S" "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/esp-idf/main/CMakeFiles/__idf_main.dir/__/__/86cf2f23eee12460caeaf6c97ae117032f556f433959a2bfd83039ab5fa3ae0c-certificate.pem.crt.S.obj"
+  "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/86cf2f23eee12460caeaf6c97ae117032f556f433959a2bfd83039ab5fa3ae0c-private.pem.key.S" "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/esp-idf/main/CMakeFiles/__idf_main.dir/__/__/86cf2f23eee12460caeaf6c97ae117032f556f433959a2bfd83039ab5fa3ae0c-private.pem.key.S.obj"
+  "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/AmazonRootCA1.pem.S" "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/esp-idf/main/CMakeFiles/__idf_main.dir/__/__/AmazonRootCA1.pem.S.obj"
   )
 set(CMAKE_ASM_COMPILER_ID "GNU")
 
@@ -30,7 +30,7 @@ set(CMAKE_TARGET_DEFINITIONS_ASM
 # The include file search paths:
 set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "config"
-  "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/main"
+  "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/main"
   "/home/juan/esp-idf/components/esp_libc/platform_include"
   "/home/juan/esp-idf/components/freertos/config/include"
   "/home/juan/esp-idf/components/freertos/config/include/freertos"
@@ -110,9 +110,11 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/main/main.c" "esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj" "gcc" "esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj.d"
-  "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/main/mqtt_manager.c" "esp-idf/main/CMakeFiles/__idf_main.dir/mqtt_manager.c.obj" "gcc" "esp-idf/main/CMakeFiles/__idf_main.dir/mqtt_manager.c.obj.d"
-  "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/main/wifi_manager.c" "esp-idf/main/CMakeFiles/__idf_main.dir/wifi_manager.c.obj" "gcc" "esp-idf/main/CMakeFiles/__idf_main.dir/wifi_manager.c.obj.d"
+  "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/main/dht11.c" "esp-idf/main/CMakeFiles/__idf_main.dir/dht11.c.obj" "gcc" "esp-idf/main/CMakeFiles/__idf_main.dir/dht11.c.obj.d"
+  "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/main/main.c" "esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj" "gcc" "esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj.d"
+  "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/main/mqtt_manager.c" "esp-idf/main/CMakeFiles/__idf_main.dir/mqtt_manager.c.obj" "gcc" "esp-idf/main/CMakeFiles/__idf_main.dir/mqtt_manager.c.obj.d"
+  "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/main/status_led.c" "esp-idf/main/CMakeFiles/__idf_main.dir/status_led.c.obj" "gcc" "esp-idf/main/CMakeFiles/__idf_main.dir/status_led.c.obj.d"
+  "/mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/main/wifi_manager.c" "esp-idf/main/CMakeFiles/__idf_main.dir/wifi_manager.c.obj" "gcc" "esp-idf/main/CMakeFiles/__idf_main.dir/wifi_manager.c.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

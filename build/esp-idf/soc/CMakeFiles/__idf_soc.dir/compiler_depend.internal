@@ -13,7 +13,7 @@ esp-idf/soc/CMakeFiles/__idf_soc.dir/dport_access_common.c.obj
  /home/juan/esp-idf/components/soc/esp32/include/soc/dport_access.h
  /home/juan/esp-idf/components/soc/esp32/include/soc/soc_caps.h
  /home/juan/esp-idf/components/soc/include/soc/soc_caps_eval.h
- /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/config/sdkconfig.h
+ /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/config/sdkconfig.h
 
 esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/adc_periph.c.obj
  /home/juan/esp-idf/components/soc/esp32/adc_periph.c
@@ -51,7 +51,7 @@ esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/adc_periph.c.obj
  /home/juan/esp-idf/components/soc/esp32/register/soc/reg_base.h
  /home/juan/esp-idf/components/soc/include/soc/adc_periph.h
  /home/juan/esp-idf/components/soc/include/soc/soc_caps_eval.h
- /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/config/sdkconfig.h
+ /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/config/sdkconfig.h
 
 esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/dac_periph.c.obj
  /home/juan/esp-idf/components/soc/esp32/dac_periph.c
@@ -65,7 +65,7 @@ esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/dac_periph.c.obj
  /home/juan/esp-idf/components/soc/esp32/include/soc/soc_caps.h
  /home/juan/esp-idf/components/soc/include/soc/dac_periph.h
  /home/juan/esp-idf/components/soc/include/soc/soc_caps_eval.h
- /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/config/sdkconfig.h
+ /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/config/sdkconfig.h
 
 esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/dport_access.c.obj
  /home/juan/esp-idf/components/soc/esp32/dport_access.c
@@ -80,7 +80,7 @@ esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/dport_access.c.obj
  /home/juan/esp-idf/components/soc/esp32/include/soc/dport_access.h
  /home/juan/esp-idf/components/soc/esp32/include/soc/soc_caps.h
  /home/juan/esp-idf/components/soc/include/soc/soc_caps_eval.h
- /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/config/sdkconfig.h
+ /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/config/sdkconfig.h
 
 esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/emac_periph.c.obj
  /home/juan/esp-idf/components/soc/esp32/emac_periph.c
@@ -120,7 +120,7 @@ esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/emac_periph.c.obj
  /home/juan/esp-idf/components/soc/esp32/register/soc/reg_base.h
  /home/juan/esp-idf/components/soc/include/soc/emac_periph.h
  /home/juan/esp-idf/components/soc/include/soc/soc_caps_eval.h
- /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/config/sdkconfig.h
+ /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/config/sdkconfig.h
 
 esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/gpio_periph.c.obj
  /home/juan/esp-idf/components/soc/esp32/gpio_periph.c
@@ -162,7 +162,7 @@ esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/gpio_periph.c.obj
  /home/juan/esp-idf/components/soc/esp32/register/soc/reg_base.h
  /home/juan/esp-idf/components/soc/include/soc/gpio_periph.h
  /home/juan/esp-idf/components/soc/include/soc/soc_caps_eval.h
- /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/config/sdkconfig.h
+ /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/config/sdkconfig.h
 
 esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/i2s_periph.c.obj
  /home/juan/esp-idf/components/soc/esp32/i2s_periph.c
@@ -204,7 +204,7 @@ esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/i2s_periph.c.obj
  /home/juan/esp-idf/components/soc/include/soc/i2s_periph.h
  /home/juan/esp-idf/components/soc/include/soc/regdma.h
  /home/juan/esp-idf/components/soc/include/soc/soc_caps_eval.h
- /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/config/sdkconfig.h
+ /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/config/sdkconfig.h
 
 esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/interrupts.c.obj
  /home/juan/esp-idf/components/soc/esp32/interrupts.c
@@ -255,7 +255,7 @@ esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/lcd_periph.c.obj
  /home/juan/esp-idf/components/soc/esp32/register/soc/reg_base.h
  /home/juan/esp-idf/components/soc/include/soc/lcd_periph.h
  /home/juan/esp-idf/components/soc/include/soc/soc_caps_eval.h
- /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/config/sdkconfig.h
+ /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/config/sdkconfig.h
 
 esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/ledc_periph.c.obj
  /home/juan/esp-idf/components/soc/esp32/ledc_periph.c
@@ -295,7 +295,7 @@ esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/ledc_periph.c.obj
  /home/juan/esp-idf/components/soc/esp32/register/soc/reg_base.h
  /home/juan/esp-idf/components/soc/include/soc/ledc_periph.h
  /home/juan/esp-idf/components/soc/include/soc/soc_caps_eval.h
- /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/config/sdkconfig.h
+ /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/config/sdkconfig.h
 
 esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/mcpwm_periph.c.obj
  /home/juan/esp-idf/components/soc/esp32/mcpwm_periph.c
@@ -335,7 +335,7 @@ esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/mcpwm_periph.c.obj
  /home/juan/esp-idf/components/soc/include/soc/mcpwm_periph.h
  /home/juan/esp-idf/components/soc/include/soc/regdma.h
  /home/juan/esp-idf/components/soc/include/soc/soc_caps_eval.h
- /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/config/sdkconfig.h
+ /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/config/sdkconfig.h
 
 esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/mpi_periph.c.obj
  /home/juan/esp-idf/components/soc/esp32/mpi_periph.c
@@ -373,7 +373,7 @@ esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/mpi_periph.c.obj
  /home/juan/esp-idf/components/soc/esp32/register/soc/reg_base.h
  /home/juan/esp-idf/components/soc/include/soc/mpi_periph.h
  /home/juan/esp-idf/components/soc/include/soc/soc_caps_eval.h
- /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/config/sdkconfig.h
+ /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/config/sdkconfig.h
 
 esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/pcnt_periph.c.obj
  /home/juan/esp-idf/components/soc/esp32/pcnt_periph.c
@@ -412,7 +412,7 @@ esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/pcnt_periph.c.obj
  /home/juan/esp-idf/components/soc/esp32/register/soc/reg_base.h
  /home/juan/esp-idf/components/soc/include/soc/pcnt_periph.h
  /home/juan/esp-idf/components/soc/include/soc/soc_caps_eval.h
- /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/config/sdkconfig.h
+ /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/config/sdkconfig.h
 
 esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/power_supply_periph.c.obj
  /home/juan/esp-idf/components/soc/esp32/power_supply_periph.c
@@ -464,7 +464,7 @@ esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/rmt_periph.c.obj
  /home/juan/esp-idf/components/soc/include/soc/regdma.h
  /home/juan/esp-idf/components/soc/include/soc/rmt_periph.h
  /home/juan/esp-idf/components/soc/include/soc/soc_caps_eval.h
- /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/config/sdkconfig.h
+ /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/config/sdkconfig.h
 
 esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/rtc_io_periph.c.obj
  /home/juan/esp-idf/components/soc/esp32/rtc_io_periph.c
@@ -509,7 +509,7 @@ esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/rtc_io_periph.c.obj
  /home/juan/esp-idf/components/soc/include/soc/rtc_io_periph.h
  /home/juan/esp-idf/components/soc/include/soc/rtc_periph.h
  /home/juan/esp-idf/components/soc/include/soc/soc_caps_eval.h
- /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/config/sdkconfig.h
+ /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/config/sdkconfig.h
 
 esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/sdio_slave_periph.c.obj
  /home/juan/esp-idf/components/soc/esp32/sdio_slave_periph.c
@@ -562,7 +562,7 @@ esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/sdio_slave_periph.c.obj
  /home/juan/esp-idf/components/soc/include/soc/gpio_periph.h
  /home/juan/esp-idf/components/soc/include/soc/sdio_slave_periph.h
  /home/juan/esp-idf/components/soc/include/soc/soc_caps_eval.h
- /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/config/sdkconfig.h
+ /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/config/sdkconfig.h
 
 esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/sdm_periph.c.obj
  /home/juan/esp-idf/components/soc/esp32/sdm_periph.c
@@ -600,7 +600,7 @@ esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/sdm_periph.c.obj
  /home/juan/esp-idf/components/soc/include/soc/regdma.h
  /home/juan/esp-idf/components/soc/include/soc/sdm_periph.h
  /home/juan/esp-idf/components/soc/include/soc/soc_caps_eval.h
- /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/config/sdkconfig.h
+ /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/config/sdkconfig.h
 
 esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/sdmmc_periph.c.obj
  /home/juan/esp-idf/components/soc/esp32/sdmmc_periph.c
@@ -646,7 +646,7 @@ esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/sdmmc_periph.c.obj
  /home/juan/esp-idf/components/soc/esp32/register/soc/sdmmc_struct.h
  /home/juan/esp-idf/components/soc/include/soc/sdmmc_periph.h
  /home/juan/esp-idf/components/soc/include/soc/soc_caps_eval.h
- /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/config/sdkconfig.h
+ /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/config/sdkconfig.h
 
 esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/spi_periph.c.obj
  /home/juan/esp-idf/components/soc/esp32/spi_periph.c
@@ -687,7 +687,7 @@ esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/spi_periph.c.obj
  /home/juan/esp-idf/components/soc/esp32/register/soc/spi_struct.h
  /home/juan/esp-idf/components/soc/include/soc/soc_caps_eval.h
  /home/juan/esp-idf/components/soc/include/soc/spi_periph.h
- /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/config/sdkconfig.h
+ /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/config/sdkconfig.h
 
 esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/touch_sensor_periph.c.obj
  /home/juan/esp-idf/components/soc/esp32/touch_sensor_periph.c
@@ -730,7 +730,7 @@ esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/twai_periph.c.obj
  /home/juan/esp-idf/components/soc/esp32/register/soc/reg_base.h
  /home/juan/esp-idf/components/soc/include/soc/soc_caps_eval.h
  /home/juan/esp-idf/components/soc/include/soc/twai_periph.h
- /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/config/sdkconfig.h
+ /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/config/sdkconfig.h
 
 esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/uart_periph.c.obj
  /home/juan/esp-idf/components/soc/esp32/uart_periph.c
@@ -772,7 +772,7 @@ esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/uart_periph.c.obj
  /home/juan/esp-idf/components/soc/esp32/register/soc/uart_struct.h
  /home/juan/esp-idf/components/soc/include/soc/soc_caps_eval.h
  /home/juan/esp-idf/components/soc/include/soc/uart_periph.h
- /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/idf/AWS_Wifi/build/config/sdkconfig.h
+ /mnt/42849DD9849DCFB1/ufc/2025.2/Embarcados/esp32/Projeto estufa Inteligente com MQTT WIP/Projeto/build/config/sdkconfig.h
 
 esp-idf/soc/CMakeFiles/__idf_soc.dir/lldesc.c.obj
  /home/juan/esp-idf/components/soc/lldesc.c
