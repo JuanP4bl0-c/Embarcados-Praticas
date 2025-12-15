@@ -1,4 +1,5 @@
 #include "mqtt_manager.h"
+#include "plant_config.h"
 #include "esp_log.h"
 #include <string.h>
 
@@ -15,27 +16,31 @@ static void mqtt_event_handler(void *handler_args, esp_event_base_t base, int32_
     switch ((esp_mqtt_event_id_t)event_id) {
 
     case MQTT_EVENT_CONNECTED:
-        ESP_LOGI(TAG, "✅ MQTT_EVENT_CONNECTED - Conectado ao AWS IoT!");
+        ESP_LOGI(TAG, "MQTT_EVENT_CONNECTED - Conectado ao AWS IoT!");
         mqtt_connected = true;
         break;
 
     case MQTT_EVENT_DATA:
-        ESP_LOGI(TAG, "📩 MQTT_EVENT_DATA");
+        ESP_LOGI(TAG, "MQTT_EVENT_DATA");
         ESP_LOGI(TAG, "Tópico: %.*s", event->topic_len, event->topic);
         ESP_LOGI(TAG, "Dados: %.*s", event->data_len, event->data);
 
+        // Chama o handler da configuração da planta
+        plant_config_mqtt_handler(handler_args, base, event_id, event_data);
+        
+        // Chama o handler customizado (solenoid)
         if (custom_handler != NULL) {
             custom_handler(handler_args, base, event_id, event_data);
         }
         break;
 
     case MQTT_EVENT_DISCONNECTED:
-        ESP_LOGW(TAG, "⚠️ MQTT_EVENT_DISCONNECTED");
+        ESP_LOGW(TAG, "MQTT_EVENT_DISCONNECTED");
         mqtt_connected = false;
         break;
 
     case MQTT_EVENT_ERROR:
-        ESP_LOGE(TAG, "❌ MQTT_EVENT_ERROR");
+        ESP_LOGE(TAG, "MQTT_EVENT_ERROR");
 
         if (event->error_handle) {
             if (event->error_handle->error_type == MQTT_ERROR_TYPE_TCP_TRANSPORT) {
@@ -46,7 +51,7 @@ static void mqtt_event_handler(void *handler_args, esp_event_base_t base, int32_
                 
                 // Decodificar erro ESP-TLS
                 if (event->error_handle->esp_tls_last_esp_err == 0x8006) {
-                    ESP_LOGE(TAG, "   ⚠️ ESP_ERR_ESP_TLS_CONNECTION_TIMEOUT");
+                    ESP_LOGE(TAG, "   ESP_ERR_ESP_TLS_CONNECTION_TIMEOUT");
                     ESP_LOGE(TAG, "   Causa: Timeout ao conectar TLS - verifique:");
                     ESP_LOGE(TAG, "   • Conexão de internet está funcionando?");
                     ESP_LOGE(TAG, "   • Porta 8883 está acessível?");
@@ -58,18 +63,11 @@ static void mqtt_event_handler(void *handler_args, esp_event_base_t base, int32_
             }
         }
 
-        ESP_LOGE(TAG, "🔎 Possíveis causas:");
-        ESP_LOGE(TAG, "   • Client ID diferente do permitido pela policy");
-        ESP_LOGE(TAG, "   • Certificado não anexado ao Thing");
-        ESP_LOGE(TAG, "   • Certificado inativo ou expirado");
-        ESP_LOGE(TAG, "   • Endpoint incorreto");
-        ESP_LOGE(TAG, "   • Subscribe ou Publish em tópico não autorizado");
-
         mqtt_connected = false;
         break;
 
     default:
-        ESP_LOGI(TAG, "🔔 Evento MQTT ID: %d", event_id);
+        ESP_LOGI(TAG, "Evento MQTT ID: %d", event_id);
         break;
     }
 }
@@ -90,19 +88,19 @@ void mqtt_manager_start(const char *endpoint, const char *client_id,
     ESP_LOGI(TAG, "══════════════════════════════════════════════");
     ESP_LOGI(TAG, "            CONFIGURANDO MQTT AWS IoT          ");
     ESP_LOGI(TAG, "══════════════════════════════════════════════");
-    ESP_LOGI(TAG, "🌐 URL: %s", mqtt_url);
-    ESP_LOGI(TAG, "🔐 Client ID: %s", client_id);
-    ESP_LOGI(TAG, "🔑 Root CA: %p", root_ca);
-    ESP_LOGI(TAG, "🔑 Cert:    %p", device_cert);
-    ESP_LOGI(TAG, "🔑 Key:     %p", device_key);
+    ESP_LOGI(TAG, "URL: %s", mqtt_url);
+    ESP_LOGI(TAG, "Client ID: %s", client_id);
+    ESP_LOGI(TAG, "Root CA: %p", root_ca);
+    ESP_LOGI(TAG, "Cert:    %p", device_cert);
+    ESP_LOGI(TAG, "Key:     %p", device_key);
     
     // Log tamanho dos certificados para debug
-    ESP_LOGI(TAG, "📏 Tamanho Root CA: ~%d bytes", strlen((const char *)root_ca));
-    ESP_LOGI(TAG, "📏 Tamanho Cert: ~%d bytes", strlen((const char *)device_cert));
-    ESP_LOGI(TAG, "📏 Tamanho Key: ~%d bytes", strlen((const char *)device_key));
+    ESP_LOGI(TAG, "Tamanho Root CA: ~%d bytes", strlen((const char *)root_ca));
+    ESP_LOGI(TAG, "Tamanho Cert: ~%d bytes", strlen((const char *)device_cert));
+    ESP_LOGI(TAG, "Tamanho Key: ~%d bytes", strlen((const char *)device_key));
 
     if (!root_ca || !device_cert || !device_key) {
-        ESP_LOGE(TAG, "❌ Certificados ausentes! MQTT NÃO pode iniciar.");
+        ESP_LOGE(TAG, "Certificados ausentes! MQTT NÃO pode iniciar.");
         *out_client = NULL;
         return;
     }
@@ -139,15 +137,15 @@ void mqtt_manager_start(const char *endpoint, const char *client_id,
 
     esp_mqtt_client_handle_t client = esp_mqtt_client_init(&mqtt_cfg);
     if (client == NULL) {
-        ESP_LOGE(TAG, "❌ Falha ao inicializar cliente MQTT");
+        ESP_LOGE(TAG, "Falha ao inicializar cliente MQTT");
         *out_client = NULL;
         return;
     }
 
-    ESP_LOGI(TAG, "✅ Cliente MQTT inicializado");
+    ESP_LOGI(TAG, "Cliente MQTT inicializado");
     ESP_ERROR_CHECK(esp_mqtt_client_register_event(client, ESP_EVENT_ANY_ID, mqtt_event_handler, NULL));
 
-    ESP_LOGI(TAG, "🚀 Iniciando cliente MQTT...");
+    ESP_LOGI(TAG, "Iniciando cliente MQTT...");
     ESP_ERROR_CHECK(esp_mqtt_client_start(client));
 
     *out_client = client;
