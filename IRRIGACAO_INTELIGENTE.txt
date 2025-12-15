@@ -1,0 +1,441 @@
+# Sistema de Irrigação Inteligente e Monitoramento de Cultivo
+
+## 📋 Visão Geral
+
+O sistema foi expandido para incluir **irrigação automática inteligente** baseada em parâmetros ideais de cultivo configuráveis. Agora o ESP32 não apenas monitora os sensores, mas também toma decisões automatizadas para garantir condições ótimas para o crescimento da planta.
+
+## 🌱 Parâmetros de Cultivo (Padrão: Tomate)
+
+O sistema está pré-configurado com valores ideais para cultivo de **tomate**:
+
+### Temperatura
+- **Mínima:** 18°C
+- **Máxima:** 28°C
+
+### Umidade do Ar
+- **Mínima:** 60%
+- **Máxima:** 80%
+
+### Umidade do Solo
+- **Mínima:** 60%
+- **Máxima:** 80%
+
+### Exposição UV
+- **Mínima:** 30%
+- **Máxima:** 70%
+
+### Irrigação
+- **Limiar:** 25% abaixo do ideal
+- **Modo:** Automático (ativado por padrão)
+- **Duração:** 10 segundos por ciclo
+
+## 🚰 Como Funciona a Irrigação Automática
+
+### Lógica de Ativação
+
+```
+Umidade Atual < (Umidade Mínima - Limiar)
+      ↓
+60% (atual) < (60% - 25%) = 35%
+      ↓
+   IRRIGA!
+```
+
+### Fluxo de Operação
+
+1. **Monitoramento contínuo:** A cada 20 segundos, o sensor de umidade do solo lê o valor
+2. **Verificação:** O sistema compara com o limiar configurado
+3. **Decisão:** Se umidade < (ideal_min - 25%), aciona irrigação
+4. **Ação:** 
+   - Liga o solenoide (GPIO 26)
+   - Publica alerta no MQTT (`esp32/alerts`)
+   - Mantém por 10 segundos
+   - Desliga o solenoide
+5. **Notificação:** Registra no log e avisa via MQTT
+
+### Exemplo de Alerta Automático
+
+```json
+{
+  "device_id": "ESP32_Client",
+  "type": "auto_irrigation",
+  "moisture": 32,
+  "threshold": 35,
+  "timestamp": 1234567890
+}
+```
+
+## 📡 Novos Tópicos MQTT
+
+### `esp32/config` (Recepção)
+
+**Função:** Atualizar remotamente os parâmetros de cultivo
+
+**Formato de mensagem:**
+
+```json
+{
+  "temperature_min": 20,
+  "temperature_max": 28,
+  "humidity_min": 65,
+  "humidity_max": 75,
+  "soil_moisture_min": 55,
+  "soil_moisture_max": 75,
+  "uv_min": 25,
+  "uv_max": 65,
+  "irrigation_threshold": 30,
+  "auto_irrigation": true
+}
+```
+
+**Exemplo de uso (AWS IoT Test):**
+
+```bash
+# Tópico: esp32/config
+
+# Mudar limiar de irrigação para 30%
+{"irrigation_threshold": 30}
+
+# Desativar irrigação automática
+{"auto_irrigation": false}
+
+# Atualizar faixa ideal de temperatura
+{"temperature_min": 22, "temperature_max": 26}
+
+# Atualizar múltiplos parâmetros
+{
+  "soil_moisture_min": 70,
+  "soil_moisture_max": 85,
+  "irrigation_threshold": 20
+}
+```
+
+### `esp32/alerts` (Publicação)
+
+**Função:** Notificar quando parâmetros estão fora do ideal ou quando irrigação é acionada
+
+**Tipos de alertas:**
+
+1. **Irrigação Automática**
+```json
+{
+  "device_id": "ESP32_Client",
+  "type": "auto_irrigation",
+  "moisture": 30,
+  "threshold": 35,
+  "timestamp": 1234567890
+}
+```
+
+2. **Temperatura Baixa**
+```json
+{
+  "alerts": [{
+    "type": "temp_low",
+    "value": 15,
+    "min": 18
+  }]
+}
+```
+
+3. **Múltiplos Alertas**
+```json
+{
+  "alerts": [
+    {"type": "temp_high", "value": 32, "max": 28},
+    {"type": "humidity_low", "value": 45, "min": 60},
+    {"type": "soil_low", "value": 40, "min": 60}
+  ]
+}
+```
+
+## 🧪 Como Testar o Sistema
+
+### 1. Monitorar a Configuração Atual
+
+Ao iniciar o ESP32, o log mostrará:
+
+```
+═══════════════════════════════════════════════
+   🌱 Configuração Ideal da Planta (Tomate) 🌱  
+═══════════════════════════════════════════════
+🌡️  Temperatura: 18°C - 28°C
+💨 Umidade Ar:  60% - 80%
+💧 Umidade Solo: 60% - 80%
+☀️  Exposição UV: 30% - 70%
+🚰 Irrigação automática: ATIVADA (limiar: -25%)
+═══════════════════════════════════════════════
+```
+
+### 2. Simular Solo Seco
+
+**Opção A: Remover sensor do solo**
+- Sensor fora do solo = leitura alta (seco)
+- Umidade calculada ficará abaixo de 35%
+- Sistema automaticamente acionará irrigação
+
+**Opção B: Ajustar limiar via MQTT**
+```bash
+# Publicar em: esp32/config
+{"irrigation_threshold": 50}
+```
+- Agora irriga quando: umidade < 10% (60% - 50%)
+
+### 3. Verificar Irrigação no Monitor Serial
+
+```
+I (xxxxx) SOIL_MOISTURE: 📤 Publicado [msg_id=123]: {"moisture_percent":32,...}
+W (xxxxx) SOIL_MOISTURE: ⚠️  IRRIGAÇÃO NECESSÁRIA!
+W (xxxxx) SOIL_MOISTURE:    Umidade atual: 32%
+W (xxxxx) SOIL_MOISTURE:    Limiar: 35% (ideal: 60% - 25%)
+W (xxxxx) SOIL_MOISTURE: 🚰 Acionando irrigação automática!
+I (xxxxx) SOLENOID: 🟢 Solenoide LIGADO (GPIO 26 = HIGH)
+... (10 segundos) ...
+I (xxxxx) SOLENOID: 🔴 Solenoide DESLIGADO (GPIO 26 = LOW)
+I (xxxxx) SOIL_MOISTURE: ✅ Irrigação automática concluída
+```
+
+### 4. Testar Atualização Remota de Configuração
+
+**No AWS IoT Console → Test:**
+
+```bash
+# Publicar para: esp32/config
+
+# Teste 1: Mudar para cultivo de alface
+{
+  "temperature_min": 15,
+  "temperature_max": 22,
+  "humidity_min": 70,
+  "humidity_max": 85,
+  "soil_moisture_min": 70,
+  "soil_moisture_max": 85,
+  "uv_min": 20,
+  "uv_max": 50,
+  "irrigation_threshold": 20
+}
+
+# Teste 2: Desativar auto-irrigação
+{"auto_irrigation": false}
+
+# Teste 3: Apenas ajustar limiar
+{"irrigation_threshold": 15}
+```
+
+### 5. Monitorar Alertas
+
+**Subscrever em:** `esp32/alerts`
+
+Você receberá notificações quando:
+- Irrigação for acionada automaticamente
+- Temperatura sair da faixa ideal
+- Umidade do ar fora do ideal
+- Umidade do solo crítica
+- Exposição UV inadequada
+
+## 🔧 Parâmetros por Tipo de Planta
+
+### Tomate (Padrão)
+```json
+{
+  "temperature_min": 18, "temperature_max": 28,
+  "humidity_min": 60, "humidity_max": 80,
+  "soil_moisture_min": 60, "soil_moisture_max": 80,
+  "uv_min": 30, "uv_max": 70,
+  "irrigation_threshold": 25
+}
+```
+
+### Alface
+```json
+{
+  "temperature_min": 15, "temperature_max": 22,
+  "humidity_min": 70, "humidity_max": 85,
+  "soil_moisture_min": 70, "soil_moisture_max": 85,
+  "uv_min": 20, "uv_max": 50,
+  "irrigation_threshold": 20
+}
+```
+
+### Pimentão
+```json
+{
+  "temperature_min": 20, "temperature_max": 30,
+  "humidity_min": 60, "humidity_max": 75,
+  "soil_moisture_min": 65, "soil_moisture_max": 80,
+  "uv_min": 35, "uv_max": 75,
+  "irrigation_threshold": 25
+}
+```
+
+### Manjericão
+```json
+{
+  "temperature_min": 18, "temperature_max": 25,
+  "humidity_min": 50, "humidity_max": 70,
+  "soil_moisture_min": 60, "soil_moisture_max": 75,
+  "uv_min": 40, "uv_max": 80,
+  "irrigation_threshold": 20
+}
+```
+
+## 📊 Arquitetura do Sistema
+
+```
+┌──────────────────────────────────────────────────┐
+│              ESP32 - Estufa Inteligente          │
+└──────────────────────────────────────────────────┘
+                       │
+        ┌──────────────┼──────────────┐
+        │              │              │
+        ▼              ▼              ▼
+   Sensores      Configuração     Atuadores
+        │              │              │
+  ┌─────┴─────┐  ┌────┴────┐   ┌─────┴─────┐
+  │ UV Sensor │  │ Plant   │   │ Solenoide │
+  │ DHT11     │  │ Config  │   │ (GPIO 26) │
+  │ Umid.Solo │  │ Manager │   └───────────┘
+  └───────────┘  └─────────┘
+        │              │              
+        └──────┬───────┘              
+               ▼                      
+         ┌──────────┐                
+         │   MQTT   │                
+         │  Broker  │                
+         └────┬─────┘                
+              │                      
+      ┌───────┴────────┐             
+      ▼                ▼             
+ esp32/config    esp32/alerts        
+ (recebe)        (publica)           
+      │                │             
+      └────────────────┘             
+            │                        
+            ▼                        
+    ┌──────────────┐                
+    │ Lógica Auto  │                
+    │   Irrigação  │                
+    └──────────────┘                
+```
+
+## 🔍 Verificação de Funcionamento
+
+### Checklist de Teste
+
+- [ ] Sistema inicia e mostra configuração padrão
+- [ ] Sensores publicam dados nos tópicos corretos
+- [ ] Subscrição em `esp32/config` ativa
+- [ ] Publicação de configuração atual ao conectar
+- [ ] Teste manual de irrigação via `esp32/solenoid`
+- [ ] Teste de solo seco aciona irrigação automática
+- [ ] Alerta publicado em `esp32/alerts` durante irrigação
+- [ ] Atualização remota via `esp32/config` funciona
+- [ ] Log mostra nova configuração após atualização
+- [ ] Desativação de auto-irrigação via MQTT funciona
+
+### Comandos de Teste Rápido
+
+```bash
+# 1. Ver configuração atual no log
+idf.py monitor
+
+# 2. No AWS IoT Test, subscrever:
+esp32/alerts
+esp32/config
+esp32/soil_moisture
+
+# 3. Publicar teste de irrigação manual:
+# Tópico: esp32/solenoid
+{"state": true}
+
+# 4. Aguardar 5 segundos, desligar:
+{"state": false}
+
+# 5. Testar auto-irrigação ajustando limiar:
+# Tópico: esp32/config
+{"irrigation_threshold": 80}
+# Com limiar alto, próxima leitura acionará irrigação
+```
+
+## 🚨 Troubleshooting
+
+### Irrigação não aciona automaticamente
+
+**Possíveis causas:**
+1. `auto_irrigation` está desativado
+   - Solução: `{"auto_irrigation": true}` em `esp32/config`
+
+2. Umidade não está abaixo do limiar
+   - Verificar: Log mostra valor de umidade
+   - Solução: Ajustar limiar ou simular solo seco
+
+3. MQTT desconectado
+   - Verificar: Log mostra "MQTT não conectado"
+   - Solução: Verificar WiFi e certificados
+
+### Configuração não atualiza via MQTT
+
+**Possíveis causas:**
+1. Não subscreveu em `esp32/config`
+   - Verificar: Log deve mostrar "Subscribed: esp32/config"
+   - Solução: Reiniciar ESP32
+
+2. JSON malformado
+   - Verificar: Usar validador JSON online
+   - Solução: Corrigir sintaxe
+
+3. Policy não permite publicação
+   - Verificar: Erro "CONNECTION_REFUSED" no log
+   - Solução: Atualizar policy AWS IoT
+
+### Alertas não aparecem no MQTT
+
+**Possíveis causas:**
+1. Nenhum parâmetro fora do ideal
+   - Normal: Alertas só aparecem quando há problema
+
+2. Não subscreveu em `esp32/alerts`
+   - Solução: Subscrever no AWS IoT Test
+
+3. Auto-irrigação desativada
+   - Alertas de irrigação só aparecem se `auto_irrigation: true`
+
+## 📝 Notas de Implementação
+
+### Decisões de Design
+
+1. **Parse JSON simples:** Usa `sscanf` e `strstr` ao invés de biblioteca pesada (cJSON)
+2. **Irrigação bloqueante:** Durante os 10s de irrigação, a task fica em delay
+3. **Valores padrão:** Tomate foi escolhido como planta padrão
+4. **Limiar percentual:** Facilita ajuste sem recalcular valores absolutos
+
+### Limitações Conhecidas
+
+1. **Parse JSON simplificado:** Não valida estrutura completa
+2. **Sem persistência:** Configuração volta ao padrão após reiniciar
+3. **Irrigação única:** Não há controle de vazão ou volume total
+4. **Sem histórico:** Não armazena dados de irrigações anteriores
+
+### Melhorias Futuras
+
+- [ ] Salvar configuração na NVS (persistir após reboot)
+- [ ] Controle de volume de água irrigado
+- [ ] Agendamento de irrigação (horários específicos)
+- [ ] Logs de eventos (histórico de irrigações)
+- [ ] Dashboard web para visualização
+- [ ] Notificações push quando parâmetros críticos
+- [ ] Machine Learning para otimizar parâmetros
+- [ ] Controle de múltiplos setores/plantas
+
+## 📚 Referências
+
+- [Guia de Cultivo de Tomate](https://www.embrapa.br)
+- [ESP-IDF MQTT Documentation](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/protocols/mqtt.html)
+- [AWS IoT Core Documentation](https://docs.aws.amazon.com/iot/latest/developerguide/)
+- [Irrigação Inteligente - Conceitos](https://www.fao.org/land-water/water/en/)
+
+---
+
+**Versão do Sistema:** 2.0  
+**Data de Atualização:** 2025  
+**Arquitetura:** Modular com irrigação automática inteligente
