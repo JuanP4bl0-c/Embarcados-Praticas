@@ -111,10 +111,11 @@ void app_main(void)
     }
 
 
-    // DHT11 precisa de maior prioridade devido ao timing crítico
-    xTaskCreate(dht11_sensor_task, "dht11_task", 4096, (void*)client, 6, NULL);
-    xTaskCreate(uv_sensor_task, "uv_task", 4096, (void*)client, 3, NULL);
-    xTaskCreate(soil_moisture_task, "soil_task", 4096, (void*)client, 3, NULL);
+    // DHT11 no Core 1 (isolado do WiFi/MQTT) com maior prioridade
+    xTaskCreatePinnedToCore(dht11_sensor_task, "dht11_task", 4096, (void*)client, 6, NULL, 1);
+    // Outras tasks no Core 0 (com WiFi/MQTT)
+    xTaskCreatePinnedToCore(uv_sensor_task, "uv_task", 4096, (void*)client, 3, NULL, 0);
+    xTaskCreatePinnedToCore(soil_moisture_task, "soil_task", 4096, (void*)client, 3, NULL, 0);
 
     ESP_LOGI(TAG, "Sistema iniciado com sucesso!");
 

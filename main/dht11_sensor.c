@@ -59,7 +59,7 @@ esp_err_t dht11_sensor_read(int16_t *humidity, int16_t *temperature)
     // ====== SINAL DE START ======
     gpio_set_direction(DHT11_GPIO, GPIO_MODE_OUTPUT);
     gpio_set_level(DHT11_GPIO, 0);
-    vTaskDelay(pdMS_TO_TICKS(20));  // 20ms LOW
+    vTaskDelay(pdMS_TO_TICKS(20));  // 20ms LOW para acordar o sensor
     
     // Desabilita interrupções SOMENTE durante a comunicação rápida
     taskDISABLE_INTERRUPTS();
@@ -67,6 +67,7 @@ esp_err_t dht11_sensor_read(int16_t *humidity, int16_t *temperature)
     gpio_set_level(DHT11_GPIO, 1);
     ets_delay_us(40);  // 40us HIGH
     gpio_set_direction(DHT11_GPIO, GPIO_MODE_INPUT);
+    ets_delay_us(10);  // Pequeno delay para estabilizar o pino
     
     // ====== AGUARDA RESPOSTA ======
     // Espera sensor puxar LOW
@@ -107,35 +108,38 @@ esp_err_t dht11_sensor_read(int16_t *humidity, int16_t *temperature)
     
     // ====== LÊ 40 BITS ======
     for (int i = 0; i < 40; i++) {
-        // Espera LOW terminar
+        // Espera LOW terminar (início do bit)
         timeout = 0;
         while (gpio_get_level(DHT11_GPIO) == 0) {
-            if (++timeout > 150) {  // Aumentado de 100 para 150
+            ets_delay_us(1);
+            if (++timeout > 200) {  // Timeout generoso
                 taskENABLE_INTERRUPTS();
                 xSemaphoreGive(dht11_mutex);
-                ESP_LOGW(TAG, "Timeout bit %d (LOW)", i);
+                ESP_LOGW(TAG, "Timeout bit %d LOW (após %dus)", i, timeout);
                 return ESP_FAIL;
             }
-            ets_delay_us(1);
         }
         
-        // Mede duração do HIGH
+        // Mede duração do pulso HIGH
         uint32_t high_count = 0;
         while (gpio_get_level(DHT11_GPIO) == 1) {
-            if (++high_count > 250) {  // Aumentado de 200 para 250
+            ets_delay_us(1);
+            high_count++;
+            if (high_count > 300) {  // Timeout muito generoso para último bit
                 taskENABLE_INTERRUPTS();
                 xSemaphoreGive(dht11_mutex);
-                ESP_LOGW(TAG, "Timeout bit %d (HIGH)", i);
+                ESP_LOGW(TAG, "Timeout bit %d HIGH (após %dus)", i, high_count);
                 return ESP_FAIL;
             }
-            ets_delay_us(1);
         }
         
-        // Bit 1 se HIGH > 40us, senão bit 0
+        // DHT11: ~26-28us = '0', ~70us = '1'
+        // Usando 40us como threshold
         if (high_count > 40) {
             bits[idx] |= (1 << cnt);
         }
         
+        // Próximo bit
         if (cnt == 0) {
             cnt = 7;
             idx++;
@@ -173,10 +177,11 @@ void dht11_sensor_task(void *pvParameters)
     char message[256];
     int counter = 0;
     
-    ESP_LOGI(TAG, "Task do sensor DHT11 iniciada");
+    ESP_LOGI(TAG, "Task do sensor DHT11 iniciada no Core %d", xPortGetCoreID());
     
-    // Aguarda inicialização
-    vTaskDelay(pdMS_TO_TICKS(5000));
+    // Aguarda inicialização e estabilização do sensor
+    // DHT11 precisa de ~1s após ligar para estabilizar
+    vTaskDelay(pdMS_TO_TICKS(10000));
     
     while (1) {
         if (mqtt_connected && client != NULL) {
