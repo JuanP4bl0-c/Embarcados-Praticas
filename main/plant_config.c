@@ -3,6 +3,8 @@
 #include "solenoid.h"
 #include <string.h>
 #include <stdio.h>
+#include <time.h>
+#include <sys/time.h>
 
 static const char *TAG = "PLANT_CONFIG";
 
@@ -259,21 +261,34 @@ void plant_config_mqtt_handler(void *handler_args, esp_event_base_t base,int32_t
 void plant_config_publish(esp_mqtt_client_handle_t client){
     if (client == NULL) return;
     
-    char message[512];
+    // Obtém timestamp Unix em segundos e converte para milissegundos
+    time_t now;
+    time(&now);
+    int64_t timestamp_ms = (int64_t)now * 1000;
+    
+    // Obtém horário formatado
+    struct tm timeinfo;
+    localtime_r(&now, &timeinfo);
+    char time_str[64];
+    strftime(time_str, sizeof(time_str), "%Y-%m-%d %H:%M:%S", &timeinfo);
+    
+    char message[768];
     snprintf(message, sizeof(message),
         "{\"device_id\":\"ESP32_Client\","
         "\"temperature_min\":%d,\"temperature_max\":%d,"
         "\"humidity_min\":%d,\"humidity_max\":%d,"
         "\"soil_moisture_min\":%d,\"soil_moisture_max\":%d,"
         "\"uv_min\":%d,\"uv_max\":%d,"
-        "\"irrigation_threshold\":%d,\"auto_irrigation\":%s}",
+        "\"irrigation_threshold\":%d,\"auto_irrigation\":%s,"
+        "\"timestamp\":%lld,\"datetime\":\"%s\",\"event\":\"system_init\"}",
         plant_config.temperature_min, plant_config.temperature_max,
         plant_config.humidity_min, plant_config.humidity_max,
         plant_config.soil_moisture_min, plant_config.soil_moisture_max,
         plant_config.uv_min, plant_config.uv_max,
         plant_config.irrigation_threshold,
-        plant_config.auto_irrigation ? "true" : "false");
+        plant_config.auto_irrigation ? "true" : "false",
+        timestamp_ms, time_str);
     
     esp_mqtt_client_publish(client, TOPIC_PLANT_CONFIG, message, 0, 1, 0);
-    ESP_LOGI(TAG, "Configuração publicada");
+    ESP_LOGI(TAG, "Configuração publicada [%s]", time_str);
 }
