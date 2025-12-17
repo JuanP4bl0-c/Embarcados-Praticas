@@ -8,7 +8,7 @@ Planejamento do código:
 
 3 - Gerenciamento de energia para baixo consumo (em andamento)
 
-4 - Implementação do Banco de Dados
+4 - Implementação do Banco de Dados (em andamento)
 
 5 - Implementação da comunicação com o protocolo MQQT
 
