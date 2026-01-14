@@ -24,6 +24,7 @@
 #include "plant_config.h"
 #include "ntp_sync.h"
 #include "system_commands.h"
+#include "power_manager.h"
 
 
 // #define WIFI_SSID "UFC_QUIXADA"
@@ -85,10 +86,6 @@ void app_main(void)
     // Registra função customizada para piscar LEDs a cada log
     esp_log_set_vprintf(custom_vprintf);
     
-    ESP_LOGI(TAG, "🚀 Sistema iniciando...");
-    ESP_LOGI(TAG, "💡 LED embutido habilitado no GPIO %d", BUILTIN_LED_GPIO);
-    ESP_LOGI(TAG, "💡 LED externo habilitado no GPIO %d (D4)", EXTERNAL_LED_GPIO);
-
     esp_err_t ret = nvs_flash_init();
     if (ret == ESP_ERR_NVS_NO_FREE_PAGES || ret == ESP_ERR_NVS_NEW_VERSION_FOUND) {
         ESP_ERROR_CHECK(nvs_flash_erase());
@@ -134,6 +131,9 @@ void app_main(void)
     
     // Inicializa sistema de comandos
     system_commands_init();
+    
+    // Inicializa gerenciamento de energia
+    power_manager_init();
     
     plant_config_init();
     

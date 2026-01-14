@@ -24,13 +24,13 @@ static plant_config_t plant_config = {
 void plant_config_init(void){
 
     ESP_LOGI(TAG, "═══════════════════════════════════════════════");
-    ESP_LOGI(TAG, "   🌱 Configuração Ideal da Planta (Tomate) 🌱 ");
+    ESP_LOGI(TAG, "   Configuração Ideal da Planta (Tomate)");
     ESP_LOGI(TAG, "═══════════════════════════════════════════════");
-    ESP_LOGI(TAG, "🌡️  Temperatura: %d°C - %d°C",plant_config.temperature_min, plant_config.temperature_max);
-    ESP_LOGI(TAG, "💨 Umidade Ar:  %d%% - %d%%",plant_config.humidity_min, plant_config.humidity_max);
-    ESP_LOGI(TAG, "💧 Umidade Solo: %d%% - %d%%",plant_config.soil_moisture_min, plant_config.soil_moisture_max);
-    ESP_LOGI(TAG, "☀️  Exposição UV: %d%% - %d%%",plant_config.uv_min, plant_config.uv_max);
-    ESP_LOGI(TAG, "🚰 Irrigação automática: %s (limiar: -%d%%)",plant_config.auto_irrigation ? "ATIVADA" : "DESATIVADA",plant_config.irrigation_threshold);
+    ESP_LOGI(TAG, "Temperatura: %d°C - %d°C",plant_config.temperature_min, plant_config.temperature_max);
+    ESP_LOGI(TAG, "Umidade Ar:  %d%% - %d%%",plant_config.humidity_min, plant_config.humidity_max);
+    ESP_LOGI(TAG, "Umidade Solo: %d%% - %d%%",plant_config.soil_moisture_min, plant_config.soil_moisture_max);
+    ESP_LOGI(TAG, "Exposição UV: %d%% - %d%%",plant_config.uv_min, plant_config.uv_max);
+    ESP_LOGI(TAG, "Irrigação automática: %s (limiar: -%d%%)",plant_config.auto_irrigation ? "ATIVADA" : "DESATIVADA",plant_config.irrigation_threshold);
     ESP_LOGI(TAG, "═══════════════════════════════════════════════");
 }
 

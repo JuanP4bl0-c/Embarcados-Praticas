@@ -10,10 +10,10 @@ Planejamento do código:
 
 4 - Implementação do Banco de Dados
 
-5 - Implementação da comunicação com o protocolo MQQT
+5 - Implementação da comunicação com o protocolo MQQT (concluido)
 
-6 - Configuração do ambiente AWS (em desenvolvimento)
+6 - Configuração do ambiente AWS (Concluido)
 
-7 - Modelagem física e impressão da PCB (80% concluido)
+7 - Modelagem física e impressão da PCB (concluido)
 
 8 - Atuador: Válvula solenóide (obtido)

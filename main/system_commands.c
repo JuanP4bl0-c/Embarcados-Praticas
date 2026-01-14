@@ -5,6 +5,7 @@
 #include "soil_moisture.h"
 #include "plant_config.h"
 #include "ntp_sync.h"
+#include "power_manager.h"
 #include "esp_log.h"
 #include <string.h>
 #include <time.h>
@@ -50,7 +51,7 @@ void system_commands_publish_all_data(esp_mqtt_client_handle_t client)
         return;
     }
     
-    ESP_LOGI(TAG, "📤 Publicando todos os dados dos sensores...");
+    ESP_LOGI(TAG, "Publicando todos os dados dos sensores...");
     
     // Publica DHT11
     float temperature, humidity;
@@ -65,7 +66,7 @@ void system_commands_publish_all_data(esp_mqtt_client_handle_t client)
                 temperature, humidity, (long long)(now * 1000), time_str);
         
         esp_mqtt_client_publish(client, "esp32/sensor/dht11", dht_payload, 0, 1, 0);
-        ESP_LOGI(TAG, "✅ DHT11: T=%.1f°C, H=%.1f%%", temperature, humidity);
+        ESP_LOGI(TAG, "DHT11: T=%.1f°C, H=%.1f%%", temperature, humidity);
     }
     
     // Publica UV (força leitura)
@@ -77,7 +78,7 @@ void system_commands_publish_all_data(esp_mqtt_client_handle_t client)
     // Publica configuração da planta
     plant_config_publish(client);
     
-    ESP_LOGI(TAG, "✅ Todos os dados publicados!");
+    ESP_LOGI(TAG, "Todos os dados publicados!");
 }
 
 void system_commands_publish_status(esp_mqtt_client_handle_t client)
@@ -92,12 +93,18 @@ void system_commands_publish_status(esp_mqtt_client_handle_t client)
     char time_str[64];
     ntp_get_time_string(time_str, sizeof(time_str));
     
+    power_config_t power_cfg = power_manager_get_config();
+    const char *power_mode_str = power_cfg.mode == POWER_MODE_AUTO ? "auto" :
+                                  power_cfg.mode == POWER_MODE_LIGHT_SLEEP ? "light_sleep" : "normal";
+    
     snprintf(status_payload, sizeof(status_payload),
             "{"
             "\"status\":\"online\","
             "\"read_period_minutes\":%d,"
             "\"solenoid_state\":%s,"
             "\"solenoid_enabled\":%s,"
+            "\"power_save_enabled\":%s,"
+            "\"power_save_mode\":\"%s\","
             "\"uptime_seconds\":%lld,"
             "\"timestamp\":%lld,"
             "\"datetime\":\"%s\""
@@ -105,6 +112,8 @@ void system_commands_publish_status(esp_mqtt_client_handle_t client)
             system_config.read_period_minutes,
             solenoid_get_state() ? "true" : "false",
             system_config.solenoid_enabled ? "true" : "false",
+            power_cfg.enabled ? "true" : "false",
+            power_mode_str,
             (long long)(now),
             (long long)(now * 1000),
             time_str);
@@ -124,7 +133,7 @@ void system_commands_mqtt_handler(void *handler_args, esp_event_base_t base, int
         // Verifica se é o tópico de comandos
         if (strncmp(topic, TOPIC_SYSTEM_COMMANDS, strlen(TOPIC_SYSTEM_COMMANDS)) == 0) {
             ESP_LOGI(TAG, "═══════════════════════════════════════");
-            ESP_LOGI(TAG, "📥 Comando recebido: %s", topic);
+            ESP_LOGI(TAG, "Comando recebido: %s", topic);
             
             char data[512] = {0};
             snprintf(data, sizeof(data), "%.*s", event->data_len, event->data);
@@ -135,21 +144,21 @@ void system_commands_mqtt_handler(void *handler_args, esp_event_base_t base, int
             
             // ========== COMANDO: Ligar Solenoide ==========
             if (strstr(data, "\"command\":\"solenoid_on\"") != NULL) {
-                ESP_LOGI(TAG, "🔧 Comando: LIGAR SOLENOIDE");
+                ESP_LOGI(TAG, "Comando: LIGAR SOLENOIDE");
                 solenoid_set_state(true);
                 system_config.solenoid_enabled = true;
                 system_commands_publish_status(client);
             }
             // ========== COMANDO: Desligar Solenoide ==========
             else if (strstr(data, "\"command\":\"solenoid_off\"") != NULL) {
-                ESP_LOGI(TAG, "🔧 Comando: DESLIGAR SOLENOIDE");
+                ESP_LOGI(TAG, "Comando: DESLIGAR SOLENOIDE");
                 solenoid_set_state(false);
                 system_config.solenoid_enabled = false;
                 system_commands_publish_status(client);
             }
             // ========== COMANDO: Publicar Todos os Dados ==========
             else if (strstr(data, "\"command\":\"publish_all\"") != NULL) {
-                ESP_LOGI(TAG, "🔧 Comando: PUBLICAR TODOS OS DADOS");
+                ESP_LOGI(TAG, "Comando: PUBLICAR TODOS OS DADOS");
                 system_commands_publish_all_data(client);
             }
             // ========== COMANDO: Alterar Período de Leitura ==========
@@ -160,23 +169,23 @@ void system_commands_mqtt_handler(void *handler_args, esp_event_base_t base, int
                     int minutes = 0;
                     sscanf(minutes_str, "\"minutes\":%d", &minutes);
                     
-                    ESP_LOGI(TAG, "🔧 Comando: ALTERAR PERÍODO DE LEITURA");
+                    ESP_LOGI(TAG, "Comando: ALTERAR PERÍODO DE LEITURA");
                     ESP_LOGI(TAG, "Novo período: %d minutos", minutes);
                     
                     system_commands_set_read_period_minutes(minutes);
                     system_commands_publish_status(client);
                 } else {
-                    ESP_LOGW(TAG, "❌ Campo 'minutes' não encontrado");
+                    ESP_LOGW(TAG, "Campo 'minutes' não encontrado");
                 }
             }
             // ========== COMANDO: Solicitar Status ==========
             else if (strstr(data, "\"command\":\"get_status\"") != NULL) {
-                ESP_LOGI(TAG, "🔧 Comando: SOLICITAR STATUS");
+                ESP_LOGI(TAG, "Comando: SOLICITAR STATUS");
                 system_commands_publish_status(client);
             }
             // ========== COMANDO: Reiniciar ESP32 ==========
             else if (strstr(data, "\"command\":\"restart\"") != NULL) {
-                ESP_LOGI(TAG, "🔧 Comando: REINICIAR ESP32");
+                ESP_LOGI(TAG, "Comando: REINICIAR ESP32");
                 ESP_LOGW(TAG, "Reiniciando em 3 segundos...");
                 
                 char ack[128];
@@ -186,15 +195,52 @@ void system_commands_mqtt_handler(void *handler_args, esp_event_base_t base, int
                 vTaskDelay(pdMS_TO_TICKS(3000));
                 esp_restart();
             }
+            // ========== COMANDO: Habilitar Economia de Energia ==========
+            else if (strstr(data, "\"command\":\"power_save_on\"") != NULL) {
+                ESP_LOGI(TAG, "Comando: HABILITAR ECONOMIA DE ENERGIA");
+                power_manager_set_enabled(true);
+                system_commands_publish_status(client);
+            }
+            // ========== COMANDO: Desabilitar Economia de Energia ==========
+            else if (strstr(data, "\"command\":\"power_save_off\"") != NULL) {
+                ESP_LOGI(TAG, "Comando: DESABILITAR ECONOMIA DE ENERGIA");
+                power_manager_set_enabled(false);
+                system_commands_publish_status(client);
+            }
+            // ========== COMANDO: Alterar Modo de Economia ==========
+            else if (strstr(data, "\"command\":\"set_power_mode\"") != NULL) {
+                ESP_LOGI(TAG, "Comando: ALTERAR MODO DE ECONOMIA");
+                
+                if (strstr(data, "\"mode\":\"auto\"") != NULL) {
+                    power_manager_set_mode(POWER_MODE_AUTO);
+                } else if (strstr(data, "\"mode\":\"light_sleep\"") != NULL) {
+                    power_manager_set_mode(POWER_MODE_LIGHT_SLEEP);
+                } else if (strstr(data, "\"mode\":\"normal\"") != NULL) {
+                    power_manager_set_mode(POWER_MODE_NORMAL);
+                } else {
+                    ESP_LOGW(TAG, "Modo inválido. Use: auto, light_sleep ou normal");
+                }
+                
+                system_commands_publish_status(client);
+            }
+            // ========== COMANDO: Estatísticas de Energia ==========
+            else if (strstr(data, "\"command\":\"power_stats\"") != NULL) {
+                ESP_LOGI(TAG, "Comando: ESTATÍSTICAS DE ENERGIA");
+                power_manager_report_stats();
+            }
             // ========== COMANDO DESCONHECIDO ==========
             else {
-                ESP_LOGW(TAG, "❌ Comando não reconhecido");
+                ESP_LOGW(TAG, "Comando não reconhecido");
                 ESP_LOGI(TAG, "Comandos disponíveis:");
                 ESP_LOGI(TAG, "  - {\"command\":\"solenoid_on\"}");
                 ESP_LOGI(TAG, "  - {\"command\":\"solenoid_off\"}");
                 ESP_LOGI(TAG, "  - {\"command\":\"publish_all\"}");
                 ESP_LOGI(TAG, "  - {\"command\":\"set_read_period\",\"minutes\":10}");
                 ESP_LOGI(TAG, "  - {\"command\":\"get_status\"}");
+                ESP_LOGI(TAG, "  - {\"command\":\"power_save_on\"}");
+                ESP_LOGI(TAG, "  - {\"command\":\"power_save_off\"}");
+                ESP_LOGI(TAG, "  - {\"command\":\"set_power_mode\",\"mode\":\"auto|light_sleep|normal\"}");
+                ESP_LOGI(TAG, "  - {\"command\":\"power_stats\"}");
                 ESP_LOGI(TAG, "  - {\"command\":\"restart\"}");
             }
             
