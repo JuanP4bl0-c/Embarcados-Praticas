@@ -1,0 +1,7 @@
+# Previne commit acidental de chaves privadas
+*-private.pem.key filter=block
+*-certificate.pem.crt filter=block
+*.pem.key filter=block
+
+# Marca arquivos sensíveis
+main/certs/** filter=lfs diff=lfs merge=lfs -text

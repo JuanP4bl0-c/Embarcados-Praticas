@@ -29,11 +29,11 @@
 
 // #define WIFI_SSID "UFC_QUIXADA"
 
-// #define WIFI_SSID "UFC_B4_SL3_1"
-// #define WIFI_PASS ""
+#define WIFI_SSID "UFC_B4_SL3_1"
+#define WIFI_PASS ""
 
-#define WIFI_SSID "brisa-2504280"
-#define WIFI_PASS "eubcidpn"
+// #define WIFI_SSID "brisa-2504280"
+// #define WIFI_PASS "eubcidpn"
 
 #define AWS_IOT_ENDPOINT "a1gqpq2oiyi1r1-ats.iot.us-east-1.amazonaws.com"
 #define AWS_IOT_CLIENT_ID "ESP32_Client"
