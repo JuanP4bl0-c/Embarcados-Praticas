@@ -27,4 +27,10 @@ esp_err_t uv_sensor_read(int *value);
  */
 void uv_sensor_task(void *pvParameters);
 
+/**
+ * @brief Força a publicação imediata dos dados do sensor UV
+ * @param client Cliente MQTT
+ */
+void uv_sensor_force_publish(esp_mqtt_client_handle_t client);
+
 #endif // UV_SENSOR_H

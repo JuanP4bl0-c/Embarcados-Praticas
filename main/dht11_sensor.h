@@ -3,6 +3,7 @@
 
 #include "esp_err.h"
 #include "mqtt_client.h"
+#include <stdbool.h>
 
 // Configurações do sensor DHT11
 #define DHT11_GPIO 27  // GPIO digital - Lado direito da placa
@@ -21,6 +22,14 @@ esp_err_t dht11_sensor_init(void);
  * @return ESP_OK em caso de sucesso
  */
 esp_err_t dht11_sensor_read(int16_t *humidity, int16_t *temperature);
+
+/**
+ * @brief Lê temperatura e umidade como floats (compatível com system_commands)
+ * @param temperature Ponteiro para armazenar a temperatura (°C)
+ * @param humidity Ponteiro para armazenar a umidade (%)
+ * @return true em caso de sucesso, false caso contrário
+ */
+bool dht11_read_data(float *temperature, float *humidity);
 
 /**
  * @brief Task para publicar dados do sensor DHT11 periodicamente

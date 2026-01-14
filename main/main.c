@@ -23,30 +23,71 @@
 #include "solenoid.h"
 #include "plant_config.h"
 #include "ntp_sync.h"
+#include "system_commands.h"
 
 
 // #define WIFI_SSID "UFC_QUIXADA"
+
+// #define WIFI_SSID "UFC_B4_SL3_1"
 // #define WIFI_PASS ""
 
 #define WIFI_SSID "brisa-2504280"
 #define WIFI_PASS "eubcidpn"
 
-#define AWS_IOT_ENDPOINT "a1gqpq2oiyi1r1-ats.iot.sa-east-1.amazonaws.com"
-#define AWS_IOT_CLIENT_ID "esp32_estufa_inteligente_001"
+#define AWS_IOT_ENDPOINT "a1gqpq2oiyi1r1-ats.iot.us-east-1.amazonaws.com"
+#define AWS_IOT_CLIENT_ID "ESP32_Client"
+
+
+// LED embutido da ESP32
+#define BUILTIN_LED_GPIO GPIO_NUM_2  // GPIO2 é o LED embutido na maioria das ESP32
+// LED externo
+#define EXTERNAL_LED_GPIO GPIO_NUM_4  // GPIO4 (D4) - LED externo
 
 static const char *TAG = "APP_MAIN";
+
+// Função de callback customizado para vprintf (intercepta todos os logs)
+static int custom_vprintf(const char *fmt, va_list args)
+{
+    // Chama o printf original
+    int ret = vprintf(fmt, args);
+    
+    // Pisca ambos os LEDs simultaneamente a cada log
+    gpio_set_level(BUILTIN_LED_GPIO, 1);   // Liga LED embutido
+    gpio_set_level(EXTERNAL_LED_GPIO, 1);  // Liga LED externo
+    vTaskDelay(pdMS_TO_TICKS(25));         // Mantém por 25ms
+    gpio_set_level(BUILTIN_LED_GPIO, 0);   // Desliga LED embutido
+    gpio_set_level(EXTERNAL_LED_GPIO, 0);  // Desliga LED externo
+    
+    return ret;
+}
 
 adc_oneshot_unit_handle_t adc1_handle = NULL;
 
 extern const uint8_t aws_root_ca_pem_start[] asm("_binary_AmazonRootCA1_pem_start");
-extern const uint8_t device_certificate_pem_crt_start[] asm("_binary_784b1c21017ae276cbea71bc6b3ed0d1fa6377bb594ee4094f9271ff367ecc3e_certificate_pem_crt_start");
-extern const uint8_t device_private_pem_key_start[] asm("_binary_784b1c21017ae276cbea71bc6b3ed0d1fa6377bb594ee4094f9271ff367ecc3e_private_pem_key_start");
+extern const uint8_t device_certificate_pem_crt_start[] asm("_binary_376f19f7d489fd831039a918bc7a9ec29a363566a92e0c10b4fc5b0f69aa345f_certificate_pem_crt_start");
+extern const uint8_t device_private_pem_key_start[] asm("_binary_376f19f7d489fd831039a918bc7a9ec29a363566a92e0c10b4fc5b0f69aa345f_private_pem_key_start");
 
 esp_mqtt_client_handle_t client = NULL;
 extern bool mqtt_connected;
 
 void app_main(void)
 {
+    // Configura LED embutido
+    gpio_reset_pin(BUILTIN_LED_GPIO);
+    gpio_set_direction(BUILTIN_LED_GPIO, GPIO_MODE_OUTPUT);
+    gpio_set_level(BUILTIN_LED_GPIO, 0);  // Inicia apagado
+    
+    // Configura LED externo (D4 / GPIO4)
+    gpio_reset_pin(EXTERNAL_LED_GPIO);
+    gpio_set_direction(EXTERNAL_LED_GPIO, GPIO_MODE_OUTPUT);
+    gpio_set_level(EXTERNAL_LED_GPIO, 0);  // Inicia apagado
+    
+    // Registra função customizada para piscar LEDs a cada log
+    esp_log_set_vprintf(custom_vprintf);
+    
+    ESP_LOGI(TAG, "🚀 Sistema iniciando...");
+    ESP_LOGI(TAG, "💡 LED embutido habilitado no GPIO %d", BUILTIN_LED_GPIO);
+    ESP_LOGI(TAG, "💡 LED externo habilitado no GPIO %d (D4)", EXTERNAL_LED_GPIO);
 
     esp_err_t ret = nvs_flash_init();
     if (ret == ESP_ERR_NVS_NO_FREE_PAGES || ret == ESP_ERR_NVS_NEW_VERSION_FOUND) {
@@ -70,7 +111,10 @@ void app_main(void)
         ESP_LOGW(TAG, "Falha ao sincronizar horário, continuando sem NTP");
     }
 
+    // Registra handlers MQTT customizados
     mqtt_manager_set_custom_handler(solenoid_mqtt_handler);
+    mqtt_manager_set_custom_handler(system_commands_mqtt_handler);
+    
     mqtt_manager_start(AWS_IOT_ENDPOINT, AWS_IOT_CLIENT_ID, 
                        aws_root_ca_pem_start, 
                        device_certificate_pem_crt_start, 
@@ -88,6 +132,9 @@ void app_main(void)
     // Inicializa controle diurno/noturno
     day_night_control_init();
     
+    // Inicializa sistema de comandos
+    system_commands_init();
+    
     plant_config_init();
     
     uv_sensor_init();
@@ -101,11 +148,17 @@ void app_main(void)
         ESP_LOGI(TAG, "subscribe nos tópicos.");
         int msg_id1 = esp_mqtt_client_subscribe(client, TOPIC_SOLENOID, 1);
         int msg_id2 = esp_mqtt_client_subscribe(client, TOPIC_PLANT_CONFIG, 1);
+        int msg_id3 = esp_mqtt_client_subscribe(client, TOPIC_SYSTEM_COMMANDS, 1);
+        
         ESP_LOGI(TAG, "Subscribed: %s (msg_id=%d)", TOPIC_SOLENOID, msg_id1);
         ESP_LOGI(TAG, "Subscribed: %s (msg_id=%d)", TOPIC_PLANT_CONFIG, msg_id2);
+        ESP_LOGI(TAG, "Subscribed: %s (msg_id=%d)", TOPIC_SYSTEM_COMMANDS, msg_id3);
         
         // Publica configuração atual
         plant_config_publish(client);
+        
+        // Publica status inicial do sistema
+        system_commands_publish_status(client);
     } else {
         ESP_LOGW(TAG, "MQTT não conectado, não foi possível fazer subscribe");
     }

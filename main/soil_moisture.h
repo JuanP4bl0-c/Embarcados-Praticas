@@ -27,4 +27,10 @@ esp_err_t soil_moisture_read(int *value);
  */
 void soil_moisture_task(void *pvParameters);
 
+/**
+ * @brief Força a publicação imediata dos dados do sensor de umidade do solo
+ * @param client Cliente MQTT
+ */
+void soil_moisture_force_publish(esp_mqtt_client_handle_t client);
+
 #endif // SOIL_MOISTURE_H
