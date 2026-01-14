@@ -40,9 +40,9 @@
 
 
 // LED embutido da ESP32
-#define BUILTIN_LED_GPIO GPIO_NUM_2  // GPIO2 é o LED embutido na maioria das ESP32
-// LED externo
-#define EXTERNAL_LED_GPIO GPIO_NUM_4  // GPIO4 (D4) - LED externo
+#define BUILTIN_LED_GPIO GPIO_NUM_2  // GPIO2 - Pisca a cada log
+// LED externo - Status do sistema
+#define EXTERNAL_LED_GPIO GPIO_NUM_4  // GPIO4 - Aceso = Sistema pronto (WiFi + AWS + Internet)
 
 static const char *TAG = "APP_MAIN";
 
@@ -52,12 +52,12 @@ static int custom_vprintf(const char *fmt, va_list args)
     // Chama o printf original
     int ret = vprintf(fmt, args);
     
-    // Pisca ambos os LEDs simultaneamente a cada log
+    // Pisca APENAS LED embutido a cada log
     gpio_set_level(BUILTIN_LED_GPIO, 1);   // Liga LED embutido
-    gpio_set_level(EXTERNAL_LED_GPIO, 1);  // Liga LED externo
     vTaskDelay(pdMS_TO_TICKS(25));         // Mantém por 25ms
     gpio_set_level(BUILTIN_LED_GPIO, 0);   // Desliga LED embutido
-    gpio_set_level(EXTERNAL_LED_GPIO, 0);  // Desliga LED externo
+    
+    // LED externo permanece no estado de status (não pisca)
     
     return ret;
 }
@@ -95,7 +95,13 @@ void app_main(void)
     ESP_ERROR_CHECK(ret);
     ESP_LOGI(TAG, "NVS Flash inicializado");
 
+    // LED externo piscando = conectando WiFi
     ESP_LOGI(TAG, "Conectando ao WiFi: %s", WIFI_SSID);
+    gpio_set_level(EXTERNAL_LED_GPIO, 1);
+    vTaskDelay(pdMS_TO_TICKS(200));
+    gpio_set_level(EXTERNAL_LED_GPIO, 0);
+    vTaskDelay(pdMS_TO_TICKS(200));
+    
     wifi_manager_init(WIFI_SSID, WIFI_PASS, WIFI_AUTH_OPEN);
     vTaskDelay(pdMS_TO_TICKS(5000));
 
@@ -106,6 +112,14 @@ void app_main(void)
         ESP_LOGI(TAG, "Horário sincronizado com sucesso!");
     } else {
         ESP_LOGW(TAG, "Falha ao sincronizar horário, continuando sem NTP");
+    }
+
+    // LED externo piscando = conectando AWS IoT
+    for (int i = 0; i < 3; i++) {
+        gpio_set_level(EXTERNAL_LED_GPIO, 1);
+        vTaskDelay(pdMS_TO_TICKS(150));
+        gpio_set_level(EXTERNAL_LED_GPIO, 0);
+        vTaskDelay(pdMS_TO_TICKS(150));
     }
 
     // Registra handlers MQTT customizados
@@ -159,8 +173,19 @@ void app_main(void)
         
         // Publica status inicial do sistema
         system_commands_publish_status(client);
+        
+        // SISTEMA PRONTO! Liga LED externo fixo
+        ESP_LOGI(TAG, "Sistema 100%% operacional - WiFi + AWS IoT conectados");
+        gpio_set_level(EXTERNAL_LED_GPIO, 1);  // LED externo ACESO = Sistema pronto
     } else {
         ESP_LOGW(TAG, "MQTT não conectado, não foi possível fazer subscribe");
+        // LED externo piscando rápido = ERRO
+        for (int i = 0; i < 10; i++) {
+            gpio_set_level(EXTERNAL_LED_GPIO, 1);
+            vTaskDelay(pdMS_TO_TICKS(100));
+            gpio_set_level(EXTERNAL_LED_GPIO, 0);
+            vTaskDelay(pdMS_TO_TICKS(100));
+        }
     }
 
 

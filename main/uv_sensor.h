@@ -5,7 +5,7 @@
 #include "mqtt_client.h"
 
 // Configurações do sensor UV
-#define UV_SENSOR_GPIO 32  // ADC1_CHANNEL_4 - Lado direito da placa
+#define UV_SENSOR_GPIO 35  // ADC1_CHANNEL_4 - Lado direito da placa
 #define TOPIC_UV_SENSOR "esp32/uv"
 
 /**

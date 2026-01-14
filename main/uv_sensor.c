@@ -22,11 +22,27 @@ esp_err_t uv_sensor_init(void)
     // Configura canal 4 (GPIO32)
     adc_oneshot_chan_cfg_t config = {
         .bitwidth = ADC_BITWIDTH_DEFAULT,
-        .atten = ADC_ATTEN_DB_12,
+        .atten = ADC_ATTEN_DB_12,  // 0-3.3V range
     };
-    ESP_ERROR_CHECK(adc_oneshot_config_channel(adc1_handle, ADC_CHANNEL_4, &config));
     
-    ESP_LOGI(TAG, "Sensor UV inicializado");
+    esp_err_t ret = adc_oneshot_config_channel(adc1_handle, ADC_CHANNEL_4, &config);
+    
+    if (ret != ESP_OK) {
+        ESP_LOGE(TAG, "FALHA ao configurar ADC_CHANNEL_4! Erro: 0x%x (%s)", ret, esp_err_to_name(ret));
+        return ret;
+    }
+    
+    // Teste de leitura inicial
+    int test_value = 0;
+    ret = adc_oneshot_read(adc1_handle, ADC_CHANNEL_4, &test_value);
+    
+    if (ret == ESP_OK) {
+        ESP_LOGI(TAG, "Sensor UV inicializado - Teste: %d (%.2fV)", 
+                 test_value, (test_value / 4095.0) * 3.3);
+    } else {
+        ESP_LOGE(TAG, "ERRO na leitura de teste! Código: 0x%x (%s)", ret, esp_err_to_name(ret));
+    }
+    
     return ESP_OK;
 }
 
@@ -39,8 +55,12 @@ esp_err_t uv_sensor_read(int *value)
     // Lê o valor do ADC (0-4095)
     int raw_value = 0;
     esp_err_t ret = adc_oneshot_read(adc1_handle, ADC_CHANNEL_4, &raw_value);
+    
     if (ret == ESP_OK) {
         *value = raw_value;
+        ESP_LOGD(TAG, "ADC leitura OK - Raw: %d", raw_value);
+    } else {
+        ESP_LOGE(TAG, "ERRO ao ler ADC! Código: 0x%x (%s)", ret, esp_err_to_name(ret));
     }
     
     return ret;
@@ -93,6 +113,10 @@ void uv_sensor_task(void *pvParameters)
                 
                 // Converte para voltagem aproximada (0-3.3V)
                 float voltage = (uv_value / 4095.0) * 3.3;
+                
+                // Log detalhado
+                ESP_LOGI(TAG, "Leitura UV - Raw: %d, Voltage: %.3fV, %%: %.1f%%", 
+                         uv_value, voltage, (uv_value / 4095.0) * 100.0);
                 
                 snprintf(message, sizeof(message),
                     "{\"device_id\":\"ESP32_Client\",\"uv_raw\":%d,\"uv_voltage\":%.2f,\"hour\":%d,\"counter\":%d,\"timestamp\":%lld}",
