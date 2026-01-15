@@ -55,7 +55,7 @@ void uv_sensor_task(void *pvParameters)
     bool was_night = false;
     
     ESP_LOGI(TAG, "Task do sensor UV iniciada");
-    ESP_LOGW(TAG, "DEBUG: Controle dia/noite DESABILITADO - Sensor UV funcionando 24h");
+   // ESP_LOGW(TAG, "DEBUG: Controle dia/noite DESABILITADO - Sensor UV funcionando 24h");
     
     // Aguarda inicialização
     vTaskDelay(pdMS_TO_TICKS(5000));

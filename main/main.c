@@ -35,8 +35,8 @@
 #define WIFI_SSID "brisa-2504280"
 #define WIFI_PASS "eubcidpn"
 
-#define AWS_IOT_ENDPOINT "a1gqpq2oiyi1r1-ats.iot.us-east-1.amazonaws.com"
-#define AWS_IOT_CLIENT_ID "ESP32_Client"
+#define AWS_IOT_ENDPOINT "a1gqpq2oiyi1r1-ats.iot.sa-east-1.amazonaws.com"
+#define AWS_IOT_CLIENT_ID "esp32_estufa_inteligente_001"
 
 
 // LED embutido da ESP32
