@@ -6,8 +6,10 @@
 static const char *TAG = "MQTT_MANAGER";
 bool mqtt_connected = false;
 
-// Handler customizado
-static mqtt_custom_event_handler_t custom_handler = NULL;
+// Handlers customizados
+#define MAX_CUSTOM_HANDLERS 5
+static mqtt_custom_event_handler_t custom_handlers[MAX_CUSTOM_HANDLERS] = {NULL};
+static int handler_count = 0;
 
 static void mqtt_event_handler(void *handler_args, esp_event_base_t base, int32_t event_id, void *event_data)
 {
@@ -28,9 +30,11 @@ static void mqtt_event_handler(void *handler_args, esp_event_base_t base, int32_
         // Chama o handler da configuração da planta
         plant_config_mqtt_handler(handler_args, base, event_id, event_data);
         
-        // Chama o handler customizado (solenoid)
-        if (custom_handler != NULL) {
-            custom_handler(handler_args, base, event_id, event_data);
+        // Chama todos os handlers customizados registrados
+        for (int i = 0; i < handler_count; i++) {
+            if (custom_handlers[i] != NULL) {
+                custom_handlers[i](handler_args, base, event_id, event_data);
+            }
         }
         break;
 
@@ -74,8 +78,13 @@ static void mqtt_event_handler(void *handler_args, esp_event_base_t base, int32_
 
 void mqtt_manager_set_custom_handler(mqtt_custom_event_handler_t handler)
 {
-    custom_handler = handler;
-    ESP_LOGI(TAG, "Handler customizado registrado");
+    if (handler_count < MAX_CUSTOM_HANDLERS) {
+        custom_handlers[handler_count] = handler;
+        handler_count++;
+        ESP_LOGI(TAG, "Handler customizado #%d registrado", handler_count);
+    } else {
+        ESP_LOGW(TAG, "Máximo de handlers atingido (%d)", MAX_CUSTOM_HANDLERS);
+    }
 }
 
 void mqtt_manager_start(const char *endpoint, const char *client_id,

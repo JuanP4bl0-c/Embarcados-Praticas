@@ -1,6 +1,8 @@
 #include "soil_moisture.h"
 #include "plant_config.h"
 #include "solenoid.h"
+#include "system_commands.h"
+#include "power_manager.h"
 #include "esp_adc/adc_oneshot.h"
 #include "esp_log.h"
 #include "esp_timer.h"
@@ -76,6 +78,9 @@ void soil_moisture_task(void *pvParameters)
                 int msg_id = esp_mqtt_client_publish(client, TOPIC_SOIL_MOISTURE, message, 0, 1, 0);
                 ESP_LOGI(TAG, "Publicado [msg_id=%d]: %s", msg_id, message);
                 
+                // Marca que publicou dados
+                power_manager_mark_sensor_published("soil");
+                
                 // Verifica se precisa irrigar automaticamente
                 if (plant_config_should_irrigate(moisture_percent)) {
                     ESP_LOGW(TAG, "Acionando irrigação automática!");
@@ -108,6 +113,39 @@ void soil_moisture_task(void *pvParameters)
             ESP_LOGW(TAG, "MQTT não conectado, aguardando...");
         }
         
-        vTaskDelay(pdMS_TO_TICKS(20000)); // Publica a cada 20 segundos
+        // Usa período configurável com power management
+        int delay_ms = system_commands_get_read_period_ms();
+        
+        if (power_manager_should_sleep(delay_ms)) {
+            power_manager_sleep(delay_ms);
+        } else {
+            vTaskDelay(pdMS_TO_TICKS(delay_ms));
+        }
+    }
+}
+
+void soil_moisture_force_publish(esp_mqtt_client_handle_t client)
+{
+    if (client == NULL) {
+        ESP_LOGW(TAG, "Cliente MQTT NULL");
+        return;
+    }
+    
+    int moisture_value = 0;
+    esp_err_t res = soil_moisture_read(&moisture_value);
+    
+    if (res == ESP_OK) {
+        char message[256];
+        int64_t timestamp_ms = esp_timer_get_time() / 1000;
+        int moisture_percent = 100 - ((moisture_value * 100) / 4095);
+        
+        snprintf(message, sizeof(message),
+            "{\"device_id\":\"ESP32_Client\",\"moisture_raw\":%d,\"moisture_percent\":%d,\"forced\":true,\"timestamp\":%lld}",
+            moisture_value, moisture_percent, timestamp_ms);
+        
+        esp_mqtt_client_publish(client, TOPIC_SOIL_MOISTURE, message, 0, 1, 0);
+        ESP_LOGI(TAG, "Umidade do solo forçada: %d%% (%d raw)", moisture_percent, moisture_value);
+    } else {
+        ESP_LOGW(TAG, "Falha ao ler sensor de umidade do solo");
     }
 }

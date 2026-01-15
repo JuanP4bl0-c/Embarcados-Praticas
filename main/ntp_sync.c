@@ -44,13 +44,13 @@ bool ntp_wait_sync(uint32_t timeout_ms)
     
     // Verifica se o ano está correto (>2020)
     if (timeinfo.tm_year < (2020 - 1900)) {
-        ESP_LOGE(TAG, "❌ Falha na sincronização NTP (ano=%d)", timeinfo.tm_year + 1900);
+        ESP_LOGE(TAG, "Falha na sincronização NTP (ano=%d)", timeinfo.tm_year + 1900);
         return false;
     }
     
     char strftime_buf[64];
     strftime(strftime_buf, sizeof(strftime_buf), "%c", &timeinfo);
-    ESP_LOGI(TAG, "✅ NTP sincronizado: %s", strftime_buf);
+    ESP_LOGI(TAG, "NTP sincronizado: %s", strftime_buf);
     
     return true;
 }

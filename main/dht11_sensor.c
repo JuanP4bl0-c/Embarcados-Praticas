@@ -1,4 +1,6 @@
 #include "dht11_sensor.h"
+#include "system_commands.h"
+#include "power_manager.h"
 #include "driver/gpio.h"
 #include "esp_log.h"
 #include "esp_timer.h"
@@ -10,6 +12,7 @@
 #include <string.h>
 #include <time.h>
 #include <sys/time.h>
+#include <stdbool.h>
 
 static const char *TAG = "DHT11_SENSOR";
 extern bool mqtt_connected;
@@ -76,7 +79,7 @@ esp_err_t dht11_sensor_read(int16_t *humidity, int16_t *temperature)
         if (++timeout > 200) {  // Aumentado de 100 para 200
             taskENABLE_INTERRUPTS();
             xSemaphoreGive(dht11_mutex);
-            ESP_LOGW(TAG, "Timeout: sensor não puxou LOW");
+            //ESP_LOGW(TAG, "Timeout: sensor não puxou LOW");
             return ESP_FAIL;
         }
         ets_delay_us(1);
@@ -165,9 +168,27 @@ esp_err_t dht11_sensor_read(int16_t *humidity, int16_t *temperature)
     
     xSemaphoreGive(dht11_mutex);
     
-    ESP_LOGI(TAG, "✓ Temp=%d°C Umid=%d%%", *temperature, *humidity);
+    ESP_LOGI(TAG, "Temp=%d°C Umid=%d%%", *temperature, *humidity);
     
     return ESP_OK;
+}
+
+bool dht11_read_data(float *temperature, float *humidity)
+{
+    if (temperature == NULL || humidity == NULL) {
+        return false;
+    }
+    
+    int16_t temp_int = 0, hum_int = 0;
+    esp_err_t ret = dht11_sensor_read(&hum_int, &temp_int);
+    
+    if (ret == ESP_OK) {
+        *temperature = (float)temp_int;
+        *humidity = (float)hum_int;
+        return true;
+    }
+    
+    return false;
 }
 
 void dht11_sensor_task(void *pvParameters)
@@ -219,6 +240,9 @@ void dht11_sensor_task(void *pvParameters)
                 ESP_LOGI(TAG, "Publicado [%s] [msg_id=%d]: Temp=%d°C, Umid=%d%% (tentativas:%d)", 
                          time_str, msg_id, temperature, humidity, retry);
                 counter++;
+                
+                // Marca que publicou dados
+                power_manager_mark_sensor_published("dht11");
             } else {
                 ESP_LOGE(TAG, "Falha ao ler DHT11 após %d tentativas", max_retries);
             }
@@ -226,7 +250,15 @@ void dht11_sensor_task(void *pvParameters)
             ESP_LOGW(TAG, "MQTT não conectado, aguardando...");
         }
         
-        // Aguarda 10 segundos entre ciclos de leitura
-        vTaskDelay(pdMS_TO_TICKS(10000));
+        // Aguarda período configurável entre ciclos de leitura
+        int delay_ms = system_commands_get_read_period_ms();
+        ESP_LOGI(TAG, "Próxima leitura em %d ms (%d min)", delay_ms, delay_ms/60000);
+        
+        // Usa power manager para sleep inteligente
+        if (power_manager_should_sleep(delay_ms)) {
+            power_manager_sleep(delay_ms);
+        } else {
+            vTaskDelay(pdMS_TO_TICKS(delay_ms));
+        }
     }
 }

@@ -14,6 +14,7 @@ __pycache__/
 # Certificados (IMPORTANTE: não commitar certificados privados!)
 main/certs/*.key
 main/certs/private*.pem
+main/certs/*.crt
 
 # Logs
 *.log

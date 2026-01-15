@@ -1,5 +1,7 @@
 #include "uv_sensor.h"
 #include "day_night_control.h"
+#include "system_commands.h"
+#include "power_manager.h"
 #include "esp_adc/adc_oneshot.h"
 #include "esp_log.h"
 #include "esp_timer.h"
@@ -52,21 +54,23 @@ void uv_sensor_task(void *pvParameters)
     int counter = 0;
     bool was_night = false;
     
-    ESP_LOGI(TAG, "Task do sensor UV iniciada (com controle dia/noite)");
+    ESP_LOGI(TAG, "Task do sensor UV iniciada");
+   // ESP_LOGW(TAG, "DEBUG: Controle dia/noite DESABILITADO - Sensor UV funcionando 24h");
     
     // Aguarda inicialização
     vTaskDelay(pdMS_TO_TICKS(5000));
     
     while (1) {
+        
         // Verifica se é horário noturno
         bool is_night = is_night_time();
         
         // Log quando muda de dia para noite ou vice-versa
         if (is_night != was_night) {
             if (is_night) {
-                ESP_LOGI(TAG, "🌙 Horário noturno detectado - Sensor UV pausado");
+                ESP_LOGI(TAG, "Horário noturno detectado - Sensor UV pausado");
             } else {
-                ESP_LOGI(TAG, "☀️  Horário diurno detectado - Sensor UV ativado");
+                ESP_LOGI(TAG, "Horário diurno detectado - Sensor UV ativado");
             }
             was_night = is_night;
         }
@@ -76,6 +80,8 @@ void uv_sensor_task(void *pvParameters)
             vTaskDelay(pdMS_TO_TICKS(60000)); // Verifica a cada 1 minuto durante a noite
             continue;
         }
+        
+        // ===== FIM DEBUG =====
         
         // Durante o dia, funciona normalmente
         if (mqtt_connected && client != NULL) {
@@ -93,8 +99,11 @@ void uv_sensor_task(void *pvParameters)
                     uv_value, voltage, hour, counter, timestamp_ms);
                 
                 int msg_id = esp_mqtt_client_publish(client, TOPIC_UV_SENSOR, message, 0, 1, 0);
-                ESP_LOGI(TAG, "☀️  Publicado [msg_id=%d, hora=%02d]: UV=%d (%.2fV)", 
+                ESP_LOGI(TAG, "Publicado [msg_id=%d, hora=%02d]: UV=%d (%.2fV)", 
                          msg_id, hour, uv_value, voltage);
+                
+                // Marca que publicou dados
+                power_manager_mark_sensor_published("uv");
             } else {
                 ESP_LOGW(TAG, "Falha ao ler sensor UV: %d", res);
             }
@@ -103,6 +112,40 @@ void uv_sensor_task(void *pvParameters)
             ESP_LOGW(TAG, "MQTT não conectado, aguardando...");
         }
         
-        vTaskDelay(pdMS_TO_TICKS(15000)); // Publica a cada 15 segundos durante o dia
+        // Usa período configurável com power management
+        int delay_ms = system_commands_get_read_period_ms();
+        
+        if (power_manager_should_sleep(delay_ms)) {
+            power_manager_sleep(delay_ms);
+        } else {
+            vTaskDelay(pdMS_TO_TICKS(delay_ms));
+        }
+    }
+}
+
+void uv_sensor_force_publish(esp_mqtt_client_handle_t client)
+{
+    if (client == NULL) {
+        ESP_LOGW(TAG, "Cliente MQTT NULL");
+        return;
+    }
+    
+    int uv_value = 0;
+    esp_err_t res = uv_sensor_read(&uv_value);
+    
+    if (res == ESP_OK) {
+        char message[256];
+        int64_t timestamp_ms = esp_timer_get_time() / 1000;
+        int hour = get_current_hour();
+        float voltage = (uv_value / 4095.0) * 3.3;
+        
+        snprintf(message, sizeof(message),
+            "{\"device_id\":\"ESP32_Client\",\"uv_raw\":%d,\"uv_voltage\":%.2f,\"hour\":%d,\"forced\":true,\"timestamp\":%lld}",
+            uv_value, voltage, hour, timestamp_ms);
+        
+        esp_mqtt_client_publish(client, TOPIC_UV_SENSOR, message, 0, 1, 0);
+        ESP_LOGI(TAG, "UV forçado: %d (%.2fV)", uv_value, voltage);
+    } else {
+        ESP_LOGW(TAG, "Falha ao ler sensor UV");
     }
 }
